@@ -1,7 +1,7 @@
 # NAME:BlockHttpDNS-snippet
 # DESC:Block http dns request
-# VERSION:Based@ce51252@2023-08-09T10:13:00+0800
-# UPDATETIME:2023-08-23
+# VERSION:Based@3d32439@2023-08-31T16:23:00+0800
+# UPDATETIME:2023-09-02
 # AUTHOR:VirgilClyne
 # REPO:https://github.com/VirgilClyne/GetSomeFries
 # URL:https://github.com/VirgilClyne/GetSomeFries/blob/main/snippet/HTTPDNS.Block.snippet
@@ -33,7 +33,6 @@
 
 # JD
 ^https:\/\/dns\.jd\.com\/v6\/b url reject
-^https:\/\/dns\.jd\.com\/v6\/d url reject
 
 # Meituan
 ^http:\/\/103\.37\.155\.60\/fetch url reject
@@ -75,4 +74,4 @@
 ^http:\/\/103\.41\.167\.237\/v2\/resolv url reject
 
 #[MITM]
-hostname = 119.29.29.29, amdc.alipay.com, amdc-sibling.alipay.com.cn, dns.jd.com
+hostname = 119.29.29.98, 119.29.29.99, amdc.alipay.com, amdc-sibling.alipay.com.cn, dns.jd.com
