@@ -1,7 +1,7 @@
 #!name=BlockHttpDNS
 #!desc=Block http dns requests
-#!version=Based@ce51252@2023-08-09T10:13:00+0800
-#!updatetime=2023-08-23
+#!version=Based@3d32439@2023-08-31T16:23:00+0800
+#!updatetime=2023-09-02
 #!author=VirgilClyne
 #!repo=https://github.com/VirgilClyne/GetSomeFries
 #!url=https://github.com/VirgilClyne/GetSomeFries/blob/main/sgmodule/HTTPDNS.Block.sgmodule
@@ -48,6 +48,9 @@ IP-CIDR6,2402:db40:5100:1011::5/128,REJECT,no-resolve
 # refer: https://docs.jdcloud.com/cn/httpdns/interface-specification
 IP-CIDR,103.224.222.208/32,REJECT,no-resolve
 
+# Meituan
+DOMAIN,httpdns.meituan.com,REJECT
+
 # NetEase
 # refer: https://lbs.netease.im/lbs/conf.jsp
 DOMAIN,httpdns.n.netease.com,REJECT
@@ -64,6 +67,12 @@ DOMAIN,httpdns.push.oppomobile.com,REJECT
 
 # Sina
 # refer: https://github.com/CNSRE/HTTPDNSLib
+
+# Tencent Cloud
+# refer：https://cloud.tencent.com/document/product/379/95497
+DOMAIN-SUFFIX,httpdns.pro,REJECT
+IP-CIDR,119.29.29.98/32,REJECT,no-resolve
+IP-CIDR,119.29.29.99/32,REJECT,no-resolve
 
 # Volcengine
 # refer: https://www.volcengine.com/docs/6758/174756
@@ -124,7 +133,6 @@ IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve
 
 # JD
 ^https:\/\/dns\.jd\.com\/v6\/b - reject
-^https:\/\/dns\.jd\.com\/v6\/d - reject
 
 # Meituan
 ^http:\/\/103\.37\.155\.60\/fetch - reject
@@ -166,4 +174,4 @@ IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve
 ^http:\/\/103\.41\.167\.237\/v2\/resolv - reject
 
 [MITM]
-hostname = %APPEND% 119.29.29.29, amdc.alipay.com, amdc-sibling.alipay.com.cn, dns.jd.com
+hostname = %APPEND% 119.29.29.98, 119.29.29.99, amdc.alipay.com, amdc-sibling.alipay.com.cn, dns.jd.com, *.httpdns.pro
