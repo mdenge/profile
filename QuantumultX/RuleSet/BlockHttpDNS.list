@@ -1,7 +1,7 @@
 # NAME:BlockHttpDNS-List
 # DESC:Block http dns request
-# VERSION:Based@ce51252@2023-08-09T10:13:00+0800
-# UPDATETIME:2023-08-23
+# VERSION:Based@3d32439@2023-08-31T16:23:00+0800
+# UPDATETIME:2023-09-02
 # AUTHOR:VirgilClyne
 # REPO:https://github.com/VirgilClyne/GetSomeFries
 # URL:https://github.com/VirgilClyne/GetSomeFries/blob/main/ruleset/HTTPDNS.Block.list
@@ -28,6 +28,10 @@ IP-CIDR,101.124.19.122/32
 IP-CIDR6,2402:db40:5100:1011::5/128
 # JD Cloud
 IP-CIDR,103.224.222.208/32
+# Kuaishou
+DOMAIN,kuaishou.httpdns.pro
+# Meituan
+DOMAIN,httpdns.meituan.com
 # NetEase
 DOMAIN,httpdns.n.netease.com
 DOMAIN,httpdns.music.163.com
@@ -39,6 +43,9 @@ IP-CIDR,115.236.121.51/32
 IP-CIDR,115.236.121.195/32
 # Oppo
 DOMAIN,httpdns.push.oppomobile.com
+# Tencent Cloud
+IP-CIDR,119.29.29.98/32
+IP-CIDR,119.29.29.99/32
 # Volcengine
 DOMAIN,httpdns.volcengineapi.com
 # Weibo
