@@ -1,6 +1,6 @@
 #!name=General-MacOS Enhanced
 #!desc=(MacOS only) 1.覆盖跳过代理部分段内容 2.添加返回真实IP段内容 3.添加不可MitM的域名，防止打断连接
-#!version=Based@3d32439@2023-09-14T15:58:00+0800
+#!version=Based@6ebe474@2023-09-14T15:58:00+0800
 #!updatetime=2023-11-04
 #!author=VirgilClyne
 #!repo=https://github.com/VirgilClyne/GetSomeFries
