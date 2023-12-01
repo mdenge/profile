@@ -1,6 +1,6 @@
 #!name=BlockHttpDNS
 #!desc=Block http dns requests
-#!version=Based@2a85f2a@2023-11-02T17:33:00+0800
+#!version=Based@43cf9af@2023-11-02T17:33:00+0800
 #!updatetime=2023-11-04
 #!author=VirgilClyne
 #!repo=https://github.com/VirgilClyne/GetSomeFries
