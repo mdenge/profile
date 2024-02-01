@@ -146,4 +146,4 @@ host,www.apple.com.edgekey.net.globalredir.akadns.net,AppleCDN
 host,www.apple.com.edgekey.net,AppleCDN
 host,www.apple.com,AppleCDN
 host,xp.apple.com,AppleCDN
-host,edge.apple,extended-matching,AppleCDN
+host,edge.apple,AppleCDN
