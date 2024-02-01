@@ -1,7 +1,7 @@
 #!name=General-MacOS Enhanced
 #!desc=(MacOS only) 1.覆盖跳过代理部分段内容 2.添加返回真实IP段内容 3.添加不可MitM的域名，防止打断连接
-#!version=Based@6ebe474@2023-09-14T15:58:00+0800
-#!updatetime=2023-11-04
+#!version=Based@f7d255a@2024-01-23T13:42:00+0800
+#!updatetime=2024-02-01
 #!author=VirgilClyne
 #!repo=https://github.com/VirgilClyne/GetSomeFries
 #!url=https://github.com/VirgilClyne/GetSomeFries/blob/main/sgmodule/General.mac.sgmodule
@@ -11,8 +11,9 @@
 # > 跳过代理
 # 跳过某个域名或者 IP 段，这些目标主机将不会由 Surge Proxy 处理。
 # (macOS 版本中，如果启用了 Set as System Proxy, 这些值会被写入到系统网络代理设置.)
-skip-proxy = %APPEND% 100.64.0.0/10, 169.254.0.0/16, 224.0.0.0/4, 240.0.0.0/4, 255.255.255.255/32, ::ffff:0:0:0:0/1, ::ffff:128:0:0:0/1, fd00::/8, ff00::/8, 2001::/32, 2001:db8::/32, 2002::/16, seed-sequoia.siri.apple.com, sequoia.apple.com, sequoia.siri.apple.com
+skip-proxy = 100.64.0.0/10, 169.254.0.0/16, 224.0.0.0/4, 240.0.0.0/4, 255.255.255.255/32, ::ffff:0:0:0:0/1, ::ffff:128:0:0:0/1, fd00::/8, ff00::/8, 2001::/32, 2001:db8::/32, 2002::/16
 
 [MITM]
 # 不可MitM也不应该被打断连接的域名
-hostname = %INSERT% -gateway.icloud.com, -gateway.icloud.com.cn, -weather-data.apple.com, -buy.itunes.apple.com
+hostname = %INSERT% -*.facebook.com, -*.instagram.com, -*.twitter.com, -*.snssdk.com, -*.pstatp.com
+hostname-disabled = %INSERT% gateway.icloud.com, gateway.icloud.com.cn, weather-data.apple.com, buy.itunes.apple.com
