@@ -1,9 +1,9 @@
 # NAME: apple_cdn_domain.conf
 # AUTHOR: Sebastian Luo
 # REPO: https://ruleset.isagood.day/ruleset.html
-# SOURCE_UPDATED_DATE: 2023-11-23
-# UPDATED_DATE:2023-11-23
-# TOTAL: 140
+# SOURCE_UPDATED_DATE: 2024-02-01
+# UPDATED_DATE:2024-02-01
+# TOTAL: 142
 
 .a1.mzstatic.com
 .a2.mzstatic.com
@@ -99,6 +99,7 @@
 .mesu-cdn.apple.com.akadns.net
 .mesu-china.apple.com.akadns.net
 .mesu.apple.com
+.ml.cdn-apple.com
 .music.apple.com
 .ocsp-lb.apple.com.akadns.net
 .ocsp.apple.com
@@ -122,8 +123,8 @@
 .store.storeimages.cdn-apple.com
 .support-china.apple-support.akadns.net
 .support.apple.com
-.swallow.apple.com
 .swallow-apple-com.v.aaplimg.com
+.swallow.apple.com
 .swcatalog-cdn.apple.com.akadns.net
 .swcatalog.apple.com
 .swcdn.apple.com
@@ -145,3 +146,4 @@
 .www.apple.com.edgekey.net
 .www.apple.com
 .xp.apple.com
+.edge.apple,extended-matching
