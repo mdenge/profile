@@ -1,9 +1,9 @@
 # NAME: apple_cdn_domain.conf
 # AUTHOR: Sebastian Luo
 # REPO: https://ruleset.isagood.day/ruleset.html
-# SOURCE_UPDATED_DATE: 2023-11-23
-# UPDATED_DATE:2023-11-23
-# TOTAL: 140
+# SOURCE_UPDATED_DATE: 2024-02-01
+# UPDATED_DATE:2024-02-01
+# TOTAL: 142
 
 host,a1.mzstatic.com,AppleCDN
 host,a2.mzstatic.com,AppleCDN
@@ -99,6 +99,7 @@ host,itunesconnect.apple.com,AppleCDN
 host,mesu-cdn.apple.com.akadns.net,AppleCDN
 host,mesu-china.apple.com.akadns.net,AppleCDN
 host,mesu.apple.com,AppleCDN
+host,ml.cdn-apple.com,AppleCDN
 host,music.apple.com,AppleCDN
 host,ocsp-lb.apple.com.akadns.net,AppleCDN
 host,ocsp.apple.com,AppleCDN
@@ -145,3 +146,4 @@ host,www.apple.com.edgekey.net.globalredir.akadns.net,AppleCDN
 host,www.apple.com.edgekey.net,AppleCDN
 host,www.apple.com,AppleCDN
 host,xp.apple.com,AppleCDN
+host,edge.apple,extended-matching,AppleCDN
