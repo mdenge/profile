@@ -4,6 +4,7 @@
 # SOURCE: https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/X.list
 # VERSION: b5a41aa
 # UPDATED: 2024-05-01
+
 DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,periscope.tv
 DOMAIN-SUFFIX,t.co
