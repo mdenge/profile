@@ -1,0 +1,16 @@
+# NAME: X(Twitter)
+# AUTHOR: ConnersHua
+# REPO: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Extra/X.list
+# SOURCE: https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/X.list
+# VERSION: b5a41aa
+# UPDATED: 2024-05-01
+DOMAIN-SUFFIX,pscp.tv
+DOMAIN-SUFFIX,periscope.tv
+DOMAIN-SUFFIX,t.co
+DOMAIN-SUFFIX,twimg.co
+DOMAIN-SUFFIX,twimg.com
+DOMAIN-SUFFIX,twitpic.com
+DOMAIN-SUFFIX,twitter.com
+DOMAIN-SUFFIX,twitter.jp
+DOMAIN-SUFFIX,vine.co
+DOMAIN-SUFFIX,x.com
