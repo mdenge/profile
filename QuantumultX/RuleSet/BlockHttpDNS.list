@@ -1,10 +1,9 @@
-# NAME:BlockHttpDNS-List
-# DESC:Block http dns request
-# VERSION:Based@3d32439@2023-08-31T16:23:00+0800
-# UPDATETIME:2023-09-02
-# AUTHOR:VirgilClyne
-# REPO:https://github.com/VirgilClyne/GetSomeFries
-# URL:https://github.com/VirgilClyne/GetSomeFries/blob/main/ruleset/HTTPDNS.Block.list
+# NAME: BlockHttpDNS-List
+# AUTHOR: VirgilClyne
+# REPO: https://github.com/VirgilClyne/GetSomeFries
+# SOURCE: https://github.com/VirgilClyne/GetSomeFries/blob/main/ruleset/HTTPDNS.Block.list
+# VERSION: a7bc8ff
+# UPDATED: 2024-05-27
 
 # Alibaba
 DOMAIN,httpdns.alicdn.com
@@ -33,6 +32,7 @@ DOMAIN,kuaishou.httpdns.pro
 # Meituan
 DOMAIN,httpdns.meituan.com
 # NetEase
+DOMAIN,httpdns.yunxindns.com
 DOMAIN,httpdns.n.netease.com
 DOMAIN,httpdns.music.163.com
 DOMAIN,music.httpdns.c.163.com
