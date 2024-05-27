@@ -1,11 +1,12 @@
 # NAME: AI
 # AUTHOR: ConnersHua
-# REPO: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Extra/AI.list
-# SOURCE: https://raw.githubusercontent.com/ConnersHua/RuleGo/master/Surge/Ruleset/Extra/AI.list
-# VERSION: 6647fb6
-# UPDATED: 2024-05-01
+# REPO: https://github.com/ConnersHua/RuleGo
+# SOURCE: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Extra/AI.list
+# VERSION: 21c448a
+# UPDATED: 2024-05-27
 
-# > OpenAI & ChatGPT
+# OpenAI
+# > ChatGPT
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
@@ -18,21 +19,29 @@ DOMAIN,openaiapi-site.azureedge.net
 DOMAIN,sfo3.turn.livekit.cloud
 DOMAIN-KEYWORD,openaicom
 
+# Anthropic
 # > Claude
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,anthropic.com
 
-# > Google & Gemini
-DOMAIN,gemini.google.com
+# Google
+# > Gemini
+DOMAIN,ai.google.dev
 DOMAIN,bard.google.com
+DOMAIN,gemini.google.com
+DOMAIN,generativelanguage.googleapis.com
+# > AI Studio
+DOMAIN,aistudio.google.com
+DOMAIN,alkalimakersuite-pa.clients6.google.com
 
-# > JetBrains AI
+# JetBrains AI
 DOMAIN-SUFFIX,grazie.ai
 
-# > Microsoft & Copilot
+# Microsoft
+# > Copilot
 DOMAIN,copilot.microsoft.com
 DOMAIN,sydney.bing.com
 DOMAIN,www.bing.com
 
-# > Meta
+# Meta
 DOMAIN,imagine.meta.com
