@@ -1,4 +1,4 @@
-#!name=BlockHttpDNS
+#!name=Block Http DNS
 #!desc=Block http dns requests
 #!author=VirgilClyne
 #!repo=https://github.com/VirgilClyne/GetSomeFries
