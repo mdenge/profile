@@ -1,0 +1,13 @@
+#!name=General Enhanced
+#!desc=1.Add skip proxy content; 2.Add MitM prohibited domain.
+#!author=VirgilClyne
+#!repo=https://github.com/VirgilClyne/GetSomeFries
+#!source-1=https://github.com/VirgilClyne/GetSomeFries/blob/main/sgmodule/General.sgmodule
+#!source-2=https://github.com/VirgilClyne/GetSomeFries/blob/main/sgmodule/General.mac.sgmodule
+#!version=a7fe008
+#!updatetime=2024-05-27
+
+[MITM]
+# Add MitM prohibited domain to prevent interruption of connections.
+hostname = %INSERT% -*.facebook.com, -*.instagram.com, -*.twitter.com, -*.snssdk.com, -*.pstatp.com
+hostname-disabled = %INSERT% gateway.icloud.com, gateway.icloud.com.cn, weather-data.apple.com, buy.itunes.apple.com
