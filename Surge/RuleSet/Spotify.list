@@ -2,8 +2,9 @@
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/Spotify
-# VERSION: 5108862
-# UPDATED: 2024-05-27
+# URL: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Spotify/Spotify.list
+# VERSION: 64bf992
+# UPDATED: 2024-10-10
 
 DOMAIN,audio4-ak-spotify-com.akamaized.net
 DOMAIN,cdn-spotify-experiments.conductrics.com
@@ -35,4 +36,3 @@ DOMAIN-KEYWORD,spotify.com
 IP-CIDR,104.154.127.126/32,no-resolve
 IP-CIDR,35.186.224.47/32,no-resolve
 USER-AGENT,Spotify*
-# PROCESS-NAME,com.spotify.music
