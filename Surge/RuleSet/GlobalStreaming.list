@@ -2,15 +2,15 @@
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/GlobalMedia
-# VERSION: 7dcda31
-# UPDATED: 2024-05-27
+# URL: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/GlobalMedia/GlobalMedia_All_No_Resolve.list
+# VERSION: 43f4f21
+# UPDATED: 2024-10-10
 
 DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
 DOMAIN,api.okzy.tv
 DOMAIN,apm-misaka.biliapi.net
 DOMAIN,apple.comscoreresearch.com
 DOMAIN,bcbolt446c5271-a.akamaihd.net
-DOMAIN,cache.video.iqiyi.com
 DOMAIN,chuangcachecdnoversea-tw.inter.ptqy.gitv.tv
 DOMAIN,cs428.wpc.edgecastcdn.net
 DOMAIN,dashasiafox.akamaized.netflix
@@ -653,6 +653,7 @@ DOMAIN-SUFFIX,italkbb.com
 DOMAIN-SUFFIX,italkbbtv.com
 DOMAIN-SUFFIX,itv.com
 DOMAIN-SUFFIX,itvstatic.com
+DOMAIN-SUFFIX,iwara.tv
 DOMAIN-SUFFIX,japonx.com
 DOMAIN-SUFFIX,japonx.net
 DOMAIN-SUFFIX,japonx.tv
