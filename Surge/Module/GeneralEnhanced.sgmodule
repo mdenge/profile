@@ -4,8 +4,8 @@
 #!repo=https://github.com/VirgilClyne/GetSomeFries
 #!source-1=https://github.com/VirgilClyne/GetSomeFries/blob/main/sgmodule/General.sgmodule
 #!source-2=https://github.com/VirgilClyne/GetSomeFries/blob/main/sgmodule/General.mac.sgmodule
-#!version=a7fe008
-#!updatetime=2024-06-29
+#!version=5c59f60
+#!updatetime=2024-10-10
 
 [MITM]
 # Add MitM prohibited domain to prevent interruption of connections.
