@@ -2,8 +2,9 @@
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/GoogleDrive
-# VERSION: 5108862
-# UPDATED: 2024-05-27
+# URL: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/GoogleDrive/GoogleDrive.list
+# VERSION: d716391
+# UPDATED: 2024-10-10
 
 DOMAIN,www.googleapis.com
 DOMAIN-SUFFIX,docs.google.com
