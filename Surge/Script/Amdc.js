@@ -1,5 +1,5 @@
-#!name=BlockAmdc
-#!desc=block amdc
+#!name=AmdcModifier
+#!desc=Modify alibaba amdc
 #!author=ddgksf2013
 #!repo=https://github.com/ddgksf2013/Scripts
 #!source=https://github.com/ddgksf2013/Scripts/blob/master/amdc.js
