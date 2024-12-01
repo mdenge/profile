@@ -3,8 +3,8 @@
 # REPO: https://github.com/blackmatrix7/ios_rule_script
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/GlobalMedia
 # URL: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/GlobalMedia/GlobalMedia_All_No_Resolve.list
-# VERSION: 43f4f21
-# UPDATED: 2024-10-10
+# VERSION: 2f841d0
+# UPDATED: 2024-12-01
 
 DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
 DOMAIN,api.okzy.tv
@@ -1289,7 +1289,6 @@ DOMAIN-SUFFIX,youtubekids.com
 DOMAIN-SUFFIX,youtubemobilesupport.com
 DOMAIN-SUFFIX,yt.be
 DOMAIN-SUFFIX,ytimg.com
-DOMAIN-KEYWORD,-spotify-
 DOMAIN-KEYWORD,abematv.akamaized.net
 DOMAIN-KEYWORD,apiproxy-device-prod-nlb-
 DOMAIN-KEYWORD,avoddashs
@@ -1307,7 +1306,7 @@ DOMAIN-KEYWORD,nivod
 DOMAIN-KEYWORD,nowtv100
 DOMAIN-KEYWORD,olevod
 DOMAIN-KEYWORD,rthklive
-DOMAIN-KEYWORD,spotify.com
+DOMAIN-KEYWORD,spotify
 DOMAIN-KEYWORD,tiktokcdn
 DOMAIN-KEYWORD,ttvnw
 DOMAIN-KEYWORD,tvbanywhere
