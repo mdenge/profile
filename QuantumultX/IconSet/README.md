@@ -1,1 +1,0 @@
-# Icons used on QuantumultX.
