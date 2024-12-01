@@ -4,7 +4,7 @@
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/Discord
 # URL: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Discord/Discord.list
 # VERSION: d716391
-# UPDATED: 2024-10-10
+# UPDATED: 2024-12-01
 
 DOMAIN-SUFFIX,airhorn.solutions
 DOMAIN-SUFFIX,airhornbot.com
