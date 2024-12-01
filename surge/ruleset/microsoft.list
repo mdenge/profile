@@ -4,7 +4,7 @@
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/Microsoft
 # URL: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Microsoft/Microsoft.list
 # VERSION: d716391
-# UPDATED: 2024-10-10
+# UPDATED: 2024-12-01
 
 DOMAIN,vsmarketplacebadge.apphb.com
 DOMAIN-SUFFIX,1drv.ms
