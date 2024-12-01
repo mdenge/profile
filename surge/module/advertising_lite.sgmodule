@@ -3,9 +3,8 @@
 #!author=blackmatrix7
 #!repo=https://github.com/blackmatrix7/ios_rule_script
 #!source=https://github.com/blackmatrix7/ios_rule_script/tree/master/rewrite/Surge/AdvertisingLite
-#!version=8b782df
-#!updatetime=2024-10-10
-
+#!version=d837bfa
+#!updatetime=2024-12-01
 [General]
 force-http-engine-hosts = %APPEND% *.ott.cibntv.net,intl.iqiyi.com,maicai.api.ddxq.mobi,mobileapi-v6.elong.com,weibointl.api.weibo.cn,wmapi.meituan.com
 
