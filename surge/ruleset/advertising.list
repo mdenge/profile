@@ -3,8 +3,8 @@
 # REPO: https://github.com/blackmatrix7/ios_rule_script
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/AdvertisingLite
 # URL: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/AdvertisingLite/AdvertisingLite_All_No_Resolve.list
-# VERSION: 92bcf9b
-# UPDATED: 2024-10-10
+# VERSION: 92f4c2d
+# UPDATED: 2024-12-01
 
 DOMAIN,00-gov.cn
 DOMAIN,0024aadd.com
@@ -30605,6 +30605,7 @@ DOMAIN-SUFFIX,jdb.jiudingcapital.cn
 DOMAIN-SUFFIX,jdb.jiudingcapital.com
 DOMAIN-SUFFIX,jdcbuy.com
 DOMAIN-SUFFIX,jddaw.com
+DOMAIN-SUFFIX,jddebug.com
 DOMAIN-SUFFIX,jdf494.cn
 DOMAIN-SUFFIX,jdflower.cn
 DOMAIN-SUFFIX,jdgsgl.com
@@ -38028,3 +38029,4 @@ IP-CIDR,69.28.57.245/32,no-resolve
 IP-CIDR,74.117.182.77/32,no-resolve
 IP-CIDR,78.140.131.214/32,no-resolve
 IP-CIDR6,2402:db40:5100:1011::5/128,no-resolve
+AND,((USER-AGENT,Frodo*),(DOMAIN,119.29.29.29))
