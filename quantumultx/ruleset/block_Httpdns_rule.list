@@ -3,7 +3,7 @@
 # REPO: https://github.com/VirgilClyne/GetSomeFries
 # SOURCE: https://github.com/VirgilClyne/GetSomeFries/blob/main/ruleset/HTTPDNS.Block.list
 # VERSION: a7bc8ff
-# UPDATED: 2024-10-10
+# UPDATED: 2024-12-01
 
 # Alibaba
 DOMAIN,httpdns.alicdn.com
