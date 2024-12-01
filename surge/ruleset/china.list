@@ -3,7 +3,7 @@
 # REPO: https://github.com/blackmatrix7/ios_rule_script
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/China
 # URL: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/China/China_All.list
-# VERSION: d716391
+# VERSION: 9a096db
 # UPDATED: 2024-10-10
 
 DOMAIN,analytics.strava.com
@@ -3557,6 +3557,7 @@ DOMAIN-SUFFIX,yoyou.com
 DOMAIN-SUFFIX,ypppt.com
 DOMAIN-SUFFIX,yqb.com
 DOMAIN-SUFFIX,yrz.name
+DOMAIN-SUFFIX,ysepay.com
 DOMAIN-SUFFIX,yslyhr.com
 DOMAIN-SUFFIX,ysten.com
 DOMAIN-SUFFIX,ytzq.com
