@@ -206,7 +206,7 @@ IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve,pre-matching
 ^http:\/\/api\.weibo\.cn\/httpdns\/config - reject
 
 # Weixin
-# 注意: 以下域名HTTPS无法MitM，如通过此链接查询，无法处理
+# MitM on the following hosts is forbidden.
 ^https?:\/\/dns\.weixin\.qq\.com\/cgi-bin\/micromsg-bin\/newgetdns - reject
 ^https?:\/\/dns\.weixin\.qq\.com\.cn\/cgi-bin\/micromsg-bin\/newgetdns - reject
 ^https?:\/\/short\.weixin\.qq\.com\/cgi-bin\/micromsg-bin\/getcdndns - reject
