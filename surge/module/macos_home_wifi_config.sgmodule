@@ -1,0 +1,2 @@
+[SSID Setting]
+TYPE:WIFI tfo-behaviour=force-disabled, dns-server="system", encrypted-dns-server="off"
