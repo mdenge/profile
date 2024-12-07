@@ -1,2 +1,7 @@
+#!name=MacOS Home Wi-Fi Config
+#!desc=MacOS Home Wi-Fi Config.
+#!system=mac
+#!updatetime=2024-12-08
+
 [SSID Setting]
 TYPE:WIFI tfo-behaviour=force-disabled, dns-server="system", encrypted-dns-server="off"
