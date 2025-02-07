@@ -2,8 +2,8 @@
 # AUTHOR: VirgilClyne
 # REPO: https://github.com/VirgilClyne/GetSomeFries
 # SOURCE: https://github.com/VirgilClyne/GetSomeFries/blob/main/ruleset/HTTPDNS.Block.list
-# VERSION: a7bc8ff
-# UPDATED: 2024-12-01
+# VERSION: 2601b5c
+# UPDATED: 2025-02-07
 
 # Alibaba
 DOMAIN,httpdns.alicdn.com
@@ -27,6 +27,8 @@ IP-CIDR,101.124.19.122/32
 IP-CIDR6,2402:db40:5100:1011::5/128
 # JD Cloud
 IP-CIDR,103.224.222.208/32
+# Keep
+DOMAIN,httpdns.calorietech.com
 # Kuaishou
 DOMAIN,kuaishou.httpdns.pro
 # Meituan

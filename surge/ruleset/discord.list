@@ -3,14 +3,15 @@
 # REPO: https://github.com/blackmatrix7/ios_rule_script
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/Discord
 # URL: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Discord/Discord.list
-# VERSION: d716391
-# UPDATED: 2024-12-01
+# VERSION: 8c95a18
+# UPDATED: 2025-02-07
 
 DOMAIN-SUFFIX,airhorn.solutions
 DOMAIN-SUFFIX,airhornbot.com
 DOMAIN-SUFFIX,bigbeans.solutions
 DOMAIN-SUFFIX,dis.gd
 DOMAIN-SUFFIX,discord-activities.com
+DOMAIN-SUFFIX,discord-attachments-uploads-prd.storage.googleapis.com
 DOMAIN-SUFFIX,discord.co
 DOMAIN-SUFFIX,discord.com
 DOMAIN-SUFFIX,discord.design

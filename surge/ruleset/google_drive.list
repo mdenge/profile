@@ -4,7 +4,7 @@
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/GoogleDrive
 # URL: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/GoogleDrive/GoogleDrive.list
 # VERSION: d716391
-# UPDATED: 2024-12-01
+# UPDATED: 2025-02-07
 
 DOMAIN,www.googleapis.com
 DOMAIN-SUFFIX,docs.google.com

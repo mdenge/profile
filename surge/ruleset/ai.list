@@ -2,8 +2,8 @@
 # AUTHOR: ConnersHua
 # REPO: https://github.com/ConnersHua/RuleGo
 # SOURCE: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Extra/AI.list
-# VERSION: 9d559a3
-# UPDATED: 2024-12-01
+# VERSION: 34d9630
+# UPDATED: 2025-02-97
 
 # OpenAI
 # > ChatGPT
@@ -42,6 +42,10 @@ DOMAIN,proactivebackend-pa.googleapis.com
 # > AI Studio
 DOMAIN,aistudio.google.com
 DOMAIN,alkalimakersuite-pa.clients6.google.com
+# > Search Labs
+DOMAIN-KEYWORD,labs.google
+# > NotebookLM
+DOMAIN-KEYWORD,notebooklm.google
 
 # JetBrains AI
 DOMAIN-SUFFIX,grazie.ai
@@ -61,3 +65,7 @@ DOMAIN-SUFFIX,githubcopilot.com
 # Perplexity
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,pplx.ai
+
+# Cloudflare
+# > AI Gateway
+DOMAIN,gateway.ai.cloudflare.com

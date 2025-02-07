@@ -4,7 +4,7 @@
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/GaoDe
 # URL: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/GaoDe/GaoDe.list
 # VERSION: d716391
-# UPDATED: 2024-12-01
+# UPDATED: 2025-02-07
 
 DOMAIN-SUFFIX,a-map.cn
 DOMAIN-SUFFIX,a-map.co

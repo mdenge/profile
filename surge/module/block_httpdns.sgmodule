@@ -3,8 +3,8 @@
 #!author=VirgilClyne
 #!repo=https://github.com/VirgilClyne/GetSomeFries
 #!source=https://github.com/VirgilClyne/GetSomeFries/blob/main/sgmodule/HTTPDNS.Block.sgmodule
-#!version=323c879
-#!updatetime=2024-12-01
+#!version=2601b5c
+#!updatetime=2025-02-07
 
 [General]
 force-http-engine-hosts = %APPEND% 119.29.29.29:80, dns.weixin.qq.com:80, dns.weixin.qq.com:8080, dns.weixin.qq.com:443
@@ -67,6 +67,12 @@ IP-CIDR6,2402:db40:5100:1011::5/128,REJECT,no-resolve,pre-matching
 # refer: https://docs.jdcloud.com/cn/jd-cloud-dns/HTTPDNS
 # refer: https://docs.jdcloud.com/cn/httpdns/interface-specification
 IP-CIDR,103.224.222.208/32,REJECT,no-resolve,pre-matching
+
+# Keep
+DOMAIN,httpdns.calorietech.com,REJECT,extended-matching,pre-matching
+
+# Kuaishou
+DOMAIN,kuaishou.httpdns.pro,REJECT,extended-matching,pre-matching
 
 # Meituan
 DOMAIN,httpdns.meituan.com,REJECT,extended-matching,pre-matching

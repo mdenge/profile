@@ -10,4 +10,4 @@
 [MITM]
 # Add MitM prohibited domain to prevent interruption of connections.
 hostname = %INSERT% -*.facebook.com, -*.instagram.com, -*.twitter.com, -*.snssdk.com, -*.pstatp.com
-hostname-disabled = %INSERT% gateway.icloud.com, gateway.icloud.com.cn, weather-data.apple.com, buy.itunes.apple.com
+hostname-disabled = %INSERT% gateway.icloud.com, gateway.icloud.com.cn, weather-data.apple.com, buy.itunes.apple.com, ios.chat.openai.com
