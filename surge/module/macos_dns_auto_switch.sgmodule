@@ -1,0 +1,9 @@
+#!name=Macos DNS Auto Switch
+#!desc=switch dns between home wifi and others.
+#!author=ethan
+#!system=mac
+#!updatetime=2025-02-014
+
+
+[Script]
+macos_dns_auto_switch = type=event,event-name=network-changed,script-path=scripts/macos_dns_auto_switch.js
