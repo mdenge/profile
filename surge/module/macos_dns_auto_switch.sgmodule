@@ -1,4 +1,4 @@
-#!name=Macos DNS Auto Switch
+#!name=MacOS DNS Auto Switch
 #!desc=switch dns between home wifi and others.
 #!author=ethan
 #!system=mac
