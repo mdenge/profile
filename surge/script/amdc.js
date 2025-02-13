@@ -1,0 +1,1 @@
+let url=$request.url,body=null;if(url.includes("amdc/mobileDispatch")){let e=$request.headers,t=e["User-Agent"]||e["user-agent"];t.includes("AMap")||t.includes("Cainiao")?"undefined"!=typeof $task?$done({status:"HTTP/1.1 404 Not Found"}):$done():$done({})}else console.log("匹配到其他url:\n"+url);body?$done({body}):$done({});
