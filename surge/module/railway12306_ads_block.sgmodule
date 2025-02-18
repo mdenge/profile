@@ -5,6 +5,7 @@
 #!url=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/12306.js
 #!version=2024-08-24
 #!updatetime=2025-02-16
+#!system=ios
 
 [Script]
 http-response ^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList requires-body=1,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/railway12306.js

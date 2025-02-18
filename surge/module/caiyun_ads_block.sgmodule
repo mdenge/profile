@@ -5,6 +5,7 @@
 #!url=https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/CaiYunAds.conf
 #!version=2024-09-27
 #!updatetime=2025-02-16
+#!system=ios
 
 [URL Rewrite]
 "^https?:\/\/ad\.cyapi\.cn\/v\d" - reject
