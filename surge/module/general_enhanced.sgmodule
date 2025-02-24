@@ -1,11 +1,10 @@
 #!name=General Enhanced
-#!desc=1.Add skip proxy content; 2.Add MitM prohibited domain.
+#!desc=Add MitM prohibited domain.
 #!author=VirgilClyne
 #!repo=https://github.com/VirgilClyne/GetSomeFries
-#!source-1=https://github.com/VirgilClyne/GetSomeFries/blob/main/sgmodule/General.sgmodule
-#!source-2=https://github.com/VirgilClyne/GetSomeFries/blob/main/sgmodule/General.mac.sgmodule
-#!version=5c59f60
-#!updatetime=2024-12-01
+#!source=https://github.com/VirgilClyne/GetSomeFries/blob/main/sgmodule/General.sgmodule
+#!version=48f2b97
+#!updatetime=2025-02-24
 
 [MITM]
 # Add MitM prohibited domain to prevent interruption of connections.
