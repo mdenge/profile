@@ -2,10 +2,8 @@
 # AUTHOR: VirgilClyne
 # REPO: https://github.com/VirgilClyne/GetSomeFries
 # SOURCE: https://github.com/VirgilClyne/GetSomeFries/blob/main/snippet/HTTPDNS.Block.snippet
-# VERSION: 323c879
-# UPDATED: 2025-02-07
-
-# Alipay
+# VERSION: 4cf6cd3
+# UPDATED: 2025-03-02
 ^https?:\/\/amdc\.alipay\.com\/s?query url reject
 ^https?:\/\/amdc-sibling\.alipay\.com\.cn\/s?query url reject
 ^https?:\/\/110\.76\.8\.150\/squery url reject
@@ -20,11 +18,9 @@
 ^https?:\/\/2400:B200:1005:3000::155\/squery url reject
 ^https?:\/\/2400:B200:1005:3000::1D3\/squery url reject
 ^https?:\/\/2400:B200:5000:B000::C8\/squery url reject
-
 # Baidu
 ^http:\/\/180\.76\.76\.112\/v4\/resolve url reject
 ^http:\/\/180\.76\.76\.220\/v4\/resolve url reject
-
 # Bilibili
 # KEY_EXT_P2P_HTTPDNS_BILI_IP
 ^http:\/\/47\.101\.175\.206\/resolve url reject
@@ -46,13 +42,12 @@
 ^http:\/\/116\.63\.10\.31\/resolve url reject
 ^http:\/\/112\.64\.218\.119\/resolve url reject
 ^http:\/\/112\.65\.200\.117\/resolve url reject
-
+# ByteDance
+^https?:\/\/.+\.zijieapi\.com\/get_domains\/ - reject
 # JD
 ^https:\/\/dns\.jd\.com\/v6\/b url reject
-
 # Meituan
 ^http:\/\/103\.37\.155\.60\/fetch url reject
-
 # Pinduoduo
 ^http:\/\/101\.35\.204\.35\/d url reject
 ^http:\/\/101\.35\.212\.35\/d url reject
@@ -61,36 +56,29 @@
 ^http:\/\/240c:409f::3:0:163\/d - reject
 ^http:\/\/240c:409f::3:0:359\/d - reject
 ^http:\/\/2402:4e00:1411:201:0:9964:ba21:5a41\/d - reject
-
 # QCloud
 # refer: https://mc.qcloudimg.com/static/qc_doc/d39d48b733835af8a2e223115ac67da7/doc-HttpDNS-Getting+Started.pdf
 # refer: https://main.qcloudimg.com/raw/document/product/pdf/379_3513_cn.pdf
 # refer: https://cloud.tencent.com/document/product/379/61200
 ^https?:\/\/119\.29\.29\.29\/d url reject
-
 # QQmusic
 ^http:\/\/182\.256\.116\.116\/d url reject
-
 # Weibo
 # refer: https://github.com/CNSRE/HTTPDNSLib-for-iOS
 ^http:\/\/api\.weibo\.cn\/2\/httpdns\/config url reject
 ^http:\/\/api\.weibo\.cn\/httpdns\/config url reject
-
 # Weixin
-# MitM on the following hosts is forbidden.
+# 注意: 以下域名HTTPS无法MitM，如通过此链接查询，无法处理
 ^https?:\/\/dns\.weixin\.qq\.com\/cgi-bin\/micromsg-bin\/newgetdns url reject
 ^https?:\/\/dns\.weixin\.qq\.com\.cn\/cgi-bin\/micromsg-bin\/newgetdns url reject
 ^https?:\/\/short\.weixin\.qq\.com\/cgi-bin\/micromsg-bin\/getcdndns url reject
 ^https?:\/\/hkextshort\.weixin\.qq\.com\/cgi-bin\/micromsg-bin\/getcdndns url reject
-
 # Wework
 # refer: https://res.mail.qq.com/zh_CN/wework_ip/latest.html
 ^http:\/\/182\.254\.116\.117\/d url reject
 ^http:\/\/182\.254\.118\.119\/d url reject
-
 # Zhihu
 # refer: https://github.com/lwd-temp/anti-ip-attribution/issues/24
 ^http:\/\/103\.41\.167\.237\/v2\/resolv url reject
-
 #[MITM]
-hostname = 119.29.29.98, 119.29.29.99, amdc.alipay.com, amdc-sibling.alipay.com.cn, dns.jd.com
+hostname = 119.29.29.98, 119.29.29.99, amdc.alipay.com, amdc-sibling.alipay.com.cn, dns.jd.com, *.zijieapi.com

@@ -4,8 +4,7 @@
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/GitHub
 # URL: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/GitHub/GitHub.list
 # VERSION: d716391
-# UPDATED: 2025-02-07
-
+# UPDATED: 2025-03-02
 DOMAIN-SUFFIX,atom.io
 DOMAIN-SUFFIX,dependabot.com
 DOMAIN-SUFFIX,ghcr.io

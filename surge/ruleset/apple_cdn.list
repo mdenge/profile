@@ -3,8 +3,7 @@
 # REPO: https://github.com/SukkaW/Surge
 # SOURCE: https://ruleset.skk.moe/List/domainset/apple_cdn.conf
 # VERSION: 2025-02-06
-# UPDATED: 2025-02-07
-
+# UPDATED: 2025-03-02
 .a1.mzstatic.com
 .a2.mzstatic.com
 .a3.mzstatic.com

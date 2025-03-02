@@ -2,9 +2,8 @@
 # AUTHOR: Loyalsoldier
 # REPO: https://github.com/Loyalsoldier/surge-rules
 # SOURCE: https://github.com/Loyalsoldier/surge-rules/blob/release/private.txt
-# VERSION: 1bd5b42
-# UPDATED: 2025-02-07
-
+# VERSION: 3bddca7
+# UPDATED: 2025-03-02
 instant.arubanetworks.com
 setmeup.arubanetworks.com
 asusrouter.com

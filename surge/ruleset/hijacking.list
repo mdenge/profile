@@ -5,7 +5,6 @@
 # URL: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Hijacking/Hijacking.list
 # VERSION: d716391
 # UPDATED: 2025-02-07
-
 DOMAIN,geo2.adobe.com
 DOMAIN-SUFFIX,17gouwuba.com
 DOMAIN-SUFFIX,186078.com

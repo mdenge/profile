@@ -4,8 +4,7 @@
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/Telegram
 # URL: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Telegram/Telegram.list
 # VERSION: 5738cb8
-# UPDATED: 2025-02-07
-
+# UPDATED: 2025-03-02
 DOMAIN-SUFFIX,cdn-telegram.org
 DOMAIN-SUFFIX,comments.app
 DOMAIN-SUFFIX,graph.org

@@ -4,8 +4,7 @@
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/AdvertisingLite
 # URL: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/AdvertisingLite/AdvertisingLite_All_No_Resolve.list
 # VERSION: c456fbb
-# UPDATED: 2025-02-07
-
+# UPDATED: 2025-03-02
 DOMAIN,00-gov.cn
 DOMAIN,0024aadd.com
 DOMAIN,0026645142c89aeb1.com

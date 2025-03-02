@@ -4,8 +4,7 @@
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/Privacy
 # URL: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Privacy/Privacy_All_No_Resolve.list
 # VERSION: 61cae6b
-# UPDATED: 2025-02-07
-
+# UPDATED: 2025-03-02
 DOMAIN,hmma.baidu.com
 DOMAIN,ios-pclog.i4.cn
 DOMAIN,js.users.51.la
