@@ -59,3 +59,9 @@ DOMAIN-SUFFIX,pplx.ai
 # Cloudflare
 # > AI Gateway
 DOMAIN,gateway.ai.cloudflare.com
+# Grok
+DOMAIN-SUFFIX,x.ai
+DOMAIN-SUFFIX,grok.com
+# DeepSeek
+DOMAIN-SUFFIX,deepseek.com
+DOMAIN-SUFFIX,portal101.cn
