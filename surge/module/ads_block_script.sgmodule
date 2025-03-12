@@ -1,7 +1,7 @@
 #!name=ads_block_script
 #!desc=Block advertisings with scripts
 #!source_1=https://github.com/fmz200/wool_scripts/blob/main/QuantumultX/rewrite/chongxie.txt
-#!updatetime=2025-03-12
+#!updatetime=2025-03-13
 
 [Rule]
 # > 滴滴出行
