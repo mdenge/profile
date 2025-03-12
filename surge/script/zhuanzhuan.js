@@ -1,0 +1,1 @@
+let url=$request.url,responseBody=$response.body;try{responseBody=JSON.parse(responseBody),delete responseBody.respData.bmNewInfo,responseBody.respData.itemGroupList=responseBody.respData.itemGroupList.map((e=>15===e.groupType?null:(3===e.groupType&&(e.itemList=e.itemList.slice(0,4)),e))).filter(Boolean)}catch(e){}$done({body:JSON.stringify(responseBody)});
