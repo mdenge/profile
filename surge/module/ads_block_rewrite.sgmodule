@@ -93,9 +93,9 @@
 # hostname = acs.m.taobao.com, acs-m.freshippo.com
 ^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.hippotown\.tabbar\.info data-type=text data="" status-code=404
 ^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.sg\.querysinglescene data-type=text data="{}" status-code=200
-^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.render\.querysinglepage data-type=text data="{}" status-code=200
+# ^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.render\.querysinglepage data-type=text data="{}" status-code=200
 ^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.fc\.recommend\.feedscommondservice data-type=text data="{}" status-code=200
-^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.render\.querytabfeedstream data-type=text data="{}" status-code=200
+# ^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.render\.querytabfeedstream data-type=text data="{}" status-code=200
 
 # > 京东
 # hostname = api.m.jd.com, dns.jd.com
