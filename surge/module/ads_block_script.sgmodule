@@ -6,12 +6,12 @@
 [Rule]
 # > 滴滴出行
 # 用于广告脚本
-ip-cidr, 123.207.209.39/32, reject
-ip-cidr, 123.207.209.60/32, reject
-ip-cidr, 139.199.240.12/32, reject
-ip-cidr, 162.14.157.2/32, reject
-ip-cidr, 162.14.157.24/32, reject
-ip-cidr, 139.199.240.15/32, reject
+IP-CIDR,123.207.209.39/32,REJECT
+IP-CIDR,123.207.209.60/32,REJECT
+IP-CIDR,139.199.240.12/32,REJECT
+IP-CIDR,162.14.157.2/32,REJECT
+IP-CIDR,162.14.157.24/32,REJECT
+IP-CIDR,139.199.240.15/32,REJECT
 
 [URL Rewrite]
 "^https?:\/\/ad\.cyapi\.cn\/v\d" - reject
