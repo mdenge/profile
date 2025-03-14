@@ -38,11 +38,6 @@ caiyun_07 = type=http-response,pattern=^https?:\/\/starplucker\.cyapi\.cn\/v\d/o
 caiyun_08 = type=http-response,pattern=^https?:\/\/starplucker\.cyapi\.cn\/v\d/operation/features,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/caiyun.js
 caiyun_09 = type=http-response,pattern=^https?:\/\/starplucker\.cyapi\.cn\/v\d/campaigns,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/caiyun.js
 
-# > 大众点评
-# hostname = img.meituan.net
-# 开屏广告
-dianping = type=http-response,pattern=^https?:\/\/img\.meituan\.net\/dpmobile\/,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/dianping.js
-
 # > 滴滴出行
 # hostname = res.xiaojukeji.com, common.diditaxi.com.cn, freight.xiaojukeji.com, daijia.kuaidadi.com, ct.xiaojukeji.com, conf.diditaxi.com.cn
 didi_01 = type=http-response,pattern=^https?:\/\/ct\.xiaojukeji\.com\/agent\/v3\/feeds,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/didi.js
@@ -56,12 +51,8 @@ didi_08 = type=http-response,pattern=^https?:\/\/daijia\.kuaidadi\.com\/gateway,
 didi_09 = type=http-response,pattern=^https?:\/\/daijia\.kuaidadi\.com:443\/gateway,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/didi.js
 didi_10 = type=http-response,pattern=^https?:\/\/common\.diditaxi\.com\.cn\/common\/v5,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/didi.js
 
-# > 盒马
-# hostname = acs.m.taobao.com, acs-m.freshippo.com
-hema = type=http-response,pattern=^https?:\/\/ct\.xiaojukeji\.com\/agent\/v3\/feeds,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/hema.js
-
 # > 京东
-# hostname = api.m.jd.com, dns.jd.com
+# hostname = api.m.jd.com
 jingdong = type=http-response,pattern=^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome),requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/jingdong.js
 
 # > keep
@@ -95,22 +86,10 @@ xianyu_04 = type=http-response,pattern=^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\
 # 定位地区页面的信息流广告
 xianyu_05 = type=http-response,pattern=^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.home\/,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/xianyu.js
 
-# > 小红书
-# hostname = edith.xiaohongshu.com
-# 搜索页
-xiaohongshu_01 = type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/(banner_list|hot_list),requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/xiaohongshu.js
-xiaohongshu_02 = type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/(hint|trending)\?,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/xiaohongshu.js
-xiaohongshu_03 = type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/notes\?,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/xiaohongshu.js
-# 开屏广告
-xiaohongshu_04 = type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/config\?,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/xiaohongshu.js
-xiaohongshu_05 = type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/system_service\/splash_config,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/xiaohongshu.js
-# 详情页,小部件
-xiaohongshu_06 = type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/widgets,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/xiaohongshu.js
-
 # > 转转
 # hostname = app.zhuanzhuan.com
 # “我的”页面去除冗余的模块
 zhuanzhuan = type=http-response,pattern=^https?:\/\/app\.zhuanzhuan\.com\/zz\/transfer\/getmyprofilev3,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/zhuanzhuan.js
 
 [MITM]
-hostname = %INSERT% acs-m.freshippo.com,acs.m.goofish.com,acs.m.taobao.com,amdc.m.taobao.com,ad.cyapi.cn,api.caiyunapp.com,api.gotokeep.com,api.m.jd.com,app.zhuanzhuan.com,common.diditaxi.com.cn,conf.diditaxi.com.cn,ct.xiaojukeji.com,daijia.kuaidadi.com,dns.jd.com,edith.xiaohongshu.com,freight.xiaojukeji.com,g-acs.m.goofish.com,gql-fed.reddit.com,gql.reddit.com,guide-acs.m.taobao.com,poplayer.template.alibaba.com,res.xiaojukeji.com,starplucker.cyapi.cn,wrapper.cyapi.cn
+hostname = %INSERT% acs.m.goofish.com,ad.cyapi.cn,amdc.m.taobao.com,api.caiyunapp.com,api.gotokeep.com,api.m.jd.com,app.zhuanzhuan.com,common.diditaxi.com.cn,conf.diditaxi.com.cn,ct.xiaojukeji.com,daijia.kuaidadi.com,freight.xiaojukeji.com,g-acs.m.goofish.com,gql-fed.reddit.com,gql.reddit.com,guide-acs.m.taobao.com,poplayer.template.alibaba.com,res.xiaojukeji.com,starplucker.cyapi.cn,wrapper.cyapi.cn

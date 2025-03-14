@@ -2,14 +2,11 @@
 #!desc=Block advertisings with rewrite
 #!source_1=https://github.com/fmz200/wool_scripts/blob/main/QuantumultX/rewrite/chongxie.txt
 #!source_2=https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/StartUp.conf
+#!source_3=https://kelee.one/Tool/Loon/Plugin/Remove_ads_by_keli.plugin
 #!updatetime=2025-03-13
 
 [Map Local]
 #
-# > 12123
-# hostname = gab.122.gov.cn
-^https?:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$ data-type=text data="" status-code=404
-
 # > 36kr
 # hostname = gateway.36kr.com
 ^https?:\/\/gateway\.36kr\.com\/api\/adx\/ad\/show data-type=text data="" status-code=404
@@ -17,7 +14,7 @@
 # > Alibaba
 # hostname = acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.crm\.screen\.(allresource|predict) data-type=text data="{}" status-code=200
-^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv data-type=text data="{}" status-code=200
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv\/ data-type=text data="{}" status-code=200
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimama\.etao\.config\.query\/.+?etao_advertise data-type=text data="{}" status-code=200
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimusic\.common\.mobileservice\.startinit data-type=text data="{}" status-code=200
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.etao\.noah\.query\/.+tao_splash data-type=text data="{}" status-code=200
@@ -29,8 +26,26 @@
 ^https?:\/\/heic\.alicdn\.com\/imgextra\/i\d\/\d*\/?[\w!]+-\d-(octopus|tps-1125-1602|tps-1080-1920)\.(jp|pn)g_(1\d{3}|9\d{2})x(1\d{3}|9\d{2})q[59]0 data-type=text data="{}" status-code=200
 ^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.adx\.flyad\.getad data-type=text data="{}" status-code=200
 ^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(volvo\.secondfloor\.getconfig|wireless\.home\.newface\.awesome\.get) data-type=text data="{}" status-code=200
-# > tianmao
+# > tmall
 ^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.fc\.resource\.tacdata\.get data-type=text data="" status-code=200
+# > 闲鱼
+# 我的页面横幅
+# hostname = dinamicx.alibabausercontent.com
+^https?:\/\/dinamicx\.alibabausercontent\.com\/pub\/fish_home_top_kingkong_new\/ data-type=text data="" status-code=404
+# 搜索页面净化
+# hostname = acs.m.goofish.com
+^https?:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.item\.search\.activate\/ data-type=text data="{}" status-code=200
+^https?:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\.discover\/ data-type=text data="{}" status-code=200
+# 底部浮层发布球
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.user\.strategy\.get\/ data-type=text data="{}" status-code=200
+# 开屏广告
+# hostname = iyes.youku.com
+^https:\/\/iyes\.youku\.com\/uts\/v1\/start\/ data-type=text data="{}" status-code=200
+# 闲鱼-其他
+# hostname = gw.alicdn.com
+^https:\/\/gw\.alicdn\.com\/mt\/ data-type=text data="" status-code=404
+^https:\/\/gw\.alicdn\.com\/tfs\/.+\d{3,4}-\d{4} data-type=text data="" status-code=404
+^https:\/\/gw\.alicdn\.com\/tps\/.+\d{3,4}-\d{4} data-type=text data="" status-code=404
 
 # > 百度地图
 # hostname = dss0.bdstatic.com, tb1.bdstatic.com, tb2.bdstatic.com, ss0.bdstatic.com, gss0.bdstatic.com
@@ -41,25 +56,18 @@
 ^https?:\/\/ss0\.bdstatic\.com/.+?_\d{3}_\d{4}\.jpg data-type=text data="" status-code=200
 ^https?:\/\/gss0\.bdstatic\.com\/.+?\/static\/wiseindex\/img\/bd_red_packet\.png data-type=tiny-gif status-code=200
 
-# > 贝壳找房
-# hostname = apps.api.ke.com
-^https?:\/\/apps\.api\.ke\.com\/config\/config\/(bootpage|getactivityconfig) data-type=text data="" status-code=404
-
-# > 乐刻
-# hostname = lens.leoao.com
-# 开屏广告
-^https?:\/\/lens\.leoao\.com\/lens\/conduct\/app\/rpc\/v2\/com\.lefit\.dubbo\.cms\.api\.front\.AppAdvertisingFrontService\/getAppAdvertisingNew data-type=text data="{}" status-code=200
-^https?:\/\/lens\.leoao\.com\/lens\/conduct\/app\/rpc\/v2\/com\.lefit\.dubbo\.cms\.api\.bff\.ClientFrontFacade\/queryHomeMiddleInfo data-type=text data="{}" status-code=200
-^https?:\/\/lens\.leoao\.com\/lens\/conduct\/app\/rpc\/v2\/com\.lefit\.dubbo\.cms\.api\.front\.AdvertiseConfigFrontService\/getAdvertiseConfigNew data-type=text data="{}" status-code=200
-
 # > 滴滴出行
 # hostname = hd.xiaojukeji.com
 ^https?:\/\/hd\.xiaojukeji\.com\/d data-type=text data="{}" status-code=200
-
 # > 滴滴青桔
 # hostname = pt-starimg.didistatic.com, omgup*.xiaojukeji.com
 ^https?:\/\/pt-starimg\.didistatic\.com\/static\/starimg\/node\/.*.(jpg|png|gif) data-type=text data="" status-code=200
 ^https?:\/\/omgup[0-9]{1}\.xiaojukeji\.com\/api data-type=text data="" status-code=200
+# > 小桔科技
+# hostname = ct.xiaojukeji.com, res.xiaojukeji.com
+^https?:\/\/ct\.xiaojukeji\.com\/agent\/v3\/feeds data-type=text data="" status-code=404
+^https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNotices) data-type=text data="" status-code=404
+^https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget data-type=text data="" status-code=404
 
 # > 饿了么
 # hostname = elemecdn.com, fuss10.elemecdn.com, cube.elemecdn.com, www1.elecfans.com, nr-op.elemecdn.com
@@ -81,16 +89,8 @@
 ^https?:\/\/m5\.amap\.com\/ws\/valueadded\/ data-type=text data="" status-code=404
 ^https?:\/\/optimus-ads\.amap\.com\/uploadimg\/[a-zA-Z0-9]+\.gif data-type=text data="" status-code=200
 
-# > 盒马
-# hostname = acs.m.taobao.com, acs-m.freshippo.com
-^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.hippotown\.tabbar\.info data-type=text data="" status-code=404
-^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.sg\.querysinglescene data-type=text data="{}" status-code=200
-^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.render\.querysinglepage data-type=text data="" status-code=200
-^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.fc\.recommend\.feedscommondservice data-type=text data="{}" status-code=200
-^https?:\/\/acs(\.|-)m\.(taobao|freshippo)\.com\/gw\/mtop\.wdk\.render\.querytabfeedstream data-type=text data="" status-code=200
-
 # > 京东
-# hostname = api.m.jd.com, dns.jd.com
+# hostname = api.m.jd.com
 # 禁京东直播小窗
 ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=getWidgetV1052 data-type=text data="" status-code=404
 
@@ -157,11 +157,6 @@ https:\/\/uts-front\.line-apps\.com\/settings$ data-type=text data="" status-cod
 https:\/\/static\.line-scdn\.net\/ad-sdk\/ data-type=text data="" status-code=404
 https:\/\/nelo2-col\.linecorp\.com\/_store$ data-type=text data="" status-code=404
 
-# > 猎聘
-# hostname = api-ac.liepin.com, api-wanda.liepin.com
-^https?:\/\/api-ac\.liepin\.com\/api\/com\.liepin\.cyclops\.live\.get-ad-cards data-type=text data="{}" status-code=200
-^https?:\/\/api-wanda\.liepin\.com\/api\/com\.liepin\.cbp\.baizhong\.op\.v2-show-4app data-type=text data="" status-code=200
-
 # > 美团 & 美团外卖
 # hostname = wmapi.meituan.com, apimobile.meituan.com, img.meituan.net, s3plus.meituan.net, flowplus.meituan.net, p*.meituan.net
 ^https?:\/\/wmapi\.meituan\.com\/api\/v\d\/(openscreen\?ad|appstatus\?ad|loadInfo\?|startpicture) data-type=text data="{}" status-code=200
@@ -173,43 +168,6 @@ https:\/\/nelo2-col\.linecorp\.com\/_store$ data-type=text data="" status-code=4
 ^https?:\/\/p\d\.meituan\.net\/movie\/\w+\.jpg\?may_covertWebp data-type=text data="" status-code=200
 # 美团订单详情页更多推荐
 ^https?:\/\/apimobile\.meituan\.com\/group\/v1\/recommend\/unity\/recommends data-type=text data="{}" status-code=200
-
-# > 麦当劳
-# hostname = api.mcd.cn
-^https?:\/\/api\.mcd\.cn\/bff\/portal\/home\/splash data-type=text data="" status-code=200
-
-# > 南方航空
-# hostname = 3g.csair.com
-# 弹窗
-^https?:\/\/3g\.csair\.com\/CSMBP\/bookProcess\/homepopup\/queryAdvertisement data-type=text data="" status-code=200
-
-# > 日日煮
-# hostname = cms.daydaycook.com.cn, api.daydaycook.com.cn
-^https?:\/\/cms\.daydaycook\.com\.cn\/api\/cms\/advertisement\/ data-type=text data="" status-code=404
-^https?:\/\/api\.daydaycook\.com\.cn\/daydaycook\/server\/ad\/ data-type=text data="" status-code=404
-
-# > 山姆会员商店
-# hostname = api-sams.walmartmobile.cn
-^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v\d\/sams\/sams-user\/(window\/getGoUpPlus|screen_promotion\/get) data-type=text data="" status-code=404
-^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v\d\/sams\/channel\/portal\/AdgroupData data-type=text data="{}" status-code=200
-^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v\d\/sams\/configuration\/personCenterEntrance\/query data-type=text data="{}" status-code=200
-^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v\d\/sams\/trade\/order\/getOftenBuyGoods data-type=text data="{}" status-code=200
-^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v\d\/sams\/goods-portal\/spu\/searchRecommendPool data-type=text data="{}" status-code=200
-^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v\d\/sams\/configuration\/appVersionUpdate\/getAppVersionUpdateInfo data-type=text data="{}" status-code=200
-# 屏蔽更新
-^https?:\/\/api-sams\.walmartmobile\.cn\/api\/v1\/sams\/configuration\/portal\/beUpdate data-type=text data="{}" status-code=200
-
-# > 淘宝
-# hostname = acs.m.taobao.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com
-^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv\/ data-type=text data="{}" status-code=200
-^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimama\.etao\.config\.query\/.+?etao_advertise data-type=text data="{}" status-code=200
-^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimusic\.common\.mobileservice\.startinit data-type=text data="{}" status-code=200
-^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.etao\.noah\.query\/.+tao_splash data-type=text data="{}" status-code=200
-^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryadvertise data-type=text data="{}" status-code=200
-^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.o2o\.ad\.gateway\.get data-type=text data="{}" status-code=200
-^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.taobao\.idle\.home\.welcome data-type=text data="{}" status-code=200
-^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources data-type=text data="{}" status-code=200
-^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(volvo\.secondfloor\.getconfig|wireless\.home\.newface\.awesome\.get) data-type=text data="{}" status-code=200
 
 # > 腾讯广告
 # hostname = btrace.qq.com, api2.helper.qq.com, *.beacon.qq.com, mi.gdt.qq.com, lives.l.qq.com, imgcache.qq.com, mtteve.beacon.qq.com, vv.video.qq.com, ssl.kohsocialapp.qq.com, qt.qq.com, 3gimg.qq.com, y.gtimg.cn, splashqqlive.gtimg.com, qzonestyle.gtimg.cn, discuz.gtimg.cn, bla.gtimg.com, mmgr.gtimg.com, bk.bingo.qq.com
@@ -242,28 +200,21 @@ https:\/\/nelo2-col\.linecorp\.com\/_store$ data-type=text data="" status-code=4
 ^https?:\/\/mp\.weixin\.qq\.com\/mp\/cps_product_info\?action data-type=text data="{}" status-code=200
 
 # > 米家
-# hostname = home.mi.com
+# hostname = home.mi.com, api.m.mi.com, api.jr.mi.com, api-mifit.huami.com, home.mi.com
 ^https?:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|carousel\/banners|myTab|openingBanner) data-type=text data="{}" status-code=200
-
-# > 下厨房
-# hostname = api.xiachufang.com
-^https?:\/\/api\.xiachufang\.com\/v\d\/ad/ data-type=text data="" status-code=404
-
-# > 小桔科技
-# hostname = ct.xiaojukeji.com, res.xiaojukeji.com
-^https?:\/\/ct\.xiaojukeji\.com\/agent\/v3\/feeds data-type=text data="" status-code=404
-^https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNotices) data-type=text data="" status-code=404
-^https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget data-type=text data="" status-code=404
-
-# > 闲鱼
-# hostname = acs.m.goofish.com, g-acs.m.goofish.com, dinamicx.alibabausercontent.com
-# 拦截广告下发(在脚本中设置)
-# ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch data-type=text data="{}" status-code=200
-# 我的页面横幅
-^https?:\/\/dinamicx\.alibabausercontent\.com\/pub\/fish_home_top_kingkong_new\/ data-type=text data="" status-code=404
-# 搜索页面净化
-^https?:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.item\.search\.activate\/ data-type=text data="{}" status-code=200
-^https?:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\.discover\/ data-type=text data="{}" status-code=200
+# > 小米
+^https?:\/\/api\.m\.mi\.com\/v\d\/app\/start data-type=text data="" status-code=200
+^https?:\/\/api\.jr\.mi\.com\/v\d\/adv\/ data-type=text data="" status-code=200
+^https?:\/\/api\.jr\.mi\.com\/jr\/api\/playScreen data-type=text data="" status-code=200
+^https?:\/\/api-mifit.+?\.huami\.com\/discovery\/mi\/discovery\/.+?_ad\? data-type=text data="" status-code=200
+^https?:\/\/home\.mi\.com\/cgi-op\/api\/v\d\/recommendation\/banner data-type=text data="" status-code=404
+^https?:\/\/(api-mifit|api-mifit-\w+)\.huami\.com\/discovery\/mi\/discovery\/\w+_ad\? data-type=text data="" status-code=404
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/homepage_ad\? data-type=tiny-gif status-code=200
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sleep_ad\? data-type=tiny-gif status-code=200
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_summary_ad\? data-type=tiny-gif status-code=200
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_training_ad\? data-type=tiny-gif status-code=200
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/step_detail_ad\? data-type=tiny-gif status-code=200
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/training_video_ad\? data-type=tiny-gif status-code=200
 
 # > 小红书
 # hostname = edith.xiaohongshu.com, www.xiaohongshu.com
@@ -322,10 +273,5 @@ https:\/\/nelo2-col\.linecorp\.com\/_store$ data-type=text data="" status-code=4
 # “我的”页面去除冗余的模块
 ^https?:\/\/app\.zhuanzhuan\.com\/zz\/v2\/zzinfoshow\/getchoicegoodsinfos data-type=text data="{}" status-code=200
 
-# > 自如
-# hostname = ztoread.ziroom.com
-^https?:\/\/ztoread\.ziroom\.com\/foka-card-api\/popup\/v2\/get data-type=text data="{}" status-code=200
-^https?:\/\/ztoread\.ziroom\.com\/ymerApi\/v\d\/index\/open data-type=text data="{}" status-code=200
-
 [MITM]
-hostname = %APPEND% *.beacon.qq.com,3g.csair.com,3gimg.qq.com,a.line.me,acs-m.freshippo.com,acs.m.goofish.com,acs.m.taobao.com,ad.line-scdn.net,amemv.com,api-ac.liepin.com,api-sams.walmartmobile.cn,api-wanda.liepin.com,api.daydaycook.com.cn,api.gotokeep.com,api.m.jd.com,api.mcd.cn,api.xiachufang.com,api2.helper.qq.com,apimobile.meituan.com,app.10086.cn,app.10099.com.cn,app.zhuanzhuan.com,apps.api.ke.com,bk.bingo.qq.com,bla.gtimg.com,btrace.qq.com,buy.line.me,cix.line-apps.com,client.app.coc.10086.cn,cloud.189.cn,cms.daydaycook.com.cn,crs-event.line.me,ct.xiaojukeji.com,cube.elemecdn.com,d.line-scdn.net,dinamicx.alibabausercontent.com,discuz.gtimg.cn,dns.jd.com,dsp.toutiao.com,dss0.bdstatic.com,edith.xiaohongshu.com,elemecdn.com,flowplus.meituan.net,fuss10.elemecdn.com,g-acs.m.goofish.com,gab.122.gov.cn,gateway.36kr.com,gss0.bdstatic.com,guide-acs.m.taobao.com,gw.line.naver.jp,h.app.coc.10086.cn,hd.xiaojukeji.com,heic.alicdn.com,home.mi.com,img.meituan.net,imgcache.qq.com,kad.gotokeep.com,legy.line-apps.com,lens.leoao.com,lives.l.qq.com,m.client.10010.com,m*.amap.com,m1.ad.10010.com,mi.gdt.qq.com,mmgr.gtimg.com,mp.weixin.qq.com,mtteve.beacon.qq.com,musical.com,nelo2-col.linecorp.com,nr-op.elemecdn.com,obs.line-scdn.net,omgup*.xiaojukeji.com,optimus-ads.amap.com,p*.meituan.net,p*.pstatp.com,poplayer.template.alibaba.com,pt-starimg.didistatic.com,qt.qq.com,qzonestyle.gtimg.cn,res.mall.10010.cn,res.xiaojukeji.com,s3plus.meituan.net,scdn.line-apps.com,sch.line.me,snssdk.com,splashqqlive.gtimg.com,ss0.bdstatic.com,ssl.kohsocialapp.qq.com,static.line-scdn.net,static1.keepcdn.com,tb1.bdstatic.com,tb2.bdstatic.com,tiktokv.com,uts-front.line-apps.com,vv.video.qq.com,w.line.me,wmapi.meituan.com,www.xiaohongshu.com,www1.elecfans.com,y.gtimg.cn,zt-app.go189.cn,ztoread.ziroom.com
+hostname = %APPEND% *.beacon.qq.com,3gimg.qq.com,a.line.me,acs.m.goofish.com,acs.m.taobao.com,ad.line-scdn.net,amemv.com,api-mifit-cn2.huami.com,api-mifit.huami.com,api-mifit*.huami.com,api.gotokeep.com,api.jr.mi.com,api.m.jd.com,api.m.mi.com,api2.helper.qq.com,apimobile.meituan.com,app.10086.cn,app.10099.com.cn,app.zhuanzhuan.com,bk.bingo.qq.com,bla.gtimg.com,btrace.qq.com,buy.line.me,cix.line-apps.com,client.app.coc.10086.cn,cloud.189.cn,crs-event.line.me,ct.xiaojukeji.com,cube.elemecdn.com,d.line-scdn.net,dinamicx.alibabausercontent.com,discuz.gtimg.cn,dsp.toutiao.com,dss0.bdstatic.com,edith.xiaohongshu.com,elemecdn.com,flowplus.meituan.net,fuss10.elemecdn.com,gateway.36kr.com,gss0.bdstatic.com,guide-acs.m.taobao.com,gw.alicdn.com,gw.line.naver.jp,h.app.coc.10086.cn,hd.xiaojukeji.com,heic.alicdn.com,home.mi.com,img.meituan.net,imgcache.qq.com,iyes.youku.com,kad.gotokeep.com,legy.line-apps.com,lives.l.qq.com,m.client.10010.com,m*.amap.com,m1.ad.10010.com,mi.gdt.qq.com,mmgr.gtimg.com,mp.weixin.qq.com,mtteve.beacon.qq.com,musical.com,nelo2-col.linecorp.com,nr-op.elemecdn.com,obs.line-scdn.net,omgup*.xiaojukeji.com,optimus-ads.amap.com,p*.meituan.net,p*.pstatp.com,pt-starimg.didistatic.com,qt.qq.com,qzonestyle.gtimg.cn,res.mall.10010.cn,res.xiaojukeji.com,s3plus.meituan.net,scdn.line-apps.com,sch.line.me,shopapi.io.mi.com,snssdk.com,splashqqlive.gtimg.com,ss0.bdstatic.com,ssl.kohsocialapp.qq.com,static.line-scdn.net,static1.keepcdn.com,tb1.bdstatic.com,tb2.bdstatic.com,tiktokv.com,uts-front.line-apps.com,vv.video.qq.com,w.line.me,watch.iot.mi.com,wmapi.meituan.com,www.xiaohongshu.com,www1.elecfans.com,y.gtimg.cn,zt-app.go189.cn

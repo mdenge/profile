@@ -1,1 +1,96 @@
-const url=$request.url,isResp="undefined"!=typeof $response;let body=$response.body;switch(isResp){case/^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.cloudvideo\.video\.query/.test(url):try{let e=JSON.parse(body);e?.data?.duration&&(e.data.duration="0"),e?.data?.resources?.length>0&&(e.data.resources=[]),e?.data?.caches?.length>0&&(e.data.caches=[]),e?.data?.respTimeInMs&&(e.data.respTimeInMs="3818332800000"),body=JSON.stringify(e)}catch(e){}break;case/^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.wireless\.home\.splash\.awesome\.get/.test(url):try{let e=JSON.parse(body);if(e?.data?.containers?.splash_home_base){let a=e.data.containers.splash_home_base;if(a?.base?.sections?.length>0)for(let e of a.base.sections)if("taobao-splash"in e.bizData&&e?.bizData?.["taobao-splash"]?.data?.length>0)for(let a of e.bizData["taobao-splash"].data)a.waitTime="0",a.times="0",a.hotStart="false",a.haveVoice="false",a.hideTBLogo="false",a.enable4G="false",a.coldStart="false",a.waitTime="0",a.startTime="3818332800000",a.endTime="3818419199000",a.gmtStart="2090-12-31 00:00:00",a.gmtEnd="2090-12-31 23:59:59",a.gmtStartMs="3818332800000",a.gmtEndMs="3818419199000",a?.imgUrl&&(a.imgUrl=""),a?.videoUrl&&(a.videoUrl="")}body=JSON.stringify(e)}catch(e){}break;case/^https:\/\/poplayer\.template\.alibaba\.com\/\w+\.json/.test(url):try{let e=JSON.parse(body);e?.res?.images?.length>0&&(e.res.images=[]),e?.res?.videos?.length>0&&(e.res.videos=[]),e?.enable&&(e.enable=!1),e?.mainRes?.images?.length>0&&(e.mainRes.images=[]),body=JSON.stringify(e)}catch(e){}break;default:$done({})}$done({body:body});
+// 2024-10-15 10:05
+
+const url = $request.url;
+const isResp = typeof $response !== "undefined";
+let body = $response.body;
+
+switch (isResp) {
+  // 淘宝-开屏视频广告
+  case /^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.cloudvideo\.video\.query/.test(url):
+    try {
+      let obj = JSON.parse(body);
+      if (obj?.data?.duration) {
+        obj.data.duration = "0";
+      }
+      if (obj?.data?.resources?.length > 0) {
+        obj.data.resources = [];
+      }
+      if (obj?.data?.caches?.length > 0) {
+        obj.data.caches = [];
+      }
+      if (obj?.data?.respTimeInMs) {
+        obj.data.respTimeInMs = "3818332800000";
+      }
+      body = JSON.stringify(obj);
+    } catch (err) {
+      console.log(`淘宝-开屏视频广告, 出现异常: ` + err);
+    }
+    break;
+  // 淘宝-开屏图片广告
+  case /^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.wireless\.home\.splash\.awesome\.get/.test(url):
+    try {
+      let obj = JSON.parse(body);
+      if (obj?.data?.containers?.splash_home_base) {
+        let splash = obj.data.containers.splash_home_base;
+        if (splash?.base?.sections?.length > 0) {
+          for (let items of splash.base.sections) {
+            if ("taobao-splash" in items.bizData) {
+              if (items?.bizData?.["taobao-splash"]?.data?.length > 0) {
+                for (let item of items.bizData["taobao-splash"].data) {
+                  item.waitTime = "0";
+                  item.times = "0";
+                  item.hotStart = "false";
+                  item.haveVoice = "false";
+                  item.hideTBLogo = "false";
+                  item.enable4G = "false";
+                  item.coldStart = "false";
+                  item.waitTime = "0";
+                  item.startTime = "3818332800000";
+                  item.endTime = "3818419199000";
+                  item.gmtStart = "2090-12-31 00:00:00";
+                  item.gmtEnd = "2090-12-31 23:59:59";
+                  item.gmtStartMs = "3818332800000";
+                  item.gmtEndMs = "3818419199000";
+                  if (item?.imgUrl) {
+                    item.imgUrl = "";
+                  }
+                  if (item?.videoUrl) {
+                    item.videoUrl = "";
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      body = JSON.stringify(obj);
+    } catch (err) {
+      console.log(`淘宝-开屏图片广告, 出现异常: ` + err);
+    }
+    break;
+  // 淘宝-开屏活动
+  case /^https:\/\/poplayer\.template\.alibaba\.com\/\w+\.json/.test(url):
+    try {
+      let obj = JSON.parse(body);
+      if (obj?.res?.images?.length > 0) {
+        obj.res.images = [];
+      }
+      if (obj?.res?.videos?.length > 0) {
+        obj.res.videos = [];
+      }
+      if (obj?.enable) {
+        obj.enable = false;
+      }
+      if (obj?.mainRes?.images?.length > 0) {
+        obj.mainRes.images = [];
+      }
+      body = JSON.stringify(obj);
+    } catch (err) {
+      console.log(`淘宝-开屏活动, 出现异常: ` + err);
+    }
+    break;
+  default:
+    $done({});
+}
+
+$done({ body });
