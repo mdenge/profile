@@ -6,4 +6,4 @@
 
 [Script]
 macos_dns_auto_switch_event = type=event,event-name=network-changed,script-path=scripts/macos_dns_auto_switch_event.js
-macos_dns_auto_switch_cron = type=cron,cronexp=*/1 * * * *,script-path=scripts/macos_dns_auto_switch_cron.js
+macos_dns_auto_switch_cron = type=cron,cronexp=*/5 * * * *,script-path=scripts/macos_dns_auto_switch_cron.js
