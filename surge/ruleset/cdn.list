@@ -1,5 +1,5 @@
 # NAME: CDN
-# SOURCE: https://github.com/SukkaW/Surge/blob/master/Source/domainset/cdn.conf
+# SOURCE: https://ruleset.skk.moe/List/domainset/cdn.conf
 # VERSION: 2025-03-17T09:56:23.069Z
 # UPDATED: 2025-03-17
 .static.microsoft
