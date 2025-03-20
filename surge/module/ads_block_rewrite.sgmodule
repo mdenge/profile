@@ -273,5 +273,49 @@ https:\/\/nelo2-col\.linecorp\.com\/_store$ data-type=text data="" status-code=4
 # “我的”页面去除冗余的模块
 ^https?:\/\/app\.zhuanzhuan\.com\/zz\/v2\/zzinfoshow\/getchoicegoodsinfos data-type=text data="{}" status-code=200
 
+#
+# > 自如
+# hostname = ztoread.ziroom.com
+^https?:\/\/ztoread\.ziroom\.com\/foka-card-api\/popup\/v2\/get data-type=text data="{}" status-code=200
+^https?:\/\/ztoread\.ziroom\.com\/ymerApi\/v\d\/index\/open data-type=text data="{}" status-code=200
+
+# > 豆瓣
+# hostname = api.douban.com
+^https?:\/\/api\.douban\.com\/v\d\/app_ads\/ data-type=text data="{}" status-code=200
+^https?:\/\/api\.douban\.com\/b.*\/common_ads\?.* data-type=text data="{}" status-code=200
+
+# > 乐刻
+# hostname = lens.leoao.com
+# 开屏广告
+^https?:\/\/lens\.leoao\.com\/lens\/conduct\/app\/rpc\/v2\/com\.lefit\.dubbo\.cms\.api\.front\.AppAdvertisingFrontService\/getAppAdvertisingNew data-type=text data="{}" status-code=200
+^https?:\/\/lens\.leoao\.com\/lens\/conduct\/app\/rpc\/v2\/com\.lefit\.dubbo\.cms\.api\.bff\.ClientFrontFacade\/queryHomeMiddleInfo data-type=text data="{}" status-code=200
+^https?:\/\/lens\.leoao\.com\/lens\/conduct\/app\/rpc\/v2\/com\.lefit\.dubbo\.cms\.api\.front\.AdvertiseConfigFrontService\/getAdvertiseConfigNew data-type=text data="{}" status-code=200
+
+# > 薄荷健康
+# hostname = api.boohee.com,bohe.sfo-tx-shanghai-01.saas.sensorsdata.cn,lego.boohee.com,status.boohee.com
+# 记录 悬浮部件
+^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/page_float_bubbles\? data-type=text data="{}" status-code=200
+# 记录 发布
+^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/tool_buttons\? data-type=text data="{}" status-code=200
+# 记录 搜索发现
+^https:\/\/api\.boohee\.com\/app-interface\/v1\/search\/search\? data-type=text data="{}" status-code=200
+# 记录 消息 通知 横幅推广
+^https:\/\/status\.boohee\.com\/api\/v1\/merged_messages$ data-type=text data="{}" status-code=200
+# 弹窗配置
+^https:\/\/bohe\.sfo-tx-shanghai-01\.saas\.sensorsdata\.cn\/api\/v2\/sfo\/user_popup_configs\? data-type=text data="{}" status-code=200
+# 绑定设备 横幅推广
+^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/sensor-banners\? data-type=text data="{}" status-code=200
+
+# > 首汽约车
+# hostname = gw-passenger.01zhuanche.com,img.yun.01zhuanche
+^https?:\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/car-rest\/webservice\/passenger\/recommendADs data-type=text data="" status-code=200
+^https?:\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/zhuanche-passenger-token\/leachtoken\/webservice\/homepage\/queryADs data-type=text data="" status-code=200
+^https?:\/\/gw-passenger\.01zhuanche\.com\/gw-passenger\/zhuanche-passengerController\/notk\/passenger\/recommendADs data-type=text data="" status-code=404
+^https?:\/\/img\.yun\.01zhuanche\.com\/statics\/app\/advertisement\/.+?-750-1334 data-type=tiny-gif status-code=200
+
+# > 小牛
+# hostname = app-api.niu.com
+^https?:\/\/app-api\.niu\.com\/v\d\/advertisement\/ data-type=text data="" status-code=404
+
 [MITM]
-hostname = %APPEND% *.beacon.qq.com,3gimg.qq.com,a.line.me,acs.m.goofish.com,acs.m.taobao.com,ad.line-scdn.net,amemv.com,api-mifit-cn2.huami.com,api-mifit.huami.com,api-mifit*.huami.com,api.gotokeep.com,api.jr.mi.com,api.m.jd.com,api.m.mi.com,api2.helper.qq.com,apimobile.meituan.com,app.10086.cn,app.10099.com.cn,app.zhuanzhuan.com,bk.bingo.qq.com,bla.gtimg.com,btrace.qq.com,buy.line.me,cix.line-apps.com,client.app.coc.10086.cn,cloud.189.cn,crs-event.line.me,ct.xiaojukeji.com,cube.elemecdn.com,d.line-scdn.net,dinamicx.alibabausercontent.com,discuz.gtimg.cn,dsp.toutiao.com,dss0.bdstatic.com,edith.xiaohongshu.com,elemecdn.com,flowplus.meituan.net,fuss10.elemecdn.com,gateway.36kr.com,gss0.bdstatic.com,guide-acs.m.taobao.com,gw.alicdn.com,gw.line.naver.jp,h.app.coc.10086.cn,hd.xiaojukeji.com,heic.alicdn.com,home.mi.com,img.meituan.net,imgcache.qq.com,iyes.youku.com,kad.gotokeep.com,legy.line-apps.com,lives.l.qq.com,m.client.10010.com,m*.amap.com,m1.ad.10010.com,mi.gdt.qq.com,mmgr.gtimg.com,mp.weixin.qq.com,mtteve.beacon.qq.com,musical.com,nelo2-col.linecorp.com,nr-op.elemecdn.com,obs.line-scdn.net,omgup*.xiaojukeji.com,optimus-ads.amap.com,p*.meituan.net,p*.pstatp.com,pt-starimg.didistatic.com,qt.qq.com,qzonestyle.gtimg.cn,res.mall.10010.cn,res.xiaojukeji.com,s3plus.meituan.net,scdn.line-apps.com,sch.line.me,shopapi.io.mi.com,snssdk.com,splashqqlive.gtimg.com,ss0.bdstatic.com,ssl.kohsocialapp.qq.com,static.line-scdn.net,static1.keepcdn.com,tb1.bdstatic.com,tb2.bdstatic.com,tiktokv.com,uts-front.line-apps.com,vv.video.qq.com,w.line.me,watch.iot.mi.com,wmapi.meituan.com,www.xiaohongshu.com,www1.elecfans.com,y.gtimg.cn,zt-app.go189.cn
+hostname = %APPEND% *.beacon.qq.com,3gimg.qq.com,a.line.me,acs.m.goofish.com,acs.m.taobao.com,ad.line-scdn.net,amemv.com,api-mifit-cn2.huami.com,api-mifit.huami.com,api-mifit*.huami.com,api.gotokeep.com,api.jr.mi.com,api.m.jd.com,api.m.mi.com,api2.helper.qq.com,apimobile.meituan.com,app.10086.cn,app.10099.com.cn,app.zhuanzhuan.com,bk.bingo.qq.com,bla.gtimg.com,btrace.qq.com,buy.line.me,cix.line-apps.com,client.app.coc.10086.cn,cloud.189.cn,crs-event.line.me,ct.xiaojukeji.com,cube.elemecdn.com,d.line-scdn.net,dinamicx.alibabausercontent.com,discuz.gtimg.cn,dsp.toutiao.com,dss0.bdstatic.com,edith.xiaohongshu.com,elemecdn.com,flowplus.meituan.net,fuss10.elemecdn.com,gateway.36kr.com,gss0.bdstatic.com,guide-acs.m.taobao.com,gw.alicdn.com,gw.line.naver.jp,h.app.coc.10086.cn,hd.xiaojukeji.com,heic.alicdn.com,home.mi.com,img.meituan.net,imgcache.qq.com,iyes.youku.com,kad.gotokeep.com,legy.line-apps.com,lives.l.qq.com,m.client.10010.com,m*.amap.com,m1.ad.10010.com,mi.gdt.qq.com,mmgr.gtimg.com,mp.weixin.qq.com,mtteve.beacon.qq.com,musical.com,nelo2-col.linecorp.com,nr-op.elemecdn.com,obs.line-scdn.net,omgup*.xiaojukeji.com,optimus-ads.amap.com,p*.meituan.net,p*.pstatp.com,pt-starimg.didistatic.com,qt.qq.com,qzonestyle.gtimg.cn,res.mall.10010.cn,res.xiaojukeji.com,s3plus.meituan.net,scdn.line-apps.com,sch.line.me,shopapi.io.mi.com,snssdk.com,splashqqlive.gtimg.com,ss0.bdstatic.com,ssl.kohsocialapp.qq.com,static.line-scdn.net,static1.keepcdn.com,tb1.bdstatic.com,tb2.bdstatic.com,tiktokv.com,uts-front.line-apps.com,vv.video.qq.com,w.line.me,watch.iot.mi.com,wmapi.meituan.com,www.xiaohongshu.com,www1.elecfans.com,y.gtimg.cn,zt-app.go189.cn,ztoread.ziroom.com,api.douban.com,lens.leoao.com,api.boohee.com,bohe.sfo-tx-shanghai-01.saas.sensorsdata.cn,lego.boohee.com,status.boohee.com,gw-passenger.01zhuanche.com,img.yun.01zhuanche,app-api.niu.com
