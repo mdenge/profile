@@ -2,7 +2,7 @@
 #!desc=Block advertisings with scripts
 #!source_1=https://github.com/fmz200/wool_scripts/blob/main/QuantumultX/rewrite/chongxie.txt
 #!updatetime=2025-03-13
-
+#
 [Rule]
 # > 滴滴出行
 # 用于广告脚本
@@ -12,10 +12,11 @@ IP-CIDR,139.199.240.12/32,REJECT,no-resolve
 IP-CIDR,162.14.157.2/32,REJECT,no-resolve
 IP-CIDR,162.14.157.24/32,REJECT,no-resolve
 IP-CIDR,139.199.240.15/32,REJECT,no-resolve
-
+#
 [URL Rewrite]
+#
 "^https?:\/\/ad\.cyapi\.cn\/v\d" - reject
-
+#
 [Script]
 #
 # > Alibaba
@@ -25,7 +26,7 @@ amdc = type=http-response,pattern=^http:\/\/amdc\.m\.taobao\.com,requires-body=t
 cainiao = type=http-response,pattern=^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/cainiao.js
 alibaba_01 = type=http-response,pattern=^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get),requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/alibaba.js
 alibaba_02 = type=http-response,pattern=^https?:\/\/poplayer\.template\.alibaba\.com\/\w+\.json,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/alibaba.js
-
+#
 # > Caiyun
 # hostname = wrapper.cyapi.cn, api.caiyunapp.com, starplucker.cyapi.cn, ad.cyapi.cn
 caiyun_01 = type=http-response,pattern=^https?:\/\/wrapper\.cyapi\.cn\/v\d\/activity,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/caiyun.js
@@ -37,7 +38,7 @@ caiyun_06 = type=http-response,pattern=^https?:\/\/starplucker\.cyapi\.cn\/v\d/o
 caiyun_07 = type=http-response,pattern=^https?:\/\/starplucker\.cyapi\.cn\/v\d/operation/banners,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/caiyun.js
 caiyun_08 = type=http-response,pattern=^https?:\/\/starplucker\.cyapi\.cn\/v\d/operation/features,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/caiyun.js
 caiyun_09 = type=http-response,pattern=^https?:\/\/starplucker\.cyapi\.cn\/v\d/campaigns,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/caiyun.js
-
+#
 # > 滴滴出行
 # hostname = res.xiaojukeji.com, common.diditaxi.com.cn, freight.xiaojukeji.com, daijia.kuaidadi.com, ct.xiaojukeji.com, conf.diditaxi.com.cn
 didi_01 = type=http-response,pattern=^https?:\/\/ct\.xiaojukeji\.com\/agent\/v3\/feeds,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/didi.js
@@ -50,11 +51,11 @@ didi_07 = type=http-response,pattern=^https?:\/\/common\.diditaxi\.com\.cn\/comm
 didi_08 = type=http-response,pattern=^https?:\/\/daijia\.kuaidadi\.com\/gateway,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/didi.js
 didi_09 = type=http-response,pattern=^https?:\/\/daijia\.kuaidadi\.com:443\/gateway,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/didi.js
 didi_10 = type=http-response,pattern=^https?:\/\/common\.diditaxi\.com\.cn\/common\/v5,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/didi.js
-
+#
 # > 京东
 # hostname = api.m.jd.com
 jingdong = type=http-response,pattern=^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome),requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/jingdong.js
-
+#
 # > keep
 # hostname = api.gotokeep.com
 # 我的页面去推广
@@ -67,12 +68,12 @@ keep_03 = type=http-response,pattern=^https?:\/\/api\.gotokeep\.com\/homepage\/v
 keep_04 = type=http-response,pattern=https?:\/\/api\.gotokeep\.com\/nuocha\/course\/v\d/\w+\/preview,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/keep.js
 # 我的运动页面去除下方推荐
 keep_05 = type=http-response,pattern=^https?:\/\/api\.gotokeep\.com\/sportpage\/sport\/v\d\/mysport,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/keep.js
-
+#
 # > Reddit
 # hostname = gql.reddit.com, gql-fed.reddit.com
 # 过滤推广 关NSFW提示 感谢【xream】分享
 reddit = type=http-response,pattern=^https?:\/\/gql(-fed)?\.reddit\.com,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/reddit.js
-
+#
 # > 闲鱼
 # hostname = acs.m.goofish.com, g-acs.m.goofish.com
 # 首页顶部标签
@@ -85,11 +86,16 @@ xianyu_03 = type=http-response,pattern=^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\
 xianyu_04 = type=http-response,pattern=^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/xianyu.js
 # 定位地区页面的信息流广告
 xianyu_05 = type=http-response,pattern=^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.home\/,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/xianyu.js
-
+#
 # > 转转
 # hostname = app.zhuanzhuan.com
 # “我的”页面去除冗余的模块
 zhuanzhuan = type=http-response,pattern=^https?:\/\/app\.zhuanzhuan\.com\/zz\/transfer\/getmyprofilev3,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/zhuanzhuan.js
-
+#
+# > 大众点评
+# 开屏广告
+dianping = type=http-response,pattern=^https?:\/\/img\.meituan\.net\/dpmobile\/,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/dianping.js
+#
 [MITM]
-hostname = %INSERT% acs.m.goofish.com,ad.cyapi.cn,amdc.m.taobao.com,api.caiyunapp.com,api.gotokeep.com,api.m.jd.com,app.zhuanzhuan.com,common.diditaxi.com.cn,conf.diditaxi.com.cn,ct.xiaojukeji.com,daijia.kuaidadi.com,freight.xiaojukeji.com,g-acs.m.goofish.com,gql-fed.reddit.com,gql.reddit.com,guide-acs.m.taobao.com,poplayer.template.alibaba.com,res.xiaojukeji.com,starplucker.cyapi.cn,wrapper.cyapi.cn
+hostname = %INSERT% acs.m.goofish.com,ad.cyapi.cn,amdc.m.taobao.com,api.caiyunapp.com,api.gotokeep.com,api.m.jd.com,app.zhuanzhuan.com,common.diditaxi.com.cn,conf.diditaxi.com.cn,ct.xiaojukeji.com,daijia.kuaidadi.com,freight.xiaojukeji.com,g-acs.m.goofish.com,gql-fed.reddit.com,gql.reddit.com,guide-acs.m.taobao.com,poplayer.template.alibaba.com,res.xiaojukeji.com,starplucker.cyapi.cn,wrapper.cyapi.cn,img.meituan.net
+#
