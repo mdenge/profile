@@ -1,0 +1,20 @@
+# NAME: Apple Non-China CDN
+# SOURCE: https://github.com/geekdada/surge-list/blob/master/surgio-snippet/apple.tpl
+# VERSION: 41a3f55
+# UPDATED: 2025-04-09
+# iTunes
+DOMAIN-SUFFIX,hls.itunes.apple.com
+DOMAIN-SUFFIX,hls-amt.itunes.apple.com
+DOMAIN-SUFFIX,audio-ssl.itunes.apple.com
+DOMAIN-SUFFIX,cdn-apple.com
+DOMAIN,cdn.apple-cloudkit.com
+# Developer
+DOMAIN,devimages-cdn.apple.com
+DOMAIN,devstreaming-cdn.apple.com
+DOMAIN,js-cdn.music.apple.com
+DOMAIN,docs-assets.developer.apple.com
+# Other
+DOMAIN-SUFFIX,apple-dns.net
+# OCSP
+DOMAIN-SUFFIX,ocsp.apple.com
+USER-AGENT,com.apple.trustd*
