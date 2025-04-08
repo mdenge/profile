@@ -1,0 +1,26 @@
+#!name=Caiyun Ads Block
+#!desc=Scripts to block ads in caiyun weather
+#!author=ddgksf2013
+#!repo=https://github.com/ddgksf2013
+#!url=https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/CaiYunAds.conf
+#!version=2024-09-27
+#!updatetime=2025-04-08
+
+[URL Rewrite]
+"^https?:\/\/ad\.cyapi\.cn\/v\d" - reject
+
+[Script]
+#
+# hostname = wrapper.cyapi.cn, api.caiyunapp.com, starplucker.cyapi.cn, ad.cyapi.cn
+caiyun_01 = type=http-response,pattern=^https?:\/\/wrapper\.cyapi\.cn\/v\d\/activity,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/caiyun.js
+caiyun_02 = type=http-response,pattern=^https?:\/\/api\.caiyunapp\.com\/v\d\/activity,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/caiyun.js
+caiyun_03 = type=http-response,pattern=^https?:\/\/starplucker\.cyapi\.cn\/v\d/operation/homefeatures,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/caiyun.js
+caiyun_04 = type=http-response,pattern=^https?:\/\/starplucker\.cyapi\.cn\/v\d/notification/message_center,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/caiyun.js
+caiyun_05 = type=http-response,pattern=^https?:\/\/starplucker\.cyapi\.cn\/v\d/config/cypage,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/caiyun.js
+caiyun_06 = type=http-response,pattern=^https?:\/\/starplucker\.cyapi\.cn\/v\d/operation/feeds,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/caiyun.js
+caiyun_07 = type=http-response,pattern=^https?:\/\/starplucker\.cyapi\.cn\/v\d/operation/banners,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/caiyun.js
+caiyun_08 = type=http-response,pattern=^https?:\/\/starplucker\.cyapi\.cn\/v\d/operation/features,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/caiyun.js
+caiyun_09 = type=http-response,pattern=^https?:\/\/starplucker\.cyapi\.cn\/v\d/campaigns,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/caiyun.js
+
+[MITM]
+hostname = %INSERT% wrapper.cyapi.cn, api.caiyunapp.com, starplucker.cyapi.cn, ad.cyapi.cn

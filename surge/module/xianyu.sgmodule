@@ -1,0 +1,45 @@
+#!name=Xianyu
+#!desc=Xianyu ads block
+#!source_1=https://github.com/fmz200/wool_scripts/blob/main/QuantumultX/rewrite/chongxie.txt
+#!version_1=b44b0bd
+#!updatetime=2025-04-08
+
+[Map Local]
+# > 闲鱼
+# 我的页面横幅
+# hostname = dinamicx.alibabausercontent.com
+^https?:\/\/dinamicx\.alibabausercontent\.com\/pub\/fish_home_top_kingkong_new\/ data-type=text data="" status-code=200
+# 搜索页面净化
+# hostname = acs.m.goofish.com
+^https?:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.item\.search\.activate\/ data-type=text data="{}" status-code=200
+^https?:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\.discover\/ data-type=text data="{}" status-code=200
+# 底部浮层发布球
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.user\.strategy\.get\/ data-type=text data="{}" status-code=200
+# 开屏广告
+# hostname = iyes.youku.com
+^https:\/\/iyes\.youku\.com\/uts\/v1\/start\/ data-type=text data="{}" status-code=200
+# 闲鱼-其他
+# hostname = gw.alicdn.com
+^https:\/\/gw\.alicdn\.com\/mt\/ data-type=text data="" status-code=200
+^https:\/\/gw\.alicdn\.com\/tfs\/.+\d{3,4}-\d{4} data-type=text data="" status-code=200
+^https:\/\/gw\.alicdn\.com\/tps\/.+\d{3,4}-\d{4} data-type=text data="" status-code=200
+#
+
+[Script]
+#
+# > 闲鱼
+# hostname = acs.m.goofish.com, g-acs.m.goofish.com
+# 首页顶部标签
+xianyu_01 = type=http-response,pattern=^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.home\.whale\.modulet\/,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/xianyu.js
+# 搜索栏填充词
+xianyu_02 = type=http-response,pattern=^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\.shade\/,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/xianyu.js
+# 首页闲鱼币入口、底部发布球
+xianyu_03 = type=http-response,pattern=^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.user\.strategy\.list\/,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/xianyu.js
+# 商品信息流广告
+xianyu_04 = type=http-response,pattern=^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/xianyu.js
+# 定位地区页面的信息流广告
+xianyu_05 = type=http-response,pattern=^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.local\.home\/,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/xianyu.js
+#
+
+[MITM]
+hostname = %APPEND% dinamicx.alibabausercontent.com,acs.m.goofish.com,iyes.youku.com,gw.alicdn.com,g-acs.m.goofish.com

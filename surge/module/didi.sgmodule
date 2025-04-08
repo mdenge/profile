@@ -1,0 +1,62 @@
+#!name=Didi
+#!desc=Didi ads block
+#!source_1=https://github.com/fmz200/wool_scripts/blob/main/QuantumultX/rewrite/chongxie.txt
+#!version_1=b44b0bd
+#!source_2=https://github.com/ddgksf2013/Modules/blob/main/Adblock/StartUpAds.sgmodule
+#!version_2=61f15d5
+#!source_3=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.snippet
+#!version_3=2024-10-22 21:56
+#!updatetime=2025-04-08
+
+[Rule]
+IP-CIDR,123.207.209.39/32,REJECT,pre-matching,no-resolve
+IP-CIDR,123.207.209.60/32,REJECT,pre-matching,no-resolve
+IP-CIDR,139.199.240.12/32,REJECT,pre-matching,no-resolve
+IP-CIDR,162.14.157.2/32,REJECT,pre-matching,no-resolve
+IP-CIDR,162.14.157.24/32,REJECT,pre-matching,no-resolve
+IP-CIDR,139.199.240.15/32,REJECT,pre-matching,no-resolve
+IP-CIDR,116.85.3.37/32,REJECT,pre-matching,no-resolve
+
+[Map Local]
+#
+# hostname = hd.xiaojukeji.com
+^https?:\/\/hd\.xiaojukeji\.com\/d data-type=text data="{}" status-code=200
+#
+# hostname = pt-starimg.didistatic.com, omgup*.xiaojukeji.com
+^https?:\/\/pt-starimg\.didistatic\.com\/static\/starimg\/node\/.*.(jpg|png|gif) data-type=text data="" status-code=200
+^https?:\/\/omgup[0-9]{1}\.xiaojukeji\.com\/api data-type=text data="" status-code=200
+#
+# hostname = conf.diditaxi.com, ct.xiaojukeji.com, daijia.kuaidadi.com, freight.xiaojukeji.com, res.xiaojukeji.com
+^https?:\/\/conf\.diditaxi\.com\.cn\/dynamic\/conf data-type=text data="{}" status-code=200
+^https?:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/other\/fast data-type=text data="{}" status-code=200
+^https?:\/\/conf\.diditaxi\.com\.cn\/homepage\/v1\/other\/slow data-type=text data="{}" status-code=200
+^https?:\/\/ct\.xiaojukeji\.com\/agent\/v3\/feeds data-type=text data="" status-code=404
+^https?:\/\/daijia\.kuaidadi\.com\/gateway data-type=text data="{}" status-code=200
+^https?:\/\/freight\.xiaojukeji\.com\/gateway data-type=text data="{}" status-code=200
+^https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/getMulti\? data-type=text data="{}" status-code=200
+^https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNotices) data-type=text data="" status-code=404
+^https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget data-type=text data="" status-code=404
+^https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/xpget data-type=text data="{}" status-code=200
+
+[Script]
+#
+# > 滴滴出行
+# hostname = api.udache.com, common.diditaxi.com.cn, conf.diditaxi.com.cn, ct.xiaojukeji.com, daijia.kuaidadi.com, freight.xiaojukeji.com, res.xiaojukeji.com
+didi_01 = type=http-response,pattern=^https?:\/\/api\.udache\.com\/gulfstream\/passenger-center\/v2\/other\/pInTripLayout,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/didi.js
+didi_02 = type=http-response,pattern=^https?:\/\/api\.udache\.com\/gulfstream\/pre-sale\/v1\/other\/pGetSceneList,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/didi.js
+didi_03 = type=http-response,pattern=^https?:\/\/common\.diditaxi\.com\.cn\/common\/v5,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/didi.js
+didi_04 = type=http-response,pattern=^https?:\/\/common\.diditaxi\.com\.cn\/common\/v\d\/usercenter\/me,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/didi.js
+didi_05 = type=http-response,pattern=^https?:\/\/conf\.diditaxi\.com\.cn\/dynamic\/conf,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/didi.js
+didi_06 = type=http-response,pattern=^https?:\/\/conf\.diditaxi\.com\.cn\/homepage\/v1\/oversea\/layout,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/didi.js
+didi_07 = type=http-response,pattern=^https?:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/core,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/didi.js
+didi_08 = type=http-response,pattern=^https?:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/other\/fast,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/didi.js
+didi_09 = type=http-response,pattern=^https?:\/\/conf\.diditaxi\.com\.cn\/ota\/na\/yuantu\/infoList,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/didi.js
+didi_10 = type=http-response,pattern=^https?:\/\/ct\.xiaojukeji\.com\/agent\/v3\/feeds,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/didi.js
+didi_11 = type=http-response,pattern=^https?:\/\/daijia\.kuaidadi\.com\/gateway,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/didi.js
+didi_12 = type=http-response,pattern=^https?:\/\/freight\.xiaojukeji\.com\/gateway,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/didi.js
+didi_13 = type=http-response,pattern=^https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/didi.js
+didi_14 = type=http-response,pattern=^https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/xpget,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/didi.js
+#
+
+[MITM]
+hostname = %APPEND% api.udache.com,common.diditaxi.com.cn,conf.diditaxi.com,conf.diditaxi.com.cn,ct.xiaojukeji.com,daijia.kuaidadi.com,freight.xiaojukeji.com,hd.xiaojukeji.com,omgup*.xiaojukeji.com,pt-starimg.didistatic.com,res.xiaojukeji.com
