@@ -1,67 +1,79 @@
 # NAME: AI
-# AUTHOR: ConnersHua
-# REPO: https://github.com/ConnersHua/RuleGo
-# SOURCE: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Extra/AI.list
-# VERSION: 34d9630
-# UPDATED: 2025-03-02
-# OpenAI
-# > ChatGPT
-DOMAIN-SUFFIX,chatgpt.com
-DOMAIN-SUFFIX,oaistatic.com
-DOMAIN-SUFFIX,oaiusercontent.com
-DOMAIN-SUFFIX,openai.com
-DOMAIN,api.statsig.com
-DOMAIN,api-iam.intercom.io
-DOMAIN,chatgpt.livekit.cloud
-DOMAIN,o33249.ingest.sentry.io
-DOMAIN,openaiapi-site.azureedge.net
-DOMAIN,sfo3.turn.livekit.cloud
-DOMAIN-KEYWORD,openaicom
-# Apple Intelligence
-DOMAIN-SUFFIX,smoot.apple.com
-DOMAIN,apple-relay.apple.com
-DOMAIN,apple-relay.cloudflare.com
-DOMAIN,apple-relay.fastly-edge.com
-DOMAIN,cp4.cloudflare.com
-DOMAIN,guzzoni.apple.com
-# Anthropic
-# > Claude
-DOMAIN-SUFFIX,claude.ai
-DOMAIN-SUFFIX,anthropic.com
-# Google
-# > Gemini
-DOMAIN,ai.google.dev
-DOMAIN,bard.google.com
-DOMAIN,gemini.google.com
-DOMAIN,generativelanguage.googleapis.com
-DOMAIN,proactivebackend-pa.googleapis.com
-# > AI Studio
-DOMAIN,aistudio.google.com
-DOMAIN,alkalimakersuite-pa.clients6.google.com
-# > Search Labs
-DOMAIN-KEYWORD,labs.google
-# > NotebookLM
-DOMAIN-KEYWORD,notebooklm.google
-# JetBrains AI
-DOMAIN-SUFFIX,grazie.ai
-# Microsoft
-# > Copilot
-DOMAIN,copilot.microsoft.com
-DOMAIN,sydney.bing.com
-DOMAIN,www.bing.com
-# Meta
-DOMAIN,imagine.meta.com
-# GitHub Copilot
-DOMAIN-SUFFIX,githubcopilot.com
-# Perplexity
-DOMAIN-SUFFIX,perplexity.ai
-DOMAIN-SUFFIX,pplx.ai
-# Cloudflare
-# > AI Gateway
-DOMAIN,gateway.ai.cloudflare.com
-# Grok
-DOMAIN-SUFFIX,x.ai
-DOMAIN-SUFFIX,grok.com
+# SOURCE_01: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Extra/AI.list
+# VERSION_01: a53ad24
+# SOURCE_02: https://ruleset.skk.moe/List/non_ip/ai.conf
+# VERSION_02: 2025-03-17T09:22:02.692Z
+# UPDATED: 2025-04-08
+#
 # DeepSeek
 DOMAIN-SUFFIX,deepseek.com
 DOMAIN-SUFFIX,portal101.cn
+#
+DOMAIN,ai.google.dev
+DOMAIN,aistudio.google.com
+DOMAIN,alkalicore-pa.clients6.google.com
+DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN,api-iam.intercom.io
+DOMAIN,api.github.com
+DOMAIN,api.statsig.com
+DOMAIN,apple-relay.apple.com
+DOMAIN,apple-relay.cloudflare.com
+DOMAIN,apple-relay.fastly-edge.com
+DOMAIN,bard.google.com
+DOMAIN,copilot.microsoft.com
+DOMAIN,cp4.cloudflare.com
+DOMAIN,gateway.ai.cloudflare.com
+DOMAIN,gemini.google.com
+DOMAIN,guzzoni.apple.com
+DOMAIN,imagine.meta.com
+DOMAIN,o33249.ingest.sentry.io
+DOMAIN,openaiapi-site.azureedge.net
+DOMAIN,pplx-res.cloudinary.com
+DOMAIN,sydney.bing.com
+DOMAIN,www.bing.com
+DOMAIN-SUFFIX,ai.com
+DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,bard.google.com
+DOMAIN-SUFFIX,chat.com
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,clipdrop.co
+DOMAIN-SUFFIX,cursor-cdn.com
+DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,cursor.sh
+DOMAIN-SUFFIX,cursorapi.com
+DOMAIN-SUFFIX,deepmind.com
+DOMAIN-SUFFIX,deepmind.google
+DOMAIN-SUFFIX,dify.ai
+DOMAIN-SUFFIX,geller-pa.googleapis.com
+DOMAIN-SUFFIX,gemini.google.com
+DOMAIN-SUFFIX,generativeai.google
+DOMAIN-SUFFIX,generativelanguage.googleapis.com
+DOMAIN-SUFFIX,githubcopilot.com
+DOMAIN-SUFFIX,grazie.ai
+DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,groq.com
+DOMAIN-SUFFIX,jasper.ai
+DOMAIN-SUFFIX,livekit.cloud
+DOMAIN-SUFFIX,makersuite.google.com
+DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,notebooklm.google
+DOMAIN-SUFFIX,notebooklm.google.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,openart.ai
+DOMAIN-SUFFIX,perplexity.ai
+DOMAIN-SUFFIX,poe.com
+DOMAIN-SUFFIX,pplx.ai
+DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+DOMAIN-SUFFIX,smoot.apple.com
+DOMAIN-SUFFIX,sora.com
+DOMAIN-SUFFIX,x.ai
+DOMAIN-KEYWORD,alkalimakersuite-pa.clients6.google.com
+DOMAIN-KEYWORD,labs.google
+DOMAIN-KEYWORD,notebooklm.google
+DOMAIN-KEYWORD,openai
+DOMAIN-KEYWORD,openaiapi
+DOMAIN-KEYWORD,openaicom

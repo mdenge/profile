@@ -1,10 +1,7 @@
 # NAME: GitHub
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# SOURCE: https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/GitHub
-# URL: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/GitHub/GitHub.list
+# SOURCE: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/GitHub/GitHub.list
 # VERSION: d716391
-# UPDATED: 2025-03-02
+# UPDATED: 2025-04-08
 DOMAIN-SUFFIX,atom.io
 DOMAIN-SUFFIX,dependabot.com
 DOMAIN-SUFFIX,ghcr.io

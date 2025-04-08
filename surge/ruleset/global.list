@@ -1,12 +1,9 @@
 # NAME: Global
-# AUTHOR: blackmatrix7,Loyalsoldier
-# SOURCE_01: https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/Global
-# URL_01: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Global/Global_All_No_Resolve.list
-# VERSION_01: f3f7aef
-# SOURCE_02: https://github.com/Loyalsoldier/surge-rules/blob/release/proxy.txt
-# URL_02: https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
-# VERSION_02: deb0d70
-# UPDATED: 2025-03-14
+# SOURCE_01: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Global/Global_All_No_Resolve.list
+# VERSION_01: b43f1f2
+# SOURCE_02: https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/proxy.txt
+# VERSION_02: daily
+# UPDATED: 2025-04-08
 3dns-1.adobe.com
 3dns-2.adobe.com
 3dns-3.adobe.com
@@ -14,6 +11,7 @@
 3dns-5.adobe.com
 3dns.adobe.com
 a.ppy.sh
+a4e8s8k3.map2.ssl.hwcdn.net
 abematv.akamaized.net
 activate-sea.adobe.com
 activate-sjc0.adobe.com
@@ -47,6 +45,7 @@ api-p.videomarket.jp
 api.viu.now.com
 api.waqi.info
 apl-hamivideo.cdn.hinet.net
+apple-tv-plus-press.apple.com
 apple.com.akadns.net
 appleworldwidedeveloper.hb-api.omtrdc.net
 appleworldwidedeveloper.sc.omtrdc.net
@@ -197,6 +196,8 @@ heads4-ak-spotify-com.akamaized.net
 himalaya-exchange.zendesk.com
 hl2rcv.adobe.com
 hlrcv.stage.adobe.com
+hls-amt.itunes.apple.com
+hls.itunes.apple.com
 homebrew.bintray.com
 hpefonts.s3.amazonaws.com
 hpstore.corpmerchandise.com
@@ -239,6 +240,7 @@ netflix.com.edgesuite.net
 notary-submissions-prod.s3-accelerate.amazonaws.com
 notary-submissions-prod.s3.us-west-2.amazonaws.com
 notify.ppy.sh
+np-edge.itunes.apple.com
 ntp-b.nist.gov
 ntp-c.colorado.edu
 ntp-d.nist.gov
@@ -269,6 +271,7 @@ p16-tiktokcdn-com.akamaized.net
 paper-attachments.s3.amazonaws.com
 pchomeonline.com.tw
 pki.google.com
+play-edge.itunes.apple.com
 poshtestgallery.cloudapp.net
 pplx-res.cloudinary.com
 practivate.adobe
@@ -286,7 +289,6 @@ publicca.googleapis.com
 push-apple.com.akadns.net
 pvr-hamivideo.cdn.hinet.net
 qualcomm.sc.omtrdc.net
-reddit.map.fastly.net
 rink.hockeyapp.net
 rtm.tnt-ea.com
 sa78gs.wpc.edgecastcdn.net
@@ -367,7 +369,6 @@ scholar.google.si
 scholar.google.sk
 scholar.googleusercontent.com
 scholar.l.google.com
-self.events.data.microsoft.com
 sentry.ppy.sh
 servd-anthropic-website.b-cdn.net
 sni1dcb6gl.wpc.edgecastcdn.net
@@ -426,6 +427,7 @@ time4.google.com
 time5.facebook.com
 tmdb-image-prod.b-cdn.net
 translomatic.foxfortmobile.com
+tv.applemusic.com
 tvcastlive-hamivideo.cdn.hinet.net
 ubisoft-orbit-savegames.s3.amazonaws.com
 ubisoft-uplay-savegames.s3.amazonaws.com
@@ -437,6 +439,7 @@ ut1-wwv.nist.gov
 utcnist.colorado.edu
 utcnist2.colorado.edu
 utcnist3.colorado.edu
+uts-api.itunes.apple.com
 ve-dash-uk-live.akamaized.net
 ve-uhd-push-uk-live.akamaized.net
 venmo.s3.amazonaws.com
@@ -756,7 +759,9 @@ ztedevices.com
 .1mobile.com
 .1mobile.tw
 .1monsterbeatsbydreus.com
+.1password.ca
 .1password.com
+.1password.eu
 .1point3acres.com
 .1pondo.tv
 .1pornlist.com
@@ -1216,6 +1221,7 @@ ztedevices.com
 .aabb1803.com
 .aacrjournals.org
 .aadmv.com
+.aadrm.com
 .aaex.uk
 .aalah.me
 .aamacau.com
@@ -1499,6 +1505,7 @@ ztedevices.com
 .adobesigncdn.com
 .adobespark.com
 .adobess.com
+.adobestats.io
 .adobestock.com
 .adobetag.com
 .adobetarget.com
@@ -1536,6 +1543,7 @@ ztedevices.com
 .adult-list.com
 .adult-sex-games.com
 .adult-web-site.net
+.adult.contents.fc2.com
 .adult.friendfinder.com
 .adult.toonsearch.net
 .adult3dcomics.com
@@ -1665,6 +1673,7 @@ ztedevices.com
 .agemys.org
 .agendaweek.com
 .agenet.ac.uk
+.agilebits.com
 .agnesb.fr
 .agocg.ac.uk
 .agoogleaday.com
@@ -2516,6 +2525,7 @@ ztedevices.com
 .apornotube.net
 .aporntv.com
 .apornvideo.com
+.app-analytics-services.com
 .app-dynamics.com
 .app-measurement-cn.com
 .app-measurement.com
@@ -3579,7 +3589,6 @@ ztedevices.com
 .b.hatena.ne.jp
 .b0ne.com
 .b3boos.com
-.b3bos.com
 .b6b33.com
 .b6fc.ac.uk
 .baa.ac.uk
@@ -4314,6 +4323,7 @@ ztedevices.com
 .bestrecipes.com.au
 .bestsexcam.com
 .bestshoesale2014.net
+.bestsrv.de
 .besttitstube.com
 .besttube4you.com
 .bestvpn.com
@@ -4387,6 +4397,7 @@ ztedevices.com
 .biaoqs1.xyz
 .biaoqs2.xyz
 .biblesforamerica.org
+.bibliocommons.com
 .bibliography.ac.uk
 .bibox.com
 .bic2011.org
@@ -5508,6 +5519,7 @@ ztedevices.com
 .brawlstars.com
 .brawlstarsgame.com
 .brazilpartneruniversity.com
+.brazz.org
 .brazzer.com
 .brazzers-porno.online
 .brazzers-xxx.net
@@ -6597,6 +6609,7 @@ ztedevices.com
 .cfos.de
 .cfr.org
 .cfs.ac.uk
+.cfsh99.com
 .cftfc.com
 .cfwives.com
 .cgdepot.org
@@ -7340,6 +7353,7 @@ ztedevices.com
 .coinalyze.net
 .coinbase.com
 .coinbene.com
+.coincarp.com
 .coincheck.com
 .coindesk.com
 .coinegg.com
@@ -7422,6 +7436,7 @@ ztedevices.com
 .comefromchina.com
 .comet-study.ac.uk
 .cometotheduckside.com
+.comffvpn.com
 .comic-mega.me
 .comicbox.xyz
 .comico.tw
@@ -7534,7 +7549,6 @@ ztedevices.com
 .coova.net
 .coova.org
 .copac.ac.uk
-.copilot.microsoft.com
 .copim.ac.uk
 .copior.ac.uk
 .copro.pw
@@ -8124,6 +8138,7 @@ ztedevices.com
 .data.gov.tw
 .datafuturesalphapilot.ac.uk
 .datagrid.ac.uk
+.datalabour.com
 .dataliberation.org
 .datalore.io
 .datasheets360.com
@@ -8452,7 +8467,9 @@ ztedevices.com
 .dify.ai
 .digicert-cn.com
 .digicert-validation.com
+.digicert.co.jp
 .digicert.com
+.digicert.eu
 .digiland.tw
 .digimap.ac.uk
 .digisfera.com
@@ -9659,7 +9676,6 @@ ztedevices.com
 .ecw.ac.uk
 .ed-coll.ac.uk
 .ed.ac.uk
-.ed21.cc
 .ed6.ac.uk
 .edam.ac.uk
 .edc.ac.uk
@@ -9885,7 +9901,6 @@ ztedevices.com
 .emuparadise.me
 .emwprep.ac.uk
 .en-compass.ac.uk
-.en.favotter.net
 .en.hao123.com
 .enablementadobe.com
 .enanyang.my
@@ -9979,6 +9994,8 @@ ztedevices.com
 .enterprisepaging.com
 .enterpriseresearch.ac.uk
 .enterprisessl.com
+.entrust.cn
+.entrust.com
 .entrust.net
 .entrustdatacard.com
 .enveast.ac.uk
@@ -10340,6 +10357,7 @@ ztedevices.com
 .exe-coll.ac.uk
 .exec-appointments.com
 .exemplashe.ac.uk
+.exeporn.net
 .exeter.ac.uk
 .exetercollege.ac.uk
 .exeterdeafacademy.ac.uk
@@ -10762,6 +10780,7 @@ ztedevices.com
 .fanfox.net
 .fangbinxing.com
 .fangeming.com
+.fangeming.comffvpn.com
 .fangeqiang.com
 .fanglizhi.info
 .fangmincn.org
@@ -10867,7 +10886,6 @@ ztedevices.com
 .fast.com
 .fastech.ac.uk
 .fastestvpn.com
-.fastgpt.run
 .fastindianporn.com
 .fastlane.ci
 .fastlane.tools
@@ -10988,7 +11006,6 @@ ztedevices.com
 .feeder.co
 .feedherfuckher.com
 .feedly.com
-.feedly.comfastgpt.run
 .feeds.fileforum.com
 .feedsportal.com
 .feedx.net
@@ -11218,6 +11235,7 @@ ztedevices.com
 .firstchancesfife.ac.uk
 .firstfivefollowers.com
 .firstgynexam.com
+.firstory.me
 .firstpelvicexam.com
 .firstpost.com
 .firstprivatebank.com.mm
@@ -11873,6 +11891,7 @@ ztedevices.com
 .fulltaboo.tv
 .fullxxxmovies.net
 .fulue.com
+.funami.tech
 .fundaiphone5s.com
 .fundfire.com
 .fundinginstitutional.com
@@ -12666,6 +12685,7 @@ ztedevices.com
 .goodreads.com
 .goodsdunk.net
 .goodsexporn.org
+.goodsrv.de
 .goodtv.com.tw
 .goodtv.tv
 .goofind.com
@@ -13307,6 +13327,7 @@ ztedevices.com
 .happymeal.com.au
 .happymealdigital.com
 .happyon.jp
+.happysrv.de
 .haproxy.org
 .hardanalfucking.com
 .hardcore-sex-filme.com
@@ -13356,6 +13377,7 @@ ztedevices.com
 .haskellstack.org
 .hastings.ac.uk
 .hastingsonline.ac.uk
+.hatena.ne.jp
 .hath.network
 .hau.ac.uk
 .hautelook.com
@@ -13790,6 +13812,7 @@ ztedevices.com
 .heywire.com
 .heyzo.com
 .hf-iphone.com
+.hf.co
 .hfaes.ac.uk
 .hfals.ac.uk
 .hfma.ac.uk
@@ -13996,6 +14019,7 @@ ztedevices.com
 .hnntube.com
 .hobonichielog.com
 .hochi.news
+.hochu.tv
 .hockeyapp.net
 .hoes.com
 .hogarth.ac.uk
@@ -14165,6 +14189,7 @@ ztedevices.com
 .hotsexydolls.com
 .hotshame.com
 .hotspotshield.com
+.hotsrv.de
 .hotstar-cdn.net
 .hotstar-labs.com
 .hotstar.com
@@ -14426,7 +14451,6 @@ ztedevices.com
 .hst.net.tw
 .hstern.net
 .hstt.net
-.hsxhr.cc
 .hsxsp1.buzz
 .hsyy.vip
 .ht.ac.uk
@@ -15910,6 +15934,8 @@ ztedevices.com
 .itasoftware.com
 .itcanwait.com
 .itcfonts.com
+.itch.io
+.itch.zone
 .itchen.ac.uk
 .iteach.ac.uk
 .itec.ac.uk
@@ -15996,6 +16022,7 @@ ztedevices.com
 .iwyn138.com
 .ixnxx.tv
 .ixquick.com
+.ixsystems.com
 .ixxx.com
 .iyalc.com
 .iyf.tv
@@ -17217,6 +17244,7 @@ ztedevices.com
 .lemonde.fr
 .lencr.org
 .lenkino.xxx
+.lenporno.net
 .lenporno.red
 .lenwhite.com
 .leorockwell.com
@@ -17684,6 +17712,7 @@ ztedevices.com
 .looporn.com
 .looti.net
 .lordofultima.com
+.lorenzetti.com.br
 .loreto.ac.uk
 .lostbetsgames.com
 .lotcrap.com
@@ -18468,7 +18497,6 @@ ztedevices.com
 .mdbankpublic.com
 .mdhcdn.com
 .mdialog.com
-.mdlf.xyz
 .mdn.allizom.net
 .mdn.dev
 .mdn.mozit.cloud
@@ -18552,6 +18580,7 @@ ztedevices.com
 .megapornpics.com
 .megaproxy.com
 .megarotic.com
+.megasrv.de
 .megatitsminka.com
 .megaupload.com
 .megavideo.com
@@ -18630,6 +18659,7 @@ ztedevices.com
 .metacafe.com
 .metacloud.com
 .metacpan.org
+.metacubex.one
 .metadac.ac.uk
 .metafilter.com
 .metalpha.finance
@@ -18755,6 +18785,7 @@ ztedevices.com
 .microsoftadvertisingregionalawards.com
 .microsoftaffiliates.com
 .microsoftapp.net
+.microsoftazuread-sso.com
 .microsoftazuresponsorships.com
 .microsoftcloud.com
 .microsoftcloudsummit.com
@@ -20640,6 +20671,7 @@ ztedevices.com
 .niceanimegames.com
 .niceporn.tv
 .nicer.ac.uk
+.nicesrv.de
 .nicesshop.net
 .nichepornsite.com
 .nichepornsites.com
@@ -21083,6 +21115,7 @@ ztedevices.com
 .nrooms-dh.sbs
 .nrp.ac.uk
 .nrs.ac.uk
+.ns.ci
 .ns01.biz
 .ns01.info
 .ns01.us
@@ -21386,6 +21419,7 @@ ztedevices.com
 .nyansa.com
 .nybooks.com
 .nydus.ca
+.nyinfor.com
 .nylon-angel.com
 .nylonstockingsonline.com
 .nym97.net
@@ -21599,6 +21633,7 @@ ztedevices.com
 .onapp.com
 .onbeatsbydresale.com
 .oncars.in
+.one.one
 .one.one.one
 .one889.app
 .oneapi.com
@@ -21704,7 +21739,9 @@ ztedevices.com
 .opencollective.com
 .opencreate.org
 .opendemocracy.net
+.opendesktop.org
 .opendn.xyz
+.opendns.com
 .opendroneid.org
 .opened.ac.uk
 .openengineeringlaboratory.ac.uk
@@ -21720,6 +21757,7 @@ ztedevices.com
 .openmaps.org
 .openreality.com
 .openresty.org
+.openrouter.ai
 .opensciencelab.ac.uk
 .opensciencelaboratory.ac.uk
 .opensea.io
@@ -21953,6 +21991,9 @@ ztedevices.com
 .ozeex.com
 .ozodi.org
 .ozodlik.org
+.ozon.ru
+.ozone.ru
+.ozonusercontent.com
 .ozvoice.org
 .ozxw.com
 .ozyoyo.com
@@ -22628,7 +22669,6 @@ ztedevices.com
 .pinterest.vn
 .pinterestmail.com
 .pintool.com
-.pinyinxiang.com
 .pion.ac.uk
 .pioneer-worker.forums-free.com
 .pipebots.ac.uk
@@ -22707,6 +22747,8 @@ ztedevices.com
 .playcover.io
 .player.fm
 .playerjs.io
+.playfab.com
+.playfabapi.com
 .playforceone.com
 .playhearthstone.com
 .playmation.com
@@ -23279,6 +23321,7 @@ ztedevices.com
 .powershape-e.com
 .powershape.com
 .powershellgallery.com
+.powersrv.de
 .powersunitedvr.com
 .powia.ac.uk
 .pp-soc.com
@@ -23303,6 +23346,7 @@ ztedevices.com
 .pramu.ac.uk
 .prastitutki.ru
 .prayforchina.net
+.prcleader.org
 .pre-bmwgroup.jobs
 .predictivetechnologies.com
 .premeforwindows7.com
@@ -23740,6 +23784,7 @@ ztedevices.com
 .quickconnect.to
 .quickiepage.com
 .quickoffice.com
+.quicksrv.de
 .quicktake.video
 .quicktime.cc
 .quicktime.com
@@ -24163,6 +24208,7 @@ ztedevices.com
 .reid-kerr.ac.uk
 .reidkerr.ac.uk
 .reigate.ac.uk
+.reimu.net
 .reiporno.com
 .relateinstitute.ac.uk
 .relateiq.com
@@ -25362,6 +25408,7 @@ ztedevices.com
 .shadowsocks.com
 .shadowsocks.com.hk
 .shadowsocks.nl
+.shadowsocks.nu
 .shadowsocks.org
 .shadowsocks9.com
 .shadowverse.jp
@@ -25597,7 +25644,11 @@ ztedevices.com
 .sign.ac.uk
 .sign.new
 .signal.art
+.signal.group
+.signal.link
+.signal.me
 .signal.org
+.signal.tube
 .signalbar.com
 .signalprocessingsociety.org
 .signalr.net
@@ -26575,6 +26626,7 @@ ztedevices.com
 .static.comico.tw
 .static.fun
 .static9.net.au
+.statically.io
 .staticflickr.com
 .statistics.ac.uk
 .statsmakemecry.com
@@ -26731,6 +26783,7 @@ ztedevices.com
 .stream-mydirtyhobby.biz
 .streamable.com
 .streamate.com
+.streamguys1.com
 .streamhentaimovies.com
 .streaming.mediaservices.windows.net
 .streamingdisney.net
@@ -27786,6 +27839,7 @@ ztedevices.com
 .thrixxx.com
 .throughnightsfire.com
 .thtmod1.com
+.thu.monster
 .thuhole.com
 .thumbnailseries.com
 .thumbzilla.com
@@ -28158,7 +28212,6 @@ ztedevices.com
 .tpi.org.tw
 .tpmde.ac.uk
 .tpornstars.com
-.tps138.info
 .tr-west-1.myhuaweicloud.com
 .tr.com
 .trac.ac.uk
@@ -28277,6 +28330,7 @@ ztedevices.com
 .truedepth3d.com
 .truedwg.com
 .truefi.io
+.truenas.com
 .trulyergonomic.com
 .trunest.com
 .truro-penwith.ac.uk
@@ -28904,6 +28958,7 @@ ztedevices.com
 .ultimaonline.com
 .ultradonkey.com
 .ultralab.ac.uk
+.ultrasrv.de
 .ultrasurf.us
 .ultravpn.com
 .ultravpn.fr
@@ -28912,6 +28967,7 @@ ztedevices.com
 .ulyssesapp.com
 .umagazine.com.hk
 .umass.edu
+.umbrella.com
 .umds.ac.uk
 .umich.edu
 .umis.ac.uk
@@ -29010,6 +29066,7 @@ ztedevices.com
 .unknownspace.org
 .unkoscene.com
 .unl.ac.uk
+.unlock-music.dev
 .unlocklimitlesslearning.com
 .unlocktool.net
 .unmineable.com
@@ -29081,7 +29138,6 @@ ztedevices.com
 .urchin.com
 .urduvoa.com
 .urhtbooks.com
-.uriminzokkiri.com
 .url.com.tw
 .url.tw
 .urlborg.com
@@ -29523,7 +29579,7 @@ ztedevices.com
 .video.aol.ca
 .video.aol.co.uk
 .video.aol.com
-.video.fdbox.com
+.video.fc2.com
 .video01.org
 .videoactive.ac.uk
 .videobam.com
@@ -29726,6 +29782,7 @@ ztedevices.com
 .visabank.org
 .visabg.com
 .visabusinessinsights.com
+.visaca.com
 .visacarddesignlab.com
 .visacards.com
 .visacheckout.net
@@ -30186,6 +30243,7 @@ ztedevices.com
 .vsphere.com
 .vsphere.net
 .vssn.ac.uk
+.vtrahe.page
 .vtri.ac.uk
 .vts.ac.uk
 .vtsociety.org
@@ -30621,6 +30679,7 @@ ztedevices.com
 .whystudylanguages.ac.uk
 .whystudymaterials.ac.uk
 .whyx.org
+.wi-fi.org
 .wias.ac.uk
 .wicn.ac.uk
 .widevine.com
@@ -31658,6 +31717,7 @@ ztedevices.com
 .yadi.sk
 .yadori.club
 .yaeby.info
+.yaeby.pro
 .yahoo
 .yahoo-news.com.hk
 .yahoo.ae

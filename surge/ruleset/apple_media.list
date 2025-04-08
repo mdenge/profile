@@ -1,10 +1,7 @@
 # NAME: Apple Media
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# SOURCE: https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/AppleMedia
-# URL: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/AppleMedia/AppleMedia.list
+# SOURCE: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/AppleMedia/AppleMedia.list
 # VERSION: d716391
-# UPDATED: 2025-03-02
+# UPDATED: 2025-04-08
 DOMAIN-SUFFIX,aod.itunes.apple.com
 DOMAIN-SUFFIX,apple.comscoreresearch.com
 DOMAIN-SUFFIX,apple.news

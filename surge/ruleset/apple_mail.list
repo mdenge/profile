@@ -1,9 +1,0 @@
-# NAME: Apple Mail
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# SOURCE: https://github.com/blackmatrix7/ios_rule_script/tree/master/rule/Surge/AppleMail
-# URL: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/AppleMail/AppleMail.list
-# VERSION: d716391
-# UPDATED: 2025-03-02
-DOMAIN-SUFFIX,mail.icloud.com.cn
-DOMAIN-SUFFIX,mail.me.com
