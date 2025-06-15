@@ -100,10 +100,12 @@ if (url.includes("/usercenter/me")) {
 }
 
 // 微信小程序
-if (url.includes("/common/v5")) {
-  obj.data.sections = obj.data.sections.filter((item) =>
-    ["center_v2", "head_v2", "core_function"].includes(item.sectionId)
-  );
+if (typeof url === "string" && url.includes("/common/v5")) {
+  if (Array.isArray(obj?.data?.sections)) {
+    obj.data.sections = obj.data.sections.filter((item) =>
+      ["center_v2", "head_v2", "core_function"].includes(item.sectionId)
+    );
+  }
 }
 
 $done({ body: JSON.stringify(obj) });
