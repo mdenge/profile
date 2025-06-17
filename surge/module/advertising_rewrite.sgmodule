@@ -118,6 +118,8 @@ https:\/\/nelo2-col\.linecorp\.com\/_store$ data-type=text data="" status-code=4
 ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/guide\? data-type=text data="{}" status-code=200
 ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/guide\/user_banner data-type=text data="{}" status-code=200
 ^https?:\/\/www\.xiaohongshu\.com\/api\/sns\/(v\d\/ads\/resource|v\d\/hey\/\w+\/hey_gallery) data-type=text data="{}" status-code=200
+# 搜索页
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/(banner_list|hot_list) data-type=text data="{}" status-code=200
 
 # > 字节跳动
 # hostname = amemv.com, musical.com, snssdk.com, tiktokv.com, dsp.toutiao.com
