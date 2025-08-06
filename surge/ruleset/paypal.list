@@ -1,7 +1,7 @@
 # NAME: PayPal
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/PayPal/PayPal.list
-# VERSION: d716391
-# UPDATED: 2025-04-08
+# VERSION: 0fa6078
+# UPDATED: 2025-08-06
 DOMAIN-SUFFIX,account-paypal.info
 DOMAIN-SUFFIX,account-paypal.net
 DOMAIN-SUFFIX,account-paypal.org

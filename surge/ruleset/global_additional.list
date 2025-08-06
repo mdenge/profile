@@ -1,8 +1,6 @@
 # NAME: Global additional
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Global/Global_All_No_Resolve.list
-# VERSION: b43f1f2
-# UPDATED: 2025-04-08
-DOMAIN-KEYWORD,amazon
+# VERSION: 6a36c4eDOMAIN-KEYWORD,amazon
 DOMAIN-KEYWORD,avoddashs
 DOMAIN-KEYWORD,bbcfmt
 DOMAIN-KEYWORD,jav
@@ -200,3 +198,4 @@ USER-AGENT,WhatsApp*
 USER-AGENT,battleroyale*
 USER-AGENT,com.apple.trustd*
 USER-AGENT,hearthstone*
+PROCESS-NAME,LookupViewService

@@ -1,15 +1,16 @@
 # NAME: Reject Supplement keyword
+# NAME: Reject
 #
-# SOURCE_01: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/AdvertisingLite/AdvertisingLite_All_No_Resolve.list
-# VERSION_01: 2694c5b
+# SOURCE_1: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Privacy/Privacy.list
+# VERSION: 0fa6078
 #
-# SOURCE_02: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Privacy/Privacy_All_No_Resolve.list
-# VERSION_02: 2694c5b
+# SOURCE_2: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Hijacking/Hijacking.list
+# VERSION: 0fa6078
 #
-# SOURCE_03: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Hijacking/Hijacking.list
-# VERSION_03: d716391
+# SOURCE_3: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/AdvertisingLite/AdvertisingLite.list
+# VERSION: 40185cc
 #
-# UPDATED: 2025-04-09
+# UPDATED: 2025-08-06
 DOMAIN-KEYWORD,112wan
 DOMAIN-KEYWORD,789htbet
 DOMAIN-KEYWORD,a.9game.cn
@@ -206,3 +207,4 @@ DOMAIN-KEYWORD,xn--2qux23c9ziyrq
 DOMAIN-KEYWORD,xxshuyuan
 DOMAIN-KEYWORD,ynuf.alipay.com
 DOMAIN-KEYWORD,zjtoolbar
+AND,((USER-AGENT,Frodo*),(DOMAIN,119.29.29.29))

@@ -1,7 +1,7 @@
 # NAME: China
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/China/China_All.list
-# VERSION: 2694c5b
-# UPDATED: 2025-04-08
+# VERSION: 0fa6078
+# UPDATED: 2025-08-06
 DOMAIN,analytics.strava.com
 DOMAIN,blzddist1-a.akamaihd.net
 DOMAIN,cdn.angruo.com
@@ -1540,7 +1540,6 @@ DOMAIN-SUFFIX,hdchina.org
 DOMAIN-SUFFIX,hdcmct.org
 DOMAIN-SUFFIX,hddolby.com
 DOMAIN-SUFFIX,hdhome.org
-DOMAIN-SUFFIX,hdsky.me
 DOMAIN-SUFFIX,hdslb.com
 DOMAIN-SUFFIX,hdslb.org
 DOMAIN-SUFFIX,hdyxgame.com
@@ -2383,7 +2382,6 @@ DOMAIN-SUFFIX,mubu.com
 DOMAIN-SUFFIX,mukewang.com
 DOMAIN-SUFFIX,mumayi.com
 DOMAIN-SUFFIX,muomou.com
-DOMAIN-SUFFIX,musical.ly
 DOMAIN-SUFFIX,muwai.com
 DOMAIN-SUFFIX,muyewx.com
 DOMAIN-SUFFIX,muzhiwan.com

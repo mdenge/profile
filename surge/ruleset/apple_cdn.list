@@ -1,7 +1,7 @@
 # NAME: Apple Non-China CDN
 # SOURCE: https://github.com/geekdada/surge-list/blob/master/surgio-snippet/apple.tpl
 # VERSION: 41a3f55
-# UPDATED: 2025-04-18
+# UPDATED: 2025-08-06
 DOMAIN,aod.itunes.apple.com
 DOMAIN,app-site-association.cdn-apple.com
 DOMAIN,appldnld.apple.com

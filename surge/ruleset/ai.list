@@ -1,20 +1,17 @@
 # NAME: AI
-# SOURCE_01: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Extra/AI.list
-# VERSION_01: a53ad24
-# SOURCE_02: https://ruleset.skk.moe/List/non_ip/ai.conf
-# VERSION_02: 2025-03-17T09:22:02.692Z
-# UPDATED: 2025-04-08
-#
-# DeepSeek
-DOMAIN-SUFFIX,deepseek.com
-DOMAIN-SUFFIX,portal101.cn
-#
+# SOURCE_1: https://github.com/ConnersHua/RuleGo/blob/master/Surge/Ruleset/Extra/AI.list
+# VERSION: a53ad24
+# SOURCE_2: https://ruleset.skk.moe/List/non_ip/ai.conf
+# VERSION_2: 2025-08-01T10:18:46.902Z
+# UPDATED: 2025-08-06
+DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,ai.google.dev
 DOMAIN,aistudio.google.com
 DOMAIN,alkalicore-pa.clients6.google.com
 DOMAIN,alkalimakersuite-pa.clients6.google.com
 DOMAIN,api-iam.intercom.io
 DOMAIN,api.github.com
+DOMAIN,api.jetbrains.ai
 DOMAIN,api.statsig.com
 DOMAIN,apple-relay.apple.com
 DOMAIN,apple-relay.cloudflare.com
@@ -26,6 +23,7 @@ DOMAIN,gateway.ai.cloudflare.com
 DOMAIN,gemini.google.com
 DOMAIN,guzzoni.apple.com
 DOMAIN,imagine.meta.com
+DOMAIN,jules.google.com
 DOMAIN,o33249.ingest.sentry.io
 DOMAIN,openaiapi-site.azureedge.net
 DOMAIN,pplx-res.cloudinary.com

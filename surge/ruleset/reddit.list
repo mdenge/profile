@@ -1,12 +1,12 @@
 # NAME: Reddit
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Reddit/Reddit.list
-# VERSION: d716391
-# UPDATED: 2025-04-08
-DOMAIN-SUFFIX,redd.it
-DOMAIN-SUFFIX,reddit.com
-DOMAIN-SUFFIX,redditmail.com
-DOMAIN-SUFFIX,redditmedia.com
-DOMAIN-SUFFIX,redditstatic.com
-DOMAIN-SUFFIX,reddituploads.com
-DOMAIN-SUFFIX,reddituploads.com.cdn-cf.behance.net
-DOMAIN-SUFFIX,reddituploads.com.cdn-cf.dropbox.com
+# VERSION: 0fa6078
+# UPDATED: 2025-08-06
+.redd.it
+.reddit.com
+.redditmail.com
+.redditmedia.com
+.redditstatic.com
+.reddituploads.com
+.reddituploads.com.cdn-cf.behance.net
+.reddituploads.com.cdn-cf.dropbox.com
