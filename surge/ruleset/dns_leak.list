@@ -1,7 +1,10 @@
 # NAME: DNS Leak
+#
 # SOURCE: https://kelee.one/Tool/Loon/Lpx/Prevent_DNS_Leaks.lpx
 # VERSION: 2025-05-13
+#
 # UPDATED: 2025-08-06
+#
 ip-scan.adspower.net
 ipv4.ping0.cc
 ipv6.ping0.cc

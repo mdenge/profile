@@ -1,0 +1,73 @@
+#!name=Advertising_Rewrite
+#!desc=Block advertisings with rewrite
+#
+#!source_1=https://github.com/fmz200/wool_scripts/blob/main/QuantumultX/rewrite/chongxie.txt
+#!version=b39bd6e
+#
+#!source_2=https://github.com/ddgksf2013/Modules/blob/main/Adblock/StartUpAds.sgmodule
+#!version=46daa38
+#
+#!updatetime=2025-08-07
+#
+[Map Local]
+#
+# > 美团 & 美团外卖
+# hostname = s3plus.meituan.net, flowplus.meituan.net, apimobile.meituan.com, img.meituan.net, p*.meituan.net, peisongapi.meituan.com, wmapi.meituan.com
+^http:\/\/59\.82\.113\.10\/amdc\/mobileDispatch\?appkey=213807& data-type=text data="{}" status-code=200
+^https?:\/\/(s3plus|flowplus)\.meituan\.net\/v\d\/\w+\/linglong\/\w+\.(gif|jpg|mp4) data-type=text data="{}" status-code=200
+^https?:\/\/apimobile\.meituan\.com\/group\/v1\/recommend\/unity\/recommends data-type=text data="{}" status-code=200
+^https?:\/\/img\.meituan\.net\/(adunion|display|midas)\/\w+\.(gif|jpg|jpg\.webp)$ data-type=tiny-gif status-code=200
+^https?:\/\/img\.meituan\.net\/bizad\/bizad_brandCpt_\d+\.jpg data-type=text data="" status-code=200
+^https?:\/\/img\.meituan\.net\/goodsawardpic\/[a-f0-9]+\.png\.webp data-type=tiny-gif status-code=200
+^https?:\/\/p\d\.meituan\.net\/(bizad|wmbanner)\/\w+\.jpg data-type=text data="" status-code=200
+^https?:\/\/p\d\.meituan\.net\/movie\/\w+\.jpg\?may_covertWebp data-type=text data="" status-code=200
+^https?:\/\/peisongapi\.meituan\.com\/client\/getInitiateImage data-type=tiny-gif status-code=200
+^https?:\/\/s3plus\.meituan\.net\/ocean-blk-index\/index\/blk_conf_73\.json data-type=text data="{}" status-code=200
+^https?:\/\/s3plus\.meituan\.net\/v1\/mss_\w+\/(brandcpt-vedio|waimai-alita)\/\w+\.zip$ data-type=text data="{}" status-code=200
+^https?:\/\/wmapi\.meituan\.com\/api\/v\d\/(openscreen\?ad|appstatus\?ad|loadInfo\?|startpicture) data-type=text data="{}" status-code=200
+#
+# > 米家
+# hostname = home.mi.com, api.m.mi.com, api.jr.mi.com, api-mifit.huami.com, home.mi.com
+^https?:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|carousel\/banners|myTab|openingBanner) data-type=text data="{}" status-code=200
+# > 小米
+^https?:\/\/api\.m\.mi\.com\/v\d\/app\/start data-type=text data="" status-code=200
+^https?:\/\/api\.jr\.mi\.com\/v\d\/adv\/ data-type=text data="" status-code=200
+^https?:\/\/api\.jr\.mi\.com\/jr\/api\/playScreen data-type=text data="" status-code=200
+^https?:\/\/api-mifit.+?\.huami\.com\/discovery\/mi\/discovery\/.+?_ad\? data-type=text data="" status-code=200
+^https?:\/\/home\.mi\.com\/cgi-op\/api\/v\d\/recommendation\/banner data-type=text data="" status-code=404
+^https?:\/\/(api-mifit|api-mifit-\w+)\.huami\.com\/discovery\/mi\/discovery\/\w+_ad\? data-type=text data="" status-code=404
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/homepage_ad\? data-type=tiny-gif status-code=200
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sleep_ad\? data-type=tiny-gif status-code=200
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_summary_ad\? data-type=tiny-gif status-code=200
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/sport_training_ad\? data-type=tiny-gif status-code=200
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/step_detail_ad\? data-type=tiny-gif status-code=200
+^https?:\/\/api-mifit\.huami\.com\/discovery\/mi\/discovery\/training_video_ad\? data-type=tiny-gif status-code=200
+#
+# > 乐刻
+# hostname = lens.leoao.com
+# 开屏广告
+^https?:\/\/lens\.leoao\.com\/lens\/conduct\/app\/rpc\/v2\/com\.lefit\.dubbo\.cms\.api\.front\.AppAdvertisingFrontService\/getAppAdvertisingNew data-type=text data="{}" status-code=200
+^https?:\/\/lens\.leoao\.com\/lens\/conduct\/app\/rpc\/v2\/com\.lefit\.dubbo\.cms\.api\.bff\.ClientFrontFacade\/queryHomeMiddleInfo data-type=text data="{}" status-code=200
+^https?:\/\/lens\.leoao\.com\/lens\/conduct\/app\/rpc\/v2\/com\.lefit\.dubbo\.cms\.api\.front\.AdvertiseConfigFrontService\/getAdvertiseConfigNew data-type=text data="{}" status-code=200
+#
+# > 薄荷健康
+# hostname = api.boohee.com, bohe.sfo-tx-shanghai-01.saas.sensorsdata.cn, lego.boohee.com, status.boohee.com
+# 记录 悬浮部件
+^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/page_float_bubbles\? data-type=text data="{}" status-code=200
+# 记录 发布
+^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/tool_buttons\? data-type=text data="{}" status-code=200
+# 记录 搜索发现
+^https:\/\/api\.boohee\.com\/app-interface\/v1\/search\/search\? data-type=text data="{}" status-code=200
+# 记录 消息 通知 横幅推广
+^https:\/\/status\.boohee\.com\/api\/v1\/merged_messages$ data-type=text data="{}" status-code=200
+# 弹窗配置
+^https:\/\/bohe\.sfo-tx-shanghai-01\.saas\.sensorsdata\.cn\/api\/v2\/sfo\/user_popup_configs\? data-type=text data="{}" status-code=200
+# 绑定设备 横幅推广
+^https:\/\/api\.boohee\.com\/meta-interface\/v1\/index\/sensor-banners\? data-type=text data="{}" status-code=200
+#
+# > 小牛
+# hostname = app-api.niu.com
+^https?:\/\/app-api\.niu\.com\/v\d\/advertisement\/ data-type=text data="" status-code=404
+#
+[MITM]
+hostname = %APPEND% *.beacon.qq.com,3gimg.qq.com,a.line.me,ad.line-scdn.net,amemv.com,api-mifit.huami.com,api.boohee.com,api.douban.com,api.jr.mi.com,api.m.mi.com,api2.helper.qq.com,apimobile.meituan.com,app-api.niu.com,bk.bingo.qq.com,bla.gtimg.com,bohe.sfo-tx-shanghai-01.saas.sensorsdata.cn,btrace.qq.com,buy.line.me,cix.line-apps.com,crs-event.line.me,d.line-scdn.net,discuz.gtimg.cn,dsp.toutiao.com,dss0.bdstatic.com,edith.xiaohongshu.com,flowplus.meituan.net,gss0.bdstatic.com,gw.line.naver.jp,home.mi.com,img.meituan.net,imgcache.qq.com,lego.boohee.com,legy.line-apps.com,lens.leoao.com,lives.l.qq.com,m5.amap.com,mi.gdt.qq.com,mmgr.gtimg.com,mtteve.beacon.qq.com,musical.com,nelo2-col.linecorp.com,obs.line-scdn.net,optimus-ads.amap.com,p*.meituan.net,qt.qq.com,qzonestyle.gtimg.cn,s3plus.meituan.net,scdn.line-apps.com,sch.line.me,snssdk.com,splashqqlive.gtimg.com,ss0.bdstatic.com,ssl.kohsocialapp.qq.com,static.line-scdn.net,status.boohee.com,tb1.bdstatic.com,tb2.bdstatic.com,tiktokv.com,uts-front.line-apps.com,vv.video.qq.com,w.line.me,wmapi.meituan.com,www.xiaohongshu.com,y.gtimg.cn

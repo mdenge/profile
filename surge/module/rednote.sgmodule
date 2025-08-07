@@ -1,0 +1,32 @@
+#!name=Xiaohongshu
+#!desc=Xiaohongshu ads block
+#
+#!source=https://kelee.one/Tool/Loon/Lpx/RedPaper_remove_ads.lpx
+#!version=2025-07-29 19:10:57
+#
+#!updatetime=2025-08-07
+#
+[Rule]
+AND, ((PROTOCOL, QUIC), (DOMAIN-SUFFIX, xiaohongshu.com)), REJECT
+#
+[Map Local]
+#
+# hostname = edith.xiaohongshu.com, www.xiaohongshu.com, ci.xiaohongshu.com, rec.xiaohongshu.com, so.xiaohongshu.com
+#
+# watermark
+^https?:\/\/ci\.xiaohongshu\.com\/system_config\/watermark data-type=tiny-gif status-code=200
+#
+# Popup
+^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/surprisebox\/(?:get_style|open|submit_action) data-type=text data="{}" status-code=200
+^https?:\/\/www\.xiaohongshu\.com\/api\/marketing\/box\/trigger\? data-type=text data="{}" status-code=200
+#
+# Feed
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/note\/guide\? data-type=text data="{}" status-code=200
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/guide\/user_banner data-type=text data="{}" status-code=200
+^https?:\/\/www\.xiaohongshu\.com\/api\/sns\/(v\d\/ads\/resource|v\d\/hey\/\w+\/hey_gallery) data-type=text data="{}" status-code=200
+#
+# Search
+^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/(banner_list|hot_list|hint|trending) data-type=text data="{}" status-code=200
+#
+[MITM]
+hostname = %APPEND% ci.xiaohongshu.com,edith.xiaohongshu.com,rec.xiaohongshu.com,so.xiaohongshu.com,www.xiaohongshu.com

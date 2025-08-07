@@ -1,7 +1,10 @@
 # NAME: Proton Mail
+#
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Protonmail/Protonmail.list
 # VERSION: 0fa6078
-# UPDATED: 2025-08-06
+#
+# UPDATED: 2025-08-07
+#
 .pm.me
 .proton.me
 .protonmail.ch

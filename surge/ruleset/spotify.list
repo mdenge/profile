@@ -1,7 +1,10 @@
 # NAME: Spotify
+#
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Spotify/Spotify.list
 # VERSION: 0fa6078
-# UPDATED: 2025-08-06
+#
+# UPDATED: 2025-08-07
+#
 DOMAIN,audio4-ak-spotify-com.akamaized.net
 DOMAIN,cdn-spotify-experiments.conductrics.com
 DOMAIN,heads-ak-spotify-com.akamaized.net

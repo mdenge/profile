@@ -1,7 +1,11 @@
 # NAME: Apple
+#
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Apple/Apple_All_No_Resolve.list
 # VERSION: 6a36c4e
-# UPDATED: 2025-08-06
+#
+# UPDATED: 2025-08-07
+#
+DOMAIN,appldnld.apple.com.edgesuite.net
 DOMAIN,apple-events.akamaized.net
 DOMAIN,appleworldwidedeveloper.hb-api.omtrdc.net
 DOMAIN,appleworldwidedeveloper.sc.omtrdc.net
@@ -100,6 +104,7 @@ DOMAIN-SUFFIX,apple.com.au
 DOMAIN-SUFFIX,apple.com.bo
 DOMAIN-SUFFIX,apple.com.br
 DOMAIN-SUFFIX,apple.com.cdn20.com
+DOMAIN-SUFFIX,apple.com.cn
 DOMAIN-SUFFIX,apple.com.co
 DOMAIN-SUFFIX,apple.com.de
 DOMAIN-SUFFIX,apple.com.do
@@ -847,6 +852,7 @@ DOMAIN-SUFFIX,livephotos.tv
 DOMAIN-SUFFIX,lojaiphone.com.br
 DOMAIN-SUFFIX,lovebeatsdr.com
 DOMAIN-SUFFIX,lovemarca.com
+DOMAIN-SUFFIX,ls.apple.com.edgesuite.net
 DOMAIN-SUFFIX,luckyissue.com
 DOMAIN-SUFFIX,lyzsxx.com
 DOMAIN-SUFFIX,mac-mini.com
@@ -950,6 +956,7 @@ DOMAIN-SUFFIX,mybeatsbydrestudio.com
 DOMAIN-SUFFIX,mybeatsbydreuk.com
 DOMAIN-SUFFIX,mybeatscheapbydre.com
 DOMAIN-SUFFIX,myferrariheadphones.com
+DOMAIN-SUFFIX,mzstatic.com
 DOMAIN-SUFFIX,namemybeats.com
 DOMAIN-SUFFIX,neborder.com
 DOMAIN-SUFFIX,negozimonsterbeats.com
@@ -1500,6 +1507,7 @@ DOMAIN-SUFFIX,iphoto.se
 DOMAIN-SUFFIX,iphoto.wang
 DOMAIN-SUFFIX,musickit.net
 DOMAIN-SUFFIX,wwwapplemusic.com
+DOMAIN-SUFFIX,apple-dns.net
 DOMAIN-SUFFIX,appsto.re
 DOMAIN-SUFFIX,digicert.com
 DOMAIN-SUFFIX,apple-cloudkit.com
@@ -1508,12 +1516,14 @@ DOMAIN-SUFFIX,apple-livephotoskit.com
 DOMAIN-SUFFIX,appleicloud.cn
 DOMAIN-SUFFIX,applemx-icloud.com
 DOMAIN-SUFFIX,apzones.com
+DOMAIN-SUFFIX,cdn-apple.com
 DOMAIN-SUFFIX,icloud-apple.cn
 DOMAIN-SUFFIX,icloud-content.com
 DOMAIN-SUFFIX,icloud-isupport.com
 DOMAIN-SUFFIX,icloud-sandbox.com
 DOMAIN-SUFFIX,icloud.ch
 DOMAIN-SUFFIX,icloud.com
+DOMAIN-SUFFIX,icloud.com.cn
 DOMAIN-SUFFIX,icloud.de
 DOMAIN-SUFFIX,icloud.ee
 DOMAIN-SUFFIX,icloud.fi
@@ -1558,6 +1568,7 @@ DOMAIN-KEYWORD,apple-support.akadns.net
 DOMAIN-KEYWORD,apple.com.akadns.net
 DOMAIN-KEYWORD,apple.com.edgekey.net
 DOMAIN-KEYWORD,buy.itunes.apple.com
+DOMAIN-KEYWORD,smp-device
 DOMAIN-KEYWORD,testflight
 DOMAIN-KEYWORD,icloud.com.akadns.net
 IP-CIDR,139.178.128.0/18,no-resolve
@@ -1572,9 +1583,37 @@ IP-CIDR,63.92.224.0/19,no-resolve
 IP-CIDR,65.199.22.0/23,no-resolve
 USER-AGENT,*FindMyiPhone?
 USER-AGENT,*Music?
+USER-AGENT,*WeatherFoundation*
 USER-AGENT,*com.apple.Maps?
+USER-AGENT,*com.apple.mobileme.fmip1
+USER-AGENT,FMDClient*
+USER-AGENT,FMFD*
+USER-AGENT,FindMyFriends*
+USER-AGENT,FindMyiPhone*
+USER-AGENT,Maps*
+USER-AGENT,Wallet*
+USER-AGENT,com.apple.Maps
+USER-AGENT,com.apple.appstored*
+USER-AGENT,fmflocatord*
+USER-AGENT,geod*
+USER-AGENT,locationd*
+USER-AGENT,passd*
 USER-AGENT,Music*
 USER-AGENT,AppleNews*
 USER-AGENT,com.apple.news*
+USER-AGENT,com.apple.trustd*
 USER-AGENT,AppleTV*
 USER-AGENT,com.apple.tv*
+PROCESS-NAME,CoreLocationAgent
+PROCESS-NAME,WeatherWidget
+PROCESS-NAME,apsd
+PROCESS-NAME,com.apple.Maps
+PROCESS-NAME,findmydevice-user-agent
+PROCESS-NAME,fmfd
+PROCESS-NAME,mapspushd
+PROCESS-NAME,netbiosd
+PROCESS-NAME,trustd
+PROCESS-NAME,com.apple.geod
+PROCESS-NAME,Music
+PROCESS-NAME,LookupViewService
+PROCESS-NAME,TV

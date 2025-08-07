@@ -1,11 +1,13 @@
 #!name=General Enhanced
 #!desc=Add MitM prohibited domain.
+#
 #!author=VirgilClyne
 #!repo=https://github.com/VirgilClyne/GetSomeFries
 #!source=https://github.com/VirgilClyne/GetSomeFries/blob/main/sgmodule/General.sgmodule
 #!version=48f2b97
-#!updatetime=2025-02-24
-
+#
+#!updatetime=2025-08-07
+#
 [MITM]
 # Add MitM prohibited domain to prevent interruption of connections.
 hostname = %INSERT% -*.facebook.com, -*.instagram.com, -*.twitter.com, -*.snssdk.com, -*.pstatp.com

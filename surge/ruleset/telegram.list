@@ -1,7 +1,10 @@
 # NAME: Telegram
+#
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Telegram/Telegram.list
 # VERSION: 0fa6078
-# UPDATED: 2025-08-06
+#
+# UPDATED: 2025-08-07
+#
 DOMAIN,api.imem.app
 DOMAIN,api.swiftgram.app
 DOMAIN-SUFFIX,cdn-telegram.org

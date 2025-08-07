@@ -1,10 +1,13 @@
 #!name=Block Http DNS
 #!desc=Block http dns requests
+#
 #!author=VirgilClyne
 #!repo=https://github.com/VirgilClyne/GetSomeFries
 #!source=https://github.com/VirgilClyne/GetSomeFries/blob/main/sgmodule/HTTPDNS.Block.sgmodule
 #!version=5ccd8a8
-#!updatetime=2025-04-08
+#
+#!updatetime=2025-08-07
+#
 [General]
 force-http-engine-hosts = %APPEND% 119.29.29.29:80, dns.weixin.qq.com:80, dns.weixin.qq.com:8080, dns.weixin.qq.com:443
 [Rule]

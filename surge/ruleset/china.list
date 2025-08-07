@@ -1,7 +1,10 @@
 # NAME: China
+#
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/China/China_All.list
 # VERSION: 0fa6078
-# UPDATED: 2025-08-06
+#
+# UPDATED: 2025-08-07
+#
 DOMAIN,analytics.strava.com
 DOMAIN,blzddist1-a.akamaihd.net
 DOMAIN,cdn.angruo.com

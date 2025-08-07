@@ -1,7 +1,10 @@
 # NAME: Global Streaming
+#
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/GlobalMedia/GlobalMedia_All_No_Resolve.list
-# VERSION: 052992e
-# UPDATED: 2025-04-08
+# VERSION: 7053420
+#
+# UPDATED: 2025-08-07
+#
 DOMAIN,ai.google.dev
 DOMAIN,akmcdnoversea-tw.inter.ptqy.gitv.tv
 DOMAIN,api.githubcopilot.com
@@ -2326,3 +2329,6 @@ USER-AGENT,YouTube*
 USER-AGENT,YouTubeMusic*
 USER-AGENT,com.google.ios.youtube*
 USER-AGENT,com.google.ios.youtubemusic*
+PROCESS-NAME,com.viu.pad
+PROCESS-NAME,com.viu.phone
+PROCESS-NAME,com.vuclip.viu

@@ -1,7 +1,10 @@
 # NAME: GitHub
+#
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/GitHub/GitHub.list
 # VERSION: 0fa6078
-# UPDATED: 2025-08-06
+#
+# UPDATED: 2025-08-07
+#
 .atom.io
 .dependabot.com
 .ghcr.io
