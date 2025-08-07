@@ -6,7 +6,7 @@
 #
 #!updatetime=2025-08-07
 #
-#!system=ios
+#!requirement=SYSTEM='iOS'
 #
 [Rule]
 AND, ((URL-REGEX, "^http:\/\/.+\/amdc\/mobileDispatch"), (USER-AGENT, "%E9%97%B2%E9%B1%BC*")), REJECT
