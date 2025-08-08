@@ -1,7 +1,7 @@
 #!name=Reddit
 #!desc=Reddit ads block
 #!source_1=https://github.com/fmz200/wool_scripts/blob/main/Loon/plugin/blockAds.plugin
-#!version_1=b39bd6e
+#!version=b39bd6e
 #!updatetime=2025-08-08
 
 [Script]
