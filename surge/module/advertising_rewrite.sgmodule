@@ -1,15 +1,12 @@
 #!name=Advertising_Rewrite
 #!desc=Block advertisings with rewrite
-#
-#!source_1=https://github.com/fmz200/wool_scripts/blob/main/Loon/plugin/blockAds.plugin
-#!version=b39bd6e
-#
-#!source_2=https://github.com/ddgksf2013/Modules/blob/main/Adblock/StartUpAds.sgmodule
-#!version=46daa38
-#
-#!updatetime=2025-08-07
 #!category=iOS
 #!system=ios
+#!updatetime=2025-08-08
+#!source_1=https://github.com/fmz200/wool_scripts/blob/main/Loon/plugin/blockAds.plugin
+#!version=b39bd6e
+#!source_2=https://github.com/ddgksf2013/Modules/blob/main/Adblock/StartUpAds.sgmodule
+#!version=46daa38
 #
 [Map Local]
 #

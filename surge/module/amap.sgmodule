@@ -1,12 +1,10 @@
 #!name=Amap
 #!desc=Amap ads block
-#
-#!source=https://kelee.one/Tool/Loon/Lpx/Amap_remove_ads.lpx
-#!version=2025-05-22 21:41:32
-#
-#!updatetime=2025-08-07
 #!category=iOS
 #!system=ios
+#!updatetime=2025-08-08
+#!source=https://kelee.one/Tool/Loon/Lpx/Amap_remove_ads.lpx
+#!version=2025-05-22 21:41:32
 #
 [Rule]
 AND, ((URL-REGEX, "^http:\/\/.+\/amdc\/mobileDispatch"), (USER-AGENT, "AMapiPhone*")), REJECT

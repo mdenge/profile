@@ -1,11 +1,9 @@
 #!name=Xiaohongshu
 #!desc=Xiaohongshu ads block
-#
+#!category=Universal
+#!updatetime=2025-08-08
 #!source=https://kelee.one/Tool/Loon/Lpx/RedPaper_remove_ads.lpx
 #!version=2025-07-29 19:10:57
-#
-#!updatetime=2025-08-07
-#!category=universal
 #
 [Rule]
 AND, ((PROTOCOL, QUIC), (DOMAIN-SUFFIX, xiaohongshu.com)), REJECT
