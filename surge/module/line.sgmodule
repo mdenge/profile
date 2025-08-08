@@ -5,6 +5,7 @@
 #!version=2025-08-05 11:22:36
 #
 #!updatetime=2025-08-07
+#!category=universal
 #
 [Rule]
 URL-REGEX, "^https:\/\/a\.line\.me\/cs\/v\d\/oa$", REJECT-DROP

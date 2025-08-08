@@ -7,6 +7,7 @@
 #!version=48f2b97
 #
 #!updatetime=2025-08-07
+#!category=universal
 #
 [MITM]
 # Add MitM prohibited domain to prevent interruption of connections.

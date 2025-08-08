@@ -7,6 +7,7 @@
 #!version=5ccd8a8
 #
 #!updatetime=2025-08-07
+#!category=universal
 #
 [General]
 force-http-engine-hosts = %APPEND% 119.29.29.29:80, dns.weixin.qq.com:80, dns.weixin.qq.com:8080, dns.weixin.qq.com:443
