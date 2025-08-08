@@ -1,11 +1,11 @@
 #!name=Line
 #!desc=Line ads block
+#!category=Universal
 #
 #!source=https://kelee.one/Tool/Loon/Lpx/Line_remove_ads.lpx
 #!version=2025-08-05 11:22:36
 #
 #!updatetime=2025-08-07
-#!category=universal
 #
 [Rule]
 URL-REGEX, "^https:\/\/a\.line\.me\/cs\/v\d\/oa$", REJECT-DROP
