@@ -1,8 +1,8 @@
 #!name=Reddit
 #!desc=Reddit ads block
-#!source_1=https://github.com/fmz200/wool_scripts/blob/main/QuantumultX/rewrite/chongxie.txt
-#!version_1=b44b0bd
-#!updatetime=2025-04-08
+#!source_1=https://github.com/fmz200/wool_scripts/blob/main/Loon/plugin/blockAds.plugin
+#!version_1=b39bd6e
+#!updatetime=2025-08-08
 
 [Script]
 #
