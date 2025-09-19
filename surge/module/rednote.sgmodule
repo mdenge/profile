@@ -25,7 +25,7 @@ AND, ((PROTOCOL, QUIC), (DOMAIN-SUFFIX, xiaohongshu.com)), REJECT
 ^https?:\/\/www\.xiaohongshu\.com\/api\/sns\/(v\d\/ads\/resource|v\d\/hey\/\w+\/hey_gallery) data-type=text data="{}" status-code=200
 #
 # Search
-^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/(banner_list|hot_list|trending) data-type=text data="{}" status-code=200
+# ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/(banner_list|hot_list|trending) data-type=text data="{}" status-code=200
 #
 [MITM]
 hostname = %APPEND% ci.xiaohongshu.com,edith.xiaohongshu.com,rec.xiaohongshu.com,so.xiaohongshu.com,www.xiaohongshu.com
