@@ -3,11 +3,20 @@
 #!source_1=https://github.com/fmz200/wool_scripts/blob/main/QuantumultX/rewrite/chongxie.txt
 #!version_1=b44b0bd
 #!updatetime=2025-04-08
-
+#
+[Rule]
+AND,((URL-REGEX,"^http:\/\/.+\/amdc\/mobileDispatch"),(USER-AGENT,"%E6%B7%98%E5%AE%9D*")),REJECT
+DOMAIN,adashx.m.taobao.com,REJECT
+DOMAIN,ossgw.alicdn.com,REJECT
+DOMAIN,ems.youku.com,REJECT
+DOMAIN,hudong.alicdn.com,REJECT
+DOMAIN,h-adashx.ut.taobao.com,REJECT
+DOMAIN,ut.taobao.com,REJECT
+#
 [Map Local]
 #
 # > Alibaba
-# hostname = acs.m.taobao.com, heic.alicdn.com, guide-acs.m.taobao.com
+# hostname = acs.m.taobao.com,heic.alicdn.com,guide-acs.m.taobao.com
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.crm\.screen\.(allresource|predict) data-type=text data="{}" status-code=200
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv\/ data-type=text data="{}" status-code=200
 ^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimama\.etao\.config\.query\/.+?etao_advertise data-type=text data="{}" status-code=200
@@ -24,11 +33,10 @@
 # > tmall
 ^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.fc\.resource\.tacdata\.get data-type=text data="" status-code=200
 #
-
 [Script]
 #
 # > Alibaba
-# hostname = amdc.m.taobao.com, guide-acs.m.taobao.com, poplayer.template.alibaba.com
+# hostname = amdc.m.taobao.com,guide-acs.m.taobao.com,poplayer.template.alibaba.com
 # > amdc
 amdc = type=http-response,pattern=^http:\/\/amdc\.m\.taobao\.com,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/amdc.js
 cainiao = type=http-response,pattern=^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/cainiao.js

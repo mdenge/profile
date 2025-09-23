@@ -1,9 +1,9 @@
 # NAME: Apple Others
 #
-# SOURCE: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Apple/Apple_All_No_Resolve.list
-# VERSION: c052bdf
+# SOURCE: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Apple/Apple.list
+# VERSION: b97db10
 #
-# UPDATED: 2025-09-14
+# UPDATED: 2025-09-24
 #
 IP-CIDR,139.178.128.0/18,no-resolve
 IP-CIDR,144.178.0.0/19,no-resolve
@@ -15,6 +15,13 @@ IP-CIDR,198.183.17.0/24,no-resolve
 IP-CIDR,205.180.175.0/24,no-resolve
 IP-CIDR,63.92.224.0/19,no-resolve
 IP-CIDR,65.199.22.0/23,no-resolve
+DOMAIN-KEYWORD,apple-support.akadns.net
+DOMAIN-KEYWORD,apple.com.akadns.net
+DOMAIN-KEYWORD,apple.com.edgekey.net
+DOMAIN-KEYWORD,buy.itunes.apple.com
+DOMAIN-KEYWORD,smp-device
+DOMAIN-KEYWORD,testflight
+DOMAIN-KEYWORD,icloud.com.akadns.net
 USER-AGENT,*FindMyiPhone?
 USER-AGENT,*Music?
 USER-AGENT,*WeatherFoundation*
@@ -35,8 +42,8 @@ USER-AGENT,passd*
 USER-AGENT,Music*
 USER-AGENT,AppleNews*
 USER-AGENT,com.apple.news*
-USER-AGENT,com.apple.trustd*
 USER-AGENT,AppleTV*
+USER-AGENT,com.apple.trustd*
 USER-AGENT,com.apple.tv*
 PROCESS-NAME,CoreLocationAgent
 PROCESS-NAME,WeatherWidget
