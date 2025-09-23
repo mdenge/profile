@@ -1,22 +1,27 @@
 #!name=Caiyun
 #!desc=Caiyun ads block
-#!category=iOS
-#!system=ios
+#!category=Universal
 #!updatetime=2025-09-24
-#!source=https://kelee.one/Tool/Loon/Lpx/Amap_remove_ads.lpx
+#!source=https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/CaiYunAds.conf
 #!version=2025-05-13 15:17:08
 #
 [Rule]
 DOMAIN,abyss.cyapi.cn,REJECT,extended-matching,pre-matching
-DOMAIN,ad.cyapi.cn,REJECT,extended-matching,pre-matching
 DOMAIN,gather.colorfulclouds.net,REJECT,extended-matching,pre-matching
 #
 [Map Local] 
-^https:\/\/biz\.cyapi\.cn\/(p\/v1\/entries|p\/v1\/trial_card\/info|v2\/product) data-type=text data="" status-code=200
-^https:\/\/starplucker\.cyapi\.cn\/v3\/(config\/cypage\/\w+\/conditions|notification\/message_center|operation\/homefeatures) data-type=text data="" status-code=200
+^https?:\/\/ad\.cyapi\.cn\/v\d url data-type=text data="" status-code=200
 #
 [Script]
-caiyun = type=http-response,pattern=^https:\/\/(wrapper\.cyapi\.cn|api\.caiyunapp\.com|cdn-w\.caiyunapp\.com)\/v1\/activity\?,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/caiyun.js
+caiyun_01 = type=http-response,pattern=^https?:\/\/wrapper\.cyapi\.cn\/v\d\/activity,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/caiyun.js
+caiyun_02 = type=http-response,pattern=^https?:\/\/api\.caiyunapp\.com\/v\d\/activity,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/caiyun.js
+caiyun_03 = type=http-response,pattern=^https?:\/\/starplucker\.cyapi\.cn\/v\d/operation/homefeatures,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/caiyun.js
+caiyun_04 = type=http-response,pattern=^https?:\/\/starplucker\.cyapi\.cn\/v\d/notification/message_center,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/caiyun.js
+caiyun_05 = type=http-response,pattern=^https?:\/\/starplucker\.cyapi\.cn\/v\d/config/cypage,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/caiyun.js
+caiyun_06 = type=http-response,pattern=^https?:\/\/starplucker\.cyapi\.cn\/v\d/operation/feeds,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/caiyun.js
+caiyun_07 = type=http-response,pattern=^https?:\/\/starplucker\.cyapi\.cn\/v\d/operation/banners,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/caiyun.js
+caiyun_08 = type=http-response,pattern=^https?:\/\/starplucker\.cyapi\.cn\/v\d/operation/features,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/caiyun.js
+caiyun_09 = type=http-response,pattern=^https?:\/\/starplucker\.cyapi\.cn\/v\d/campaigns,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/caiyun.js
 #
 [MITM]
-hostname = %APPEND% biz.cyapi.cn,starplucker.cyapi.cn,api.caiyunapp.com,cdn-w.caiyunapp.com
+hostname = %APPEND% wrapper.cyapi.cn, api.caiyunapp.com, starplucker.cyapi.cn, ad.cyapi.cn
