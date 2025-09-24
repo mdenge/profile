@@ -6,19 +6,19 @@
 #!version=2025-08-05 11:22:36
 #
 [Rule]
-URL-REGEX,"^https:\/\/a\.line\.me\/cs\/v\d\/oa$",REJECT-DROP,pre-matching
-URL-REGEX,"^https:\/\/a\.line\.me\/lass\/api\/v\d\/ads$",REJECT-DROP,pre-matching
-URL-REGEX,"^https:\/\/a\.line\.me\/oa\/v\d\/e$",REJECT-DROP,pre-matching
-URL-REGEX,"^https:\/\/crs-event\.line\.me\/v\d\/imp",REJECT-DROP,pre-matching
-URL-REGEX,"^https:\/\/obs\.line-scdn\.net\/0h.+\/(o|m)\d+x\d+$",REJECT-DROP,pre-matching
-URL-REGEX,"^https:\/\/obs\.line-scdn\.net\/0h.+\/\d+p\.mp4$",REJECT-DROP,pre-matching
-URL-REGEX,"^https:\/\/obs\.line-scdn\.net\/0hGH\d",REJECT-DROP,pre-matching
-URL-REGEX,"^https:\/\/scdn\.line-apps\.com\/lan\/document\/pageEvent\/line\/ios\/",REJECT-DROP,pre-matching
-URL-REGEX,"^https:\/\/scdn\.line-apps\.com\/lan\/image\/line\/bannerImageEvent\/",REJECT-DROP,pre-matching
-URL-REGEX,"^https:\/\/sch\.line\.me\/api\/v\d\/ads$",REJECT-DROP,pre-matching
-URL-REGEX,"^https:\/\/uts-front\.line-apps\.com\/event$",REJECT-DROP,pre-matching
-URL-REGEX,"^https:\/\/uts-front\.line-apps\.com\/settings$",REJECT-DROP,pre-matching
-URL-REGEX,"^https:\/\/w\.line\.me\/adp\/api\/ad\/v\d\/",REJECT-DROP,pre-matching
+URL-REGEX,"^https:\/\/a\.line\.me\/cs\/v\d\/oa$",REJECT
+URL-REGEX,"^https:\/\/a\.line\.me\/lass\/api\/v\d\/ads$",REJECT
+URL-REGEX,"^https:\/\/a\.line\.me\/oa\/v\d\/e$",REJECT
+URL-REGEX,"^https:\/\/crs-event\.line\.me\/v\d\/imp",REJECT
+URL-REGEX,"^https:\/\/obs\.line-scdn\.net\/0h.+\/(o|m)\d+x\d+$",REJECT
+URL-REGEX,"^https:\/\/obs\.line-scdn\.net\/0h.+\/\d+p\.mp4$",REJECT
+URL-REGEX,"^https:\/\/obs\.line-scdn\.net\/0hGH\d",REJECT
+URL-REGEX,"^https:\/\/scdn\.line-apps\.com\/lan\/document\/pageEvent\/line\/ios\/",REJECT
+URL-REGEX,"^https:\/\/scdn\.line-apps\.com\/lan\/image\/line\/bannerImageEvent\/",REJECT
+URL-REGEX,"^https:\/\/sch\.line\.me\/api\/v\d\/ads$",REJECT
+URL-REGEX,"^https:\/\/uts-front\.line-apps\.com\/event$",REJECT
+URL-REGEX,"^https:\/\/uts-front\.line-apps\.com\/settings$",REJECT
+URL-REGEX,"^https:\/\/w\.line\.me\/adp\/api\/ad\/v\d\/",REJECT
 #
 [Map Local]
 ^https:\/\/a\.line\.me\/er\/l.*\/v\d\/event\/image data-type=tiny-gif status-code=200

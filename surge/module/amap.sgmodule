@@ -7,10 +7,11 @@
 #!version=2025-09-04 23:46:49
 #
 [Rule]
-AND,((URL-REGEX,"^http:\/\/.+\/amdc\/mobileDispatch"),(USER-AGENT, "AMapiPhone*")),REJECT
-DOMAIN,amap-aos-info-nogw.amap.com,REJECT
-DOMAIN,free-aos-cdn-image.amap.com,REJECT
-DOMAIN-SUFFIX,v.smtcdns.com,REJECT
+AND,((URL-REGEX,"^http:\/\/.+\/amdc\/mobileDispatch"),(USER-AGENT, "AMapiPhone*")),REJECT,pre-matching
+DOMAIN-SUFFIX,v.smtcdns.com,REJECT,extended-matching,pre-matching
+DOMAIN,amap-aos-info-nogw.amap.com,REJECT,extended-matching,pre-matching
+DOMAIN,free-aos-cdn-image.amap.com,REJECT,extended-matching,pre-matching
+DOMAIN,optimus-ads.amap.com,DIRECT
 #
 [Map Local] 
 ^https:\/\/ai\.amap\.com\/v1\/ai_rec\/home_qs\? data-type=text data="" status-code=200
@@ -20,12 +21,16 @@ DOMAIN-SUFFIX,v.smtcdns.com,REJECT
 ^https:\/\/m5\.amap\.com\/ws\/aos\/main\/page\/product\/list\? data-type=text data="" status-code=200
 ^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/(?:main-page-assets|main-page-location|ridewalk-end-fc) data-type=text data="" status-code=200
 ^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/card-service-(?:car-end|route-plan) data-type=text data="" status-code=200
-^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\? data-type=text data="" status-code=200
 ^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/tips_adv\? data-type=text data="" status-code=200
 ^https:\/\/m5\.amap\.com\/ws\/shield\/search\/new_hotword\? data-type=text data="" status-code=200
-^https:\/\/m5\.amap\.com\/ws\/valueadded\/weather\/v2\? data-type=text data="" status-code=200
 ^https:\/\/oss\.amap\.com\/ws\/banner\/lists\/\? data-type=text data="" status-code=200
 ^https:\/\/sns\.amap\.com\/ws\/msgbox\/pull_mp\? data-type=text data="" status-code=200
+^https?:\/\/.*\.amap\.com\/uploadimg\/\w+\.gif data-type=tiny-gif status-code=200
+^https?:\/\/.*\.amap\.com\/ws\/asa\/ads_attribution data-type=text data="" status-code=404
+^https?:\/\/.*\.amap\.com\/ws\/boss\/order_web\/\w{8}_information data-type=text data="" status-code=200
+^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/card-service-route-plan\? data-type=text data="{}" status-code=200
+^https?:\/\/.*\.amap\.com\/ws\/shield\/scene\/recommend data-type=text data="{}" status-code=200
+^https?:\/\/.*\.amap\.com\/ws\/valueadded\/weather data-type=text data="{}" status-code=200
 #
 [Body Rewrite]
 http-response ^https:\/\/m5\.amap\.com\/ws\/shield\/search_business\/process\/marketingOperationStructured\? data.commonMaterial "" data.tipsOperationLocation "" data.resourcePlacement ""
@@ -47,6 +52,7 @@ amap11 = type=http-response,pattern=^https:\/\/m5\.amap\.com\/ws\/valueadded\/al
 amap12 = type=http-response,pattern=^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(?:car\/order\/content_info|order_web\/friendly_information), requires-body=true, script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/amap.js
 amap13 = type=http-response,pattern=^https:\/\/m5-zb\.amap\.com\/ws\/promotion-web\/resource(\/home)?\?, requires-body=true, script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/amap.js
 amap14 = type=http-response,pattern=^https:\/\/(?:info|m5)\.amap\.com\/ws\/shield\/search\/(?:common\/coupon\/info|poi\/detail), requires-body=true, script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/amap.js
+amap15 = type=http-response,pattern=^http:\/\/amdc\.m\.taobao\.com, requires-body=true, script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/amdc.js
 #
 [MITM]
-hostname = %APPEND% api.amap.com, m5.amap.com, m5-zb.amap.com, oss.amap.com, sns.amap.com
+hostname = %APPEND% api.amap.com,center.amap.com,m5-zb.amap.com,m5.amap.com,oss.amap.com,sns.amap.com
