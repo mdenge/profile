@@ -10,6 +10,7 @@
 #
 #
 [Rule]
+#
 # Hanglvzongheng
 DOMAIN,sensors.umetrip.com.cn,REJECT,extended-matching,pre-matching
 #
@@ -22,6 +23,14 @@ DOMAIN,sensors.umetrip.com.cn,REJECT,extended-matching,pre-matching
 # acs.m.taobao.com,acs-m.freshippo.com
 "^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.wdk\.render\.querysinglepage" data-type=text data="" status-code=200
 "^https?:\/\/acs-m\.freshippo\.com\/gw\/mtop\.wdk\.render\.querysinglepage" data-type=text data="" status-code=200
+#
+[Body Rewrite]
+#
+# Seetong splash
+# app-api-cn.seetong.com
+http-response "^https:\/\/app-api-cn\.seetong\.com\/seetong-sms\/floating-advert-space$" adStartTime "2027-01-01 00:01:00" adStartTimeStamp 1798732800000 adEndTime "2027-01-01 00:01:00" adEndTimeStamp 1798732860000 
+http-response "^https:\/\/app-api-cn\.seetong\.com\/seetong-sms\/screen-advert-space$" adStartTime "2027-01-01 00:01:00" adStartTimeStamp 1798732800000 adEndTime "2027-01-01 00:01:00" adEndTimeStamp 1798732860000 
+#
 #
 [MITM]
 hostname = %APPEND% app-api-cn.seetong.com,acs.m.taobao.com,acs-m.freshippo.com
