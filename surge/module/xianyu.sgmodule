@@ -48,8 +48,5 @@ http-response-jq ^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemt
 http-response-jq ^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\.discover url 'del(.data.resultList)'
 http-response-jq ^https?:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlemtopsearch\.search\.shade url '.data.singleShadeWords =[{}]'
 #
-[Script]
-xianyu = type=http-response, pattern="^http:\/\/[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+){1,4}(:\d+)?\/amdc\/mobileDispatch", requires-body=true, script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/amdc.js
-#
 [MITM]
 hostname = %APPEND% acs.m.goofish.com, g-acs.m.goofish.com

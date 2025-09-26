@@ -1,0 +1,32 @@
+#!name=Advertising_Rewrite
+#!desc=Block advertisings with rewrite
+#!category=Universal
+#!updatetime=2025-09-27
+#!source_1=https://github.com/fmz200/wool_scripts/blob/main/Loon/plugin/blockAds.plugin
+#!version_1=b39bd6e
+#!source_2=https://github.com/ddgksf2013/Modules/blob/main/Adblock/StartUpAds.sgmodule
+#!version_2=46daa38
+#!source_3=https://hub.kelee.one/
+#
+#
+[Rule]
+# Hanglvzongheng
+DOMAIN,sensors.umetrip.com.cn,REJECT,extended-matching,pre-matching
+#
+[Map Local]
+#
+# 7-Fresh
+"^http:\/\/mstone-api\.7fresh\.com\/fresh\/startScreen\?" data-type=text data="" status-code=200
+# 
+# Seetong splash
+# app-api-cn.seetong.com
+"^https:\/\/app-api-cn\.seetong\.com\/seetong-sms\/floating-advert-space$" data-type=text data="" status-code=200
+"^https:\/\/app-api-cn\.seetong\.com\/seetong-sms\/screen-advert-space$" data-type=text data="" status-code=200
+#
+# hema
+# acs.m.taobao.com,acs-m.freshippo.com
+"^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.wdk\.render\.querysinglepage" data-type=text data="" status-code=200
+"^https?:\/\/acs-m\.freshippo\.com\/gw\/mtop\.wdk\.render\.querysinglepage" data-type=text data="" status-code=200
+#
+[MITM]
+hostname = %APPEND% app-api-cn.seetong.com,acs.m.taobao.com,acs-m.freshippo.com

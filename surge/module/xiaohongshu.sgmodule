@@ -1,7 +1,8 @@
 #!name=Xiaohongshu
 #!desc=Xiaohongshu ads block
-#!category=Universal
-#!updatetime=2025-09-24
+#!category=iOS
+#!system=ios
+#!updatetime=2025-09-27
 #!source=https://kelee.one/Tool/Loon/Lpx/RedPaper_remove_ads.lpx
 #!version=2025-07-29 19:10:57
 #
@@ -14,7 +15,7 @@ AND,((PROTOCOL,QUIC),(DOMAIN-SUFFIX,xiaohongshu.com)),REJECT,pre-matching
 #
 [Map Local]
 #
-# hostname = edith.xiaohongshu.com,www.xiaohongshu.com,ci.xiaohongshu.com,rec.xiaohongshu.com,so.xiaohongshu.com
+# hostname = edith.xiaohongshu.com,www.xiaohongshu.com,ci.xiaohongshu.com
 #
 # watermark
 ^https?:\/\/ci\.xiaohongshu\.com\/system_config\/watermark data-type=tiny-gif status-code=200
@@ -32,15 +33,6 @@ AND,((PROTOCOL,QUIC),(DOMAIN-SUFFIX,xiaohongshu.com)),REJECT,pre-matching
 # Search
 # ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/(banner_list|hot_list|trending) data-type=text data="" status-code=200
 #
-# Others
-^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/guide\/home_guide data-type=text data="" status-code=200
-^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/user\/teenager\/status data-type=text data="" status-code=200
-^https?:\/\/[a-z]+\.xiaohongshu\.com\/data\/native\/matrix_switches data-type=text data="" status-code=200
-^https?:\/\/[a-z]+\.xiaohongshu\.com\/v\d+\/stateReport data-type=text data="" status-code=200
-^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/(tag\/)?ads data-type=text data="" status-code=200
-^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/gslb data-type=text data="" status-code=200
-^https?:\/\/[a-z]+\.xiaohongshu\.com\/api\/sns\/v\d+\/search\/notes\/recommend_info\? data-type=text data="" status-code=200
-#
 # Like
 ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/note\/like$, data-type=text data="" status-code=200
 #
@@ -52,4 +44,4 @@ http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v4\/search\/trending
 http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v2\/system_service\/splash_config "ads_groups"\s*:\s*\[[^\]]*\] "\"ads_groups\":[]"
 #
 [MITM]
-hostname = %APPEND% ci.xiaohongshu.com,edith.xiaohongshu.com,rec.xiaohongshu.com,so.xiaohongshu.com,www.xiaohongshu.com
+hostname = %APPEND% ci.xiaohongshu.com,edith.xiaohongshu.com,www.xiaohongshu.com
