@@ -17,11 +17,6 @@ DOMAIN,sensors.umetrip.com.cn,REJECT,extended-matching,pre-matching
 #
 # 7-Fresh
 "^http:\/\/mstone-api\.7fresh\.com\/fresh\/startScreen\?" data-type=text data="" status-code=200
-# 
-# Seetong splash
-# app-api-cn.seetong.com
-"^https:\/\/app-api-cn\.seetong\.com\/seetong-sms\/floating-advert-space$" data-type=text data="" status-code=200
-"^https:\/\/app-api-cn\.seetong\.com\/seetong-sms\/screen-advert-space$" data-type=text data="" status-code=200
 #
 # hema
 # acs.m.taobao.com,acs-m.freshippo.com
