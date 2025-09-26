@@ -34,8 +34,8 @@ DOMAIN,ut.taobao.com,REJECT,extended-matching,pre-matching
 #
 # hostname = guide-acs.m.taobao.com,poplayer.template.alibaba.com
 # > amdc
-taobao_01 = type=http-response,pattern=^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get),requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/alibaba.js
-taobao_02 = type=http-response,pattern=^https?:\/\/poplayer\.template\.alibaba\.com\/\w+\.json,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/alibaba.js
+taobao_01 = type=http-response,pattern=^https?:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.(cloudvideo\.video\.query|wireless\.home\.splash\.awesome\.get),requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/taobao.js
+taobao_02 = type=http-response,pattern=^https?:\/\/poplayer\.template\.alibaba\.com\/\w+\.json,requires-body=true,script-path=https://raw.githubusercontent.com/mdenge/profile/master/surge/script/taobao.js
 #
 [MITM]
 hostname = %APPEND% acs.m.taobao.com,guide-acs.m.taobao.com,guide-acs.m.taobao.com,heic.alicdn.com,poplayer.template.alibaba.com
