@@ -2,16 +2,16 @@
 #!desc=Xiaohongshu ads block
 #!category=iOS
 #!system=ios
-#!updatetime=2025-09-27
+#!updatetime=2025-10-14
 #!source=https://kelee.one/Tool/Loon/Lpx/RedPaper_remove_ads.lpx
 #!version=2025-07-29 19:10:57
 #
 [Rule]
-DOMAIN,ads-img-qc.xhscdn.com,REJECT,extended-matching,pre-matching
-DOMAIN,ads-video-al.xhscdn.com,REJECT,extended-matching,pre-matching
-DOMAIN,ads-video-qc.xhscdn.com,REJECT,extended-matching,pre-matching
-DOMAIN,t-ads.xiaohongshu.com,REJECT,extended-matching,pre-matching
-AND,((PROTOCOL,QUIC),(DOMAIN-SUFFIX,xiaohongshu.com)),REJECT,extended-matching,pre-matching
+DOMAIN,ads-img-qc.xhscdn.com,REJECT,pre-matching,extended-matching
+DOMAIN,ads-video-al.xhscdn.com,REJECT,pre-matching,extended-matching
+DOMAIN,ads-video-qc.xhscdn.com,REJECT,pre-matching,extended-matching
+DOMAIN,t-ads.xiaohongshu.com,REJECT,pre-matching,extended-matching
+AND,((PROTOCOL,QUIC),(DOMAIN-SUFFIX,xiaohongshu.com,extended-matching)),REJECT
 #
 [Map Local]
 #
@@ -36,6 +36,12 @@ AND,((PROTOCOL,QUIC),(DOMAIN-SUFFIX,xiaohongshu.com)),REJECT,extended-matching,p
 # Like
 ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/note\/like$, data-type=text data="" status-code=200
 #
+# Httpdns
+^https:\/\/gslb\.xiaohongshu\.com\/api\/httpdns, data-type=text data="" status-code=404
+#
+# Ads
+^https:\/\/gslb\.xiaohongshu\.com\/api\/gslb, data-type=text data="" status-code=404
+#
 [Body Rewrite]
 http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/search\/banner_list$ "data"\s*:\s*\{[\s\S]*?\} "\"data\":{}"
 http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/search\/hot_list$ "items"\s*:\s*\[[^\]]*\] "\"items\":[]"
@@ -44,4 +50,4 @@ http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v4\/search\/trending
 http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v2\/system_service\/splash_config "ads_groups"\s*:\s*\[[^\]]*\] "\"ads_groups\":[]"
 #
 [MITM]
-hostname = %APPEND% ci.xiaohongshu.com,edith.xiaohongshu.com,www.xiaohongshu.com
+hostname = %APPEND% ci.xiaohongshu.com,edith.xiaohongshu.com,www.xiaohongshu.com,gslb.xiaohongshu.com

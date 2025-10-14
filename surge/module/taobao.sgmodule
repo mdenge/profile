@@ -2,18 +2,19 @@
 #!desc=Taobao ads block
 #!category=iOS
 #!system=ios
+#!updatetime=2025-10-14
 #!source=https://kelee.one/Tool/Loon/Lpx/Taobao_remove_ads.lpx
 #!version=b44b0bd
-#!updatetime=2025-05-13 15:17:08
+#!version=2025-05-13 15:17:08
 #
 [Rule]
-AND,((URL-REGEX,"^http:\/\/.+\/amdc\/mobileDispatch"),(USER-AGENT,"%E6%B7%98%E5%AE%9D*")),REJECT,pre-matching
-DOMAIN,adashx.m.taobao.com,REJECT,extended-matching,pre-matching
-DOMAIN,ossgw.alicdn.com,REJECT,extended-matching,pre-matching
-DOMAIN,ems.youku.com,REJECT,extended-matching,pre-matching
-DOMAIN,hudong.alicdn.com,REJECT,extended-matching,pre-matching
-DOMAIN,h-adashx.ut.taobao.com,REJECT,extended-matching,pre-matching
-DOMAIN,ut.taobao.com,REJECT,extended-matching,pre-matching
+AND,((URL-REGEX,"^http:\/\/.+\/amdc\/mobileDispatch",extended-matching),(USER-AGENT,"%E6%B7%98%E5%AE%9D*")),REJECT
+DOMAIN,adashx.m.taobao.com,REJECT,pre-matching,extended-matching
+DOMAIN,ossgw.alicdn.com,REJECT,pre-matching,extended-matching
+DOMAIN,ems.youku.com,REJECT,pre-matching,extended-matching
+DOMAIN,hudong.alicdn.com,REJECT,pre-matching,extended-matching
+DOMAIN,h-adashx.ut.taobao.com,REJECT,pre-matching,extended-matching
+DOMAIN,ut.taobao.com,REJECT,pre-matching,extended-matching
 #
 [Map Local]
 #

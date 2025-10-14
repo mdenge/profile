@@ -2,13 +2,13 @@
 #!desc=Xianyu ads block
 #!category=iOS
 #!system=ios
-#!updatetime=2025-09-24
+#!updatetime=2025-10-14
 #!source=https://kelee.one/Tool/Loon/Lpx/FleaMarket_remove_ads.lpx
 #!version=2025-09-03 01:29:26
 #
 [Rule]
-AND,((URL-REGEX, "^http:\/\/.+\/amdc\/mobileDispatch"),(USER-AGENT, "%E9%97%B2%E9%B1%BC*")),REJECT,pre-matching
-DOMAIN,iyes.youku.com,REJECT,extended-matching,pre-matching
+AND,((URL-REGEX,"^http:\/\/.+\/amdc\/mobileDispatch",extended-matching),(USER-AGENT,"%E9%97%B2%E9%B1%BC*")),REJECT
+DOMAIN,iyes.youku.com,REJECT,pre-matching,extended-matching
 #
 [Map Local]
 ^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.item\.buy\.feeds\/ data-type=text data="" status-code=200
