@@ -1,7 +1,7 @@
 #!name=General Enhanced
 #!desc=Add MitM prohibited domain.
 #!category=Universal
-#!updatetime=2025-09-24
+#!updatetime=2025-12-08
 #!source=https://github.com/VirgilClyne/GetSomeFries/blob/main/sgmodule/General.sgmodule
 #!version=48f2b97
 #

@@ -1,13 +1,14 @@
 # NAME: China
 #
 # SOURCE: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/China/China_All.list
-# VERSION: 0fa6078
+# VERSION: e115b63
 #
-# UPDATED: 2025-09-24
+# UPDATED: 2025-12-08
 #
 DOMAIN,analytics.strava.com
 DOMAIN,blzddist1-a.akamaihd.net
 DOMAIN,cdn.angruo.com
+DOMAIN,cdn.lilyemby.com
 DOMAIN,client.amplifi.com
 DOMAIN,download.jetbrains.com
 DOMAIN,download.microsoft.com
@@ -17,8 +18,10 @@ DOMAIN,kc.kexinshe.com
 DOMAIN,ntservicepack.microsoft.com
 DOMAIN,origin-a.akamaihd.ne
 DOMAIN,origin-a.akamaihd.net
+DOMAIN,smart.uhdnow.com
 DOMAIN,sms.imagetasks.com
 DOMAIN,steamcommunity-a.akamaihd.net
+DOMAIN,tx.lilyemby.com
 DOMAIN,weixin.com
 DOMAIN,www.libvideo.com
 DOMAIN,www.yxssp.com
@@ -1948,6 +1951,7 @@ DOMAIN-SUFFIX,jiayuan.com
 DOMAIN-SUFFIX,jiazhao.com
 DOMAIN-SUFFIX,jibencaozuo.com
 DOMAIN-SUFFIX,jidian.im
+DOMAIN-SUFFIX,jiedaibao.gs
 DOMAIN-SUFFIX,jiemeng8.com
 DOMAIN-SUFFIX,jiemian.com
 DOMAIN-SUFFIX,jikeiot.cloud
@@ -2239,6 +2243,7 @@ DOMAIN-SUFFIX,lxdns.org
 DOMAIN-SUFFIX,lxjapp.com
 DOMAIN-SUFFIX,lxway.com
 DOMAIN-SUFFIX,ly.com
+DOMAIN-SUFFIX,m-team.cc
 DOMAIN-SUFFIX,m1.run
 DOMAIN-SUFFIX,m6.run
 DOMAIN-SUFFIX,m9.run
@@ -2487,7 +2492,6 @@ DOMAIN-SUFFIX,oneyac.com
 DOMAIN-SUFFIX,onlinedown.net
 DOMAIN-SUFFIX,onlinesjtu.com
 DOMAIN-SUFFIX,onlylady.com
-DOMAIN-SUFFIX,ooklaserver.net
 DOMAIN-SUFFIX,opdown.com
 DOMAIN-SUFFIX,open.cd
 DOMAIN-SUFFIX,openapp.run
@@ -2676,6 +2680,7 @@ DOMAIN-SUFFIX,qnssl.com
 DOMAIN-SUFFIX,qq.cn.com
 DOMAIN-SUFFIX,qq.com
 DOMAIN-SUFFIX,qq.design
+DOMAIN-SUFFIX,qq.net
 DOMAIN-SUFFIX,qq.wang
 DOMAIN-SUFFIX,qq.xn--fiqs8s
 DOMAIN-SUFFIX,qq163.com

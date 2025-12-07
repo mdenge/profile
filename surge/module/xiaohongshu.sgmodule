@@ -2,9 +2,9 @@
 #!desc=Xiaohongshu ads block
 #!category=iOS
 #!system=ios
-#!updatetime=2025-10-14
+#!updatetime=2025-12-08
 #!source=https://kelee.one/Tool/Loon/Lpx/RedPaper_remove_ads.lpx
-#!version=2025-07-29 19:10:57
+#!version=2025-08-01 19:57:10
 #
 [Rule]
 DOMAIN,ads-img-qc.xhscdn.com,REJECT,pre-matching,extended-matching
@@ -18,7 +18,7 @@ AND,((PROTOCOL,QUIC),(DOMAIN-SUFFIX,xiaohongshu.com,extended-matching)),REJECT
 # hostname = edith.xiaohongshu.com,www.xiaohongshu.com,ci.xiaohongshu.com
 #
 # watermark
-^https?:\/\/ci\.xiaohongshu\.com\/system_config\/watermark data-type=tiny-gif status-code=200
+^https?:\/\/ci\.xiaohongshu\.com\/system_config\/watermark data-type=tiny-gif data="" status-code=200
 #
 # Popup
 ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/surprisebox\/(?:get_style|open|submit_action) data-type=text data="" status-code=200
@@ -34,13 +34,13 @@ AND,((PROTOCOL,QUIC),(DOMAIN-SUFFIX,xiaohongshu.com,extended-matching)),REJECT
 # ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/(banner_list|hot_list|trending) data-type=text data="" status-code=200
 #
 # Like
-^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/note\/like$, data-type=text data="" status-code=200
+^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/note\/like$ data-type=text data="" status-code=200
 #
 # Httpdns
-^https:\/\/gslb\.xiaohongshu\.com\/api\/httpdns, data-type=text data="" status-code=404
+^https:\/\/gslb\.xiaohongshu\.com\/api\/httpdns data-type=text data="" status-code=404
 #
 # Ads
-^https:\/\/gslb\.xiaohongshu\.com\/api\/gslb, data-type=text data="" status-code=404
+^https:\/\/gslb\.xiaohongshu\.com\/api\/gslb data-type=text data="" status-code=404
 #
 [Body Rewrite]
 http-response ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/search\/banner_list$ "data"\s*:\s*\{[\s\S]*?\} "\"data\":{}"
