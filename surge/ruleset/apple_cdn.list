@@ -5,6 +5,13 @@
 #
 # UPDATED: 2025-12-08
 #
+DOMAIN-SUFFIX,apple-dns.net
+DOMAIN-SUFFIX,audio-ssl.itunes.apple.com
+DOMAIN-SUFFIX,cdn-apple.com
+DOMAIN-SUFFIX,hls-amt.itunes.apple.com
+DOMAIN-SUFFIX,hls.itunes.apple.com
+DOMAIN-SUFFIX,mzstatic.com
+DOMAIN-SUFFIX,ocsp.apple.com
 DOMAIN,aod.itunes.apple.com
 DOMAIN,app-site-association.cdn-apple.com
 DOMAIN,appldnld.apple.com
@@ -26,13 +33,5 @@ DOMAIN,supportdownload.apple.com
 DOMAIN,swcdn.apple.com
 DOMAIN,updates-http.cdn-apple.com
 DOMAIN,updates.cdn-apple.com
-DOMAIN-SUFFIX,apple-dns.net
-DOMAIN-SUFFIX,audio-ssl.itunes.apple.com
-DOMAIN-SUFFIX,cdn-apple.com
-DOMAIN-SUFFIX,hls-amt.itunes.apple.com
-DOMAIN-SUFFIX,hls.itunes.apple.com
-DOMAIN-SUFFIX,mzstatic.com
-DOMAIN-SUFFIX,ocsp.apple.com
 USER-AGENT,com.apple.appstored*
 USER-AGENT,com.apple.trustd*
-PROCESS-NAME,storedownloadd

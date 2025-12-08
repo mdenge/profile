@@ -1,10 +1,41 @@
 # NAME: Apple
 #
-# SOURCE: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Apple/Apple_Domain.list
+# SOURCE_1: https://github.com/blackmatrix7/ios_rule_script/blob/master/rule/Surge/Apple/Apple_Domain.list
 # VERSION: 0fa6078
 #
-# UPDATED: 2025-12-08
+# SOURCE_2: https://github.com/geekdada/surge-list/blob/master/surgio-snippet/apple.tpl
+# VERSION: 41a3f55
 #
+# UPDATED: 2025-12-09
+#
+api-edge.apps.apple.com
+api.apps.apple.com
+appldnld.apple.com.edgesuite.net
+apple-events.akamaized.net
+apple-relay.apple.com
+apple.comscoreresearch.com
+appleworldwidedeveloper.hb-api.omtrdc.net
+appleworldwidedeveloper.sc.omtrdc.net
+apps.apple.com
+bag.itunes.apple.com
+beatselectronicsllc.tt.omtrdc.net
+beta.music.apple.com
+configuration.apple.com
+e16991.b.akamaiedge.net
+edge.apple
+guzzoni.apple.com
+icons.axm-usercontent-apple.com
+lookup-api.apple.com.edgekey.net
+news-edge.apple.com
+news-events.apple.com
+p-events-delivery.akamaized.net
+play.itunes.apple.com
+se-edge.itunes.apple.com
+se.itunes.apple.com
+su.itunes.apple.com
+upp.itunes.apple.com
+weather-analytics-events.apple.com
+xp.apple.com
 .100beatscheap.com
 .12diasdepresentesdeitunes.com
 .12diasderegalosdeitunes.cl
@@ -74,6 +105,7 @@
 .appl.com
 .appl4e.com
 .appla.com
+.apple
 .apple-appstore.cn
 .apple-cloudkit.com
 .apple-darwin.com
@@ -929,6 +961,7 @@
 .emac.in
 .emagic.de
 .esbeatsbydrebuy.com
+.ess.apple.com
 .etheadphones.com
 .euroipad.com
 .eworld.com
@@ -1194,7 +1227,9 @@
 .itunbes.com
 .ituneas.com
 .itunes-apple.cn
+.itunes-apple.com.akadns.net
 .itunes-radio.net
+.itunes.apple.com
 .itunes.ca
 .itunes.co
 .itunes.co.th
@@ -1368,6 +1403,7 @@
 .moreheadphones.com
 .mr-apple.com.tw
 .ms4dre.com
+.music.apple.com
 .musickit.net
 .myappleid.com
 .mybeatsbydrestudio.com
@@ -1470,6 +1506,7 @@
 .sneakerpage.net
 .sneakerskick.com
 .solostudioksale.com
+.sonos-music.apple.com
 .soso7778.com
 .specialtyheadphones.com
 .spektral.cc
@@ -1554,13 +1591,3 @@
 .xn--ohq11k7pl25iyo8a.cn
 .xn--ruq8a011kt6y.xn--hxt814e
 .yourmonsterbeats.com
-appldnld.apple.com.edgesuite.net
-apple-events.akamaized.net
-appleworldwidedeveloper.hb-api.omtrdc.net
-appleworldwidedeveloper.sc.omtrdc.net
-beatselectronicsllc.tt.omtrdc.net
-e16991.b.akamaiedge.net
-edge.apple
-icons.axm-usercontent-apple.com
-lookup-api.apple.com.edgekey.net
-p-events-delivery.akamaized.net
