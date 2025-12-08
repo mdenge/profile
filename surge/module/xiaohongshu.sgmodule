@@ -34,7 +34,8 @@ AND,((PROTOCOL,QUIC),(DOMAIN-SUFFIX,xiaohongshu.com,extended-matching)),REJECT
 # ^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v\d\/search\/(banner_list|hot_list|trending) data-type=text data="" status-code=200
 #
 # Like
-^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/note\/like$ data-type=text data="" status-code=200
+# ^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/note\/like$ data-type=text data="" status-code=200
+^https:\/\/edith\.xiaohongshu\.com\/api\/sns\/v1\/note\/like$ data-type=text data="{"code":0,"success":true,"data":{"likes":100,"inlikes":true,"show10_likes_gift":false,"toast":"","n_dolikes":0,"base_result":0},"msg":"","extra":{"alertmsg":{"msg":""}}}" status-code=200
 #
 # Httpdns
 ^https:\/\/gslb\.xiaohongshu\.com\/api\/httpdns data-type=text data="" status-code=404
