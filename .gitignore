@@ -1,4 +1,6 @@
 
 .DS_Store
-/surge/source
 quantumultx/utils
+surge/module
+surge/ruleset/archive
+surge/script

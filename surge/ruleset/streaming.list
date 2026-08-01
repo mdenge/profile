@@ -1,9 +1,9 @@
 # NAME: Global Streaming
 #
 # SOURCE: https://ruleset.skk.moe/List/non_ip/stream.conf
-# VERSION: 2025-11-13T20:33:00.155Z
+# VERSION: 2026-06-30T21:42:09.495Z
 #
-# UPDATED: 2025-12-09
+# UPDATED: 2026-08-01
 #
 DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
 DOMAIN,4gtvfreepcvod-cds.cdn.hinet.net
@@ -64,6 +64,20 @@ DOMAIN,www.tubi.tv
 DOMAIN,www.tubitv.com
 DOMAIN,youtube.googleapis.com
 DOMAIN,youtubei.googleapis.com
+DOMAIN-KEYWORD,-spotify-com
+DOMAIN-KEYWORD,-tiktokcdn-com
+DOMAIN-KEYWORD,apiproxy-device-prod-nlb-
+DOMAIN-KEYWORD,avoddashs
+DOMAIN-KEYWORD,bbcfmt
+DOMAIN-KEYWORD,dualstack.apiproxy-
+DOMAIN-KEYWORD,dualstack.ichnaea-web-
+DOMAIN-KEYWORD,jooxweb-api
+DOMAIN-KEYWORD,netflixdnstest
+DOMAIN-KEYWORD,nowtv100
+DOMAIN-KEYWORD,rthklive
+DOMAIN-KEYWORD,tvbanywhere
+DOMAIN-KEYWORD,uk-live
+DOMAIN-KEYWORD,voddazn
 DOMAIN-SUFFIX,4gtv.tv
 DOMAIN-SUFFIX,5itv.tv
 DOMAIN-SUFFIX,abema-tv.com
@@ -263,20 +277,6 @@ DOMAIN-SUFFIX,youtube.com
 DOMAIN-SUFFIX,youtubeeducation.com
 DOMAIN-SUFFIX,youtubegaming.com
 DOMAIN-SUFFIX,youtubekids.com
-DOMAIN-KEYWORD,-spotify-com
-DOMAIN-KEYWORD,-tiktokcdn-com
-DOMAIN-KEYWORD,apiproxy-device-prod-nlb-
-DOMAIN-KEYWORD,avoddashs
-DOMAIN-KEYWORD,bbcfmt
-DOMAIN-KEYWORD,dualstack.apiproxy-
-DOMAIN-KEYWORD,dualstack.ichnaea-web-
-DOMAIN-KEYWORD,jooxweb-api
-DOMAIN-KEYWORD,netflixdnstest
-DOMAIN-KEYWORD,nowtv100
-DOMAIN-KEYWORD,rthklive
-DOMAIN-KEYWORD,tvbanywhere
-DOMAIN-KEYWORD,uk-live
-DOMAIN-KEYWORD,voddazn
 USER-AGENT,*Spotify*
 USER-AGENT,AbemaTV*
 USER-AGENT,All4*
@@ -326,3 +326,17 @@ USER-AGENT,WeMusic*
 USER-AGENT,WeTV*
 USER-AGENT,YouTube*
 USER-AGENT,YouTubeMusic*
+PROCESS-NAME,com.amazon.avod.thirdpartyclient
+PROCESS-NAME,com.bstar.intl
+PROCESS-NAME,com.hktve.viutv
+PROCESS-NAME,com.hulu.plus
+PROCESS-NAME,com.linecorp.linetv
+PROCESS-NAME,com.netflix.mediaclient
+PROCESS-NAME,com.tencent.ibg.joox
+PROCESS-NAME,com.twgood.android
+PROCESS-NAME,com.viu.pad
+PROCESS-NAME,com.viu.phone
+PROCESS-NAME,com.vuclip.viu
+PROCESS-NAME,music
+PROCESS-NAME,tv
+PROCESS-NAME,tv.twitch.android.app

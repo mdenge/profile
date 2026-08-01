@@ -1,11 +1,11 @@
 #!name=Block Http DNS
 #!desc=Block http dns requests
 #!category=Universal
-#!updatetime=2025-12-08
+#!updatetime=2026-01-31
 #!source1=https://github.com/VirgilClyne/GetSomeFries/blob/main/sgmodule/HTTPDNS.Block.sgmodule
 #!version1=5ccd8a8
 #!source2=https://kelee.one/Tool/Loon/Lpx/Block_HTTPDNS.lpx
-#!version2=2025-11-23 22:49:40
+#!version2=2026-01-30 00:55:36
 #
 [General]
 force-http-engine-hosts = %APPEND% 119.29.29.29:80,dns.weixin.qq.com:80,dns.weixin.qq.com:8080,dns.weixin.qq.com:443
@@ -73,6 +73,7 @@ DOMAIN,union-httpdns.gslb.yy.com,REJECT,pre-matching,extended-matching
 DOMAIN,yuyin-httpdns.gslb.yy.com,REJECT,pre-matching,extended-matching
 DOMAIN,yyapp-httpdns.gslb.yy.com,REJECT,pre-matching,extended-matching
 DOMAIN-SUFFIX,httpdns.pro,REJECT,pre-matching,extended-matching
+DOMAIN,ucdc.upaas.quark.cn,REJECT,pre-matching,extended-matching
 IP-CIDR,101.124.19.122/32,REJECT,no-resolve,pre-matching
 IP-CIDR,101.32.104.104/32,REJECT,no-resolve,pre-matching
 IP-CIDR,101.91.140.124/32,REJECT,no-resolve,pre-matching
@@ -162,6 +163,7 @@ URL-REGEX,^http:\/\/101\.91\.140\.124\/resolve,REJECT,extended-matching
 URL-REGEX,^http:\/\/101\.91\.140\.224\/resolve,REJECT,extended-matching
 URL-REGEX,^http:\/\/103\.37\.155\.60\/fetch,REJECT,extended-matching
 URL-REGEX,^http:\/\/103\.41\.167\.237\/v2\/resolv,REJECT,extended-matching
+URL-REGEX,^http:\/\/103\.44\.58\.64\/md\?,REJECT,extended-matching
 URL-REGEX,^http:\/\/106\.55\.220\.18:8053\/httpdns\/,REJECT,extended-matching
 URL-REGEX,^http:\/\/112\.64\.218\.119\/resolve,REJECT,extended-matching
 URL-REGEX,^http:\/\/112\.65\.200\.117\/resolve,REJECT,extended-matching
@@ -199,6 +201,8 @@ URL-REGEX,^http:\/\/54\.222\.159\.138:8053\/httpdns\/,REJECT,extended-matching
 URL-REGEX,^http:\/\/81\.69\.130\.131\/d,REJECT,extended-matching
 URL-REGEX,^http:\/\/api\.weibo\.cn\/2\/httpdns\/config,REJECT,extended-matching
 URL-REGEX,^http:\/\/api\.weibo\.cn\/httpdns\/config,REJECT,extended-matching
+URL-REGEX,^http:\/\/cdn\.wup\.huya\.com\/launch\/queryHttpDns,REJECT,extended-matching
+URL-REGEX,^http:\/\/xmc\.ximalaya\.com\/xmlymain-login-web\/login\/,REJECT,extended-matching
 #
 [URL Rewrite]
 ^http:\/\/101\.35\.204\.35\/d - reject
@@ -252,21 +256,15 @@ URL-REGEX,^http:\/\/api\.weibo\.cn\/httpdns\/config,REJECT,extended-matching
 ^http:\/\/xmc\.ximalaya\.com\/xmlymain-login-web\/login\/ - reject
 ^https:\/\/dns\.jd\.com\/v6\/b - reject
 ^https:\/\/gslbali\.ximalaya\.com\/linkeye-cloud\/httpdns\/ - reject
-^https:\/\/gslbali\.ximalaya\.com\/linkeye-cloud\/httpdns\/ reject
 ^https:\/\/msglb\.91160\.com\/msg\/outer\/broker\/get$ - reject
 ^https?:\/\/.+\.zijieapi\.com\/get_domains\/ - reject
 ^https?:\/\/110\.76\.8\.150\/squery - reject
 ^https?:\/\/119\.29\.29\.29\/d - reject
 ^https?:\/\/203\.107\.1\.1/\d+/ss - reject
-^https?:\/\/203\.107\.1\.1/\d+/ss reject
 ^https?:\/\/203\.107\.1\.33/\d+/ss - reject
-^https?:\/\/203\.107\.1\.33/\d+/ss reject
 ^https?:\/\/203\.107\.1\.66/\d+/ss - reject
-^https?:\/\/203\.107\.1\.66/\d+/ss reject
 ^https?:\/\/203\.107\.1\.67/\d+/ss - reject
-^https?:\/\/203\.107\.1\.67/\d+/ss reject
 ^https?:\/\/203\.107\.1\.97/\d+/ss - reject
-^https?:\/\/203\.107\.1\.97/\d+/ss reject
 ^https?:\/\/203\.209\.230\.39\/squery - reject
 ^https?:\/\/203\.209\.245\.102\/squery - reject
 ^https?:\/\/203\.209\.245\.158\/squery - reject
@@ -279,9 +277,7 @@ URL-REGEX,^http:\/\/api\.weibo\.cn\/httpdns\/config,REJECT,extended-matching
 ^https?:\/\/2400:B200:1005:3000::1D3\/squery - reject
 ^https?:\/\/2400:B200:5000:B000::C8\/squery - reject
 ^https?:\/\/2401:b180:2000:20::10\/\d+\/d - reject
-^https?:\/\/2401:b180:2000:20::10\/\d+\/d reject
 ^https?:\/\/2401:b180:2000:30::1c\/\d+\/d - reject
-^https?:\/\/2401:b180:2000:30::1c\/\d+\/d reject
 ^https?:\/\/amdc-sibling\.alipay\.com\.cn\/s?query - reject
 ^https?:\/\/amdc\.alipay\.com\/s?query - reject
 ^https?:\/\/appconf\.mail\.163\.com\/mailmaster\/api\/http\/urlConfig\.do$ - reject

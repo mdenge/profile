@@ -3,7 +3,7 @@
 # SOURCE: https://raw.githubusercontent.com/Loyalsoldier/surge-rules/release/tld-not-cn.txt
 # VERSION: daily
 #
-# UPDATED: 2025-12-08
+# UPDATED: 2026-08-01
 #
 .gov
 .mil
@@ -189,7 +189,6 @@
 .re
 .ro
 .rs
-.ru
 .rw
 .sa
 .sb
@@ -208,7 +207,6 @@
 .sr
 .ss
 .st
-.su
 .sv
 .sx
 .sy
@@ -296,7 +294,6 @@
 .osaka
 .ryukyu
 .taipei
-.tatar
 .tokyo
 .yokohama
 .alsace
@@ -323,7 +320,6 @@
 .koeln
 .london
 .madrid
-.moscow
 .nrw
 .paris
 .ruhr
@@ -395,7 +391,6 @@
 .weir
 .woodside
 .zara
-.africamagic
 .agakhan
 .akdn
 .bharti
@@ -421,7 +416,6 @@
 .sucks
 .tattoo
 .vana
-.virgin
 .vodka
 .wine
 .wme
@@ -479,7 +473,6 @@
 .xn--h2brj9c8c
 .xn--mgbgu82a
 .xn--mgba3a4f16a
-.xn--mgba3a4fra
 .xn--mgbtx2b
 .xn--mgbayh7gpa
 .xn--80ao21a
@@ -497,7 +490,6 @@
 .xn--mgbai9a5eva00b
 .xn--ygbi2ammx
 .xn--wgbl6a
-.xn--p1ai
 .xn--mgberp4a5d4ar
 .xn--mgberp4a5d4a87g
 .xn--mgbqly7c0a67fbc
@@ -670,6 +662,7 @@
 .aol
 .aws
 .azure
+.bing
 .chrome
 .cisco
 .dclk
@@ -693,7 +686,6 @@
 .godaddy
 .goog
 .google
-.goo
 .guge
 .hangout
 .hkt
@@ -787,6 +779,7 @@
 .shangrila
 .tui
 .viking
+.virgin
 .able
 .cbre
 .chintai
@@ -830,3 +823,14 @@
 .how
 .soy
 .xn--q9jyb4c
+.moscow
+.ru
+.su
+.tatar
+.xn--80adxhks
+.xn--80asehdb
+.xn--80aswg
+.xn--c1avg
+.xn--d1acj3b
+.xn--p1acf
+.xn--p1ai
