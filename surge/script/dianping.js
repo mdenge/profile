@@ -1,1 +1,0 @@
-const url=$request.url,header=$request.headers,resp={},headopt=header["M-SHARK-TRACEID"]||header["m-shark-traceid"];null!=headopt?$done({body:"",headers:"",status:"HTTP/1.1 204 No Content"}):$done({});
